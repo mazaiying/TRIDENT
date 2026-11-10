@@ -1,0 +1,15 @@
+gpu,dataset,dim,method,pca_s,sq8_quant_s,tile_pack_s,total_build_s,index_vram_mib
+A100_smoke,msong,420,Faiss_IVFFlat,0.0,0.0,0.0,18.272,1602.1
+A100_smoke,msong,420,Faiss_IVFSQ8,0.0,0.0,0.0,18.234,407.4
+A100_smoke,msong,420,Faiss_IVFPQ,0.0,0.0,0.0,56.433,28.2
+A100_smoke,msong,420,CM_FP32,0.0,0.0,1.343,1.343,1599.0
+A100_smoke,msong,420,CM_SQ8_RR100,1.309,0.494,1.403,3.206,2086.9
+A100_smoke,msong,420,TRIDENT_K2_T256,1.309,0.443,1.387,3.139,2092.2
+A100_smoke,msong,420,TRIDENT_K2_T64,1.309,0.428,1.422,3.16,2047.2
+A100_smoke,gist1m,960,Faiss_IVFFlat,0.0,0.0,0.0,36.933,3673.5
+A100_smoke,gist1m,960,Faiss_IVFSQ8,0.0,0.0,0.0,37.429,926.9
+A100_smoke,gist1m,960,Faiss_IVFPQ,0.0,0.0,0.0,131.769,57.2
+A100_smoke,gist1m,960,CM_FP32,0.0,0.0,2.554,2.554,3673.2
+A100_smoke,gist1m,960,CM_SQ8_RR100,1.594,0.576,2.593,4.763,4715.4
+A100_smoke,gist1m,960,TRIDENT_K2_T256,1.594,0.645,2.601,4.84,4726.6
+A100_smoke,gist1m,960,TRIDENT_K2_T64,1.594,0.644,2.636,4.874,4634.3

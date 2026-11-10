@@ -1,0 +1,12 @@
+gpu,dataset,dim,cap_gb,mode,status,required_vram_gb,qps,recall_at_10,error_msg,measured
+A100,gist1m,960,2.2,cuVS_CAGRA_InVRAM_EnforcedCap,OOM_FAILED,3.815,0.0,0.0,MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal,1
+A100,gist1m,960,2.5,cuVS_CAGRA_InVRAM_EnforcedCap,OOM_FAILED,3.815,0.0,0.0,MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal,1
+A100,gist1m,960,2.2,cuVS_CAGRA_AfterBuild_ResidentCheck,EXCEEDS_CAP_OOM,4.418,0.0,0.0,Resident 4.42GB > 2.2GB cap,1
+A100,gist1m,960,2.5,cuVS_CAGRA_AfterBuild_ResidentCheck,EXCEEDS_CAP_OOM,4.418,0.0,0.0,Resident 4.42GB > 2.5GB cap,1
+A100,bge1024,1024,2.2,cuVS_CAGRA_InVRAM_EnforcedCap,OOM_FAILED,4.053,0.0,0.0,MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal,1
+A100,bge1024,1024,2.5,cuVS_CAGRA_InVRAM_EnforcedCap,OOM_FAILED,4.053,0.0,0.0,MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal,1
+A100,bge1024,1024,2.2,cuVS_CAGRA_AfterBuild_ResidentCheck,EXCEEDS_CAP_OOM,4.604,0.0,0.0,Resident 4.60GB > 2.2GB cap,1
+A100,bge1024,1024,2.5,cuVS_CAGRA_AfterBuild_ResidentCheck,EXCEEDS_CAP_OOM,4.604,0.0,0.0,Resident 4.60GB > 2.5GB cap,1
+A100,sift10m,128,2.5,cuVS_CAGRA_InVRAM_EnforcedCap,OOM_FAILED,7.153,0.0,0.0,MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal,1
+A100,sift10m,128,3.0,cuVS_CAGRA_InVRAM_EnforcedCap,OOM_FAILED,7.153,0.0,0.0,MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal,1
+A100,deep10m,96,2.5,cuVS_CAGRA_InVRAM_EnforcedCap,OOM_FAILED,5.96,0.0,0.0,MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal,1

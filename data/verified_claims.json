@@ -1,0 +1,5369 @@
+{
+  "main_table": {
+    "R0.95": {
+      "sift1m": {
+        "nprobe": 24,
+        "Faiss_IVFFlat": 136013.8,
+        "CM_FP32": 132223.9,
+        "Faiss_IVFSQ8": 130302.9,
+        "CM_SQ8_RR50": 201001.1,
+        "Tribase_GPU": 112576.2,
+        "TRIDENT_Raw": 343620.3,
+        "TRIDENT_Auto": 343620.3,
+        "speedup_auto_vs_faiss": 2.53,
+        "speedup_auto_vs_cm": 2.6,
+        "speedup_raw_vs_faiss": 2.53,
+        "speedup_raw_vs_cm": 2.6,
+        "speedup_vs_tribase_same_run": 2.44,
+        "tribase_dim_pruned_pct": 0.65,
+        "trident_dim_pruned_pct": 67.97,
+        "trident_cand_pruned_pct": 98.75
+      },
+      "glove100": {
+        "nprobe": 128,
+        "Faiss_IVFFlat": 29849.2,
+        "CM_FP32": 26680.9,
+        "Faiss_IVFSQ8": 30380.6,
+        "CM_SQ8_RR50": 64055.6,
+        "Tribase_GPU": 25594.4,
+        "TRIDENT_Raw": 78626.8,
+        "TRIDENT_Auto": 78626.8,
+        "speedup_auto_vs_faiss": 2.63,
+        "speedup_auto_vs_cm": 2.95,
+        "speedup_raw_vs_faiss": 2.63,
+        "speedup_raw_vs_cm": 2.95,
+        "speedup_vs_tribase_same_run": 2.69,
+        "tribase_dim_pruned_pct": 0.05,
+        "trident_dim_pruned_pct": 35.35,
+        "trident_cand_pruned_pct": 99.74
+      },
+      "msong": {
+        "nprobe": 10,
+        "Faiss_IVFFlat": 61920.4,
+        "CM_FP32": 73845.3,
+        "Faiss_IVFSQ8": 59315.1,
+        "CM_SQ8_RR50": 132107.2,
+        "Tribase_GPU": 83435.1,
+        "TRIDENT_Raw": 240788.2,
+        "TRIDENT_Auto": 240788.2,
+        "speedup_auto_vs_faiss": 3.89,
+        "speedup_auto_vs_cm": 3.26,
+        "speedup_raw_vs_faiss": 3.89,
+        "speedup_raw_vs_cm": 3.26,
+        "speedup_vs_tribase_same_run": 1.9,
+        "tribase_dim_pruned_pct": 2.31,
+        "trident_dim_pruned_pct": 86.1,
+        "trident_cand_pruned_pct": 96.61
+      },
+      "nuswide": {
+        "nprobe": 3,
+        "Faiss_IVFFlat": 1466590.7,
+        "CM_FP32": 1365014.5,
+        "Faiss_IVFSQ8": 1191475.4,
+        "CM_SQ8_RR50": 263017.7,
+        "Tribase_GPU": 1080703.8,
+        "TRIDENT_Raw": 784189.3,
+        "TRIDENT_Auto": 1365014.5,
+        "speedup_auto_vs_faiss": 0.93,
+        "speedup_auto_vs_cm": 1.0,
+        "speedup_auto_vs_raw": 1.74,
+        "speedup_raw_vs_faiss": 0.53,
+        "speedup_raw_vs_cm": 0.57,
+        "speedup_vs_tribase_same_run": 0.63,
+        "tribase_dim_pruned_pct": 24.26,
+        "trident_dim_pruned_pct": 28.37,
+        "trident_cand_pruned_pct": 33.09
+      },
+      "gist1m": {
+        "nprobe": 56,
+        "Faiss_IVFFlat": 5843.1,
+        "CM_FP32": 9791.5,
+        "Faiss_IVFSQ8": 5881.1,
+        "CM_SQ8_RR50": 20280.3,
+        "Tribase_GPU": 12316.0,
+        "TRIDENT_Raw": 46229.4,
+        "TRIDENT_Auto": 46229.4,
+        "speedup_auto_vs_faiss": 7.91,
+        "speedup_auto_vs_cm": 4.72,
+        "speedup_raw_vs_faiss": 7.91,
+        "speedup_raw_vs_cm": 4.72,
+        "speedup_vs_tribase_same_run": 2.33,
+        "tribase_dim_pruned_pct": 0.64,
+        "trident_dim_pruned_pct": 90.68,
+        "trident_cand_pruned_pct": 98.82
+      },
+      "bge1024": {
+        "nprobe": 14,
+        "Faiss_IVFFlat": 30913.7,
+        "CM_FP32": 46394.7,
+        "Faiss_IVFSQ8": 28433.4,
+        "CM_SQ8_RR50": 73908.1,
+        "Tribase_GPU": 56186.4,
+        "TRIDENT_Raw": 151947.0,
+        "TRIDENT_Auto": 151947.0,
+        "speedup_auto_vs_faiss": 4.92,
+        "speedup_auto_vs_cm": 3.28,
+        "speedup_raw_vs_faiss": 4.92,
+        "speedup_raw_vs_cm": 3.28,
+        "speedup_vs_tribase_same_run": 1.79,
+        "tribase_dim_pruned_pct": 8.27,
+        "trident_dim_pruned_pct": 82.09,
+        "trident_cand_pruned_pct": 95.69
+      },
+      "sift10m": {
+        "nprobe": 32,
+        "Faiss_IVFFlat": 30479.6,
+        "CM_FP32": 30711.9,
+        "Faiss_IVFSQ8": 31278.3,
+        "CM_SQ8_RR50": 54874.5,
+        "Tribase_GPU": 31255.4,
+        "TRIDENT_Raw": 103437.1,
+        "TRIDENT_Auto": 103437.1,
+        "speedup_auto_vs_faiss": 3.39,
+        "speedup_auto_vs_cm": 3.37,
+        "speedup_raw_vs_faiss": 3.39,
+        "speedup_raw_vs_cm": 3.37,
+        "speedup_vs_tribase_same_run": 2.95,
+        "tribase_dim_pruned_pct": 1.99,
+        "trident_dim_pruned_pct": 72.0,
+        "trident_cand_pruned_pct": 99.57
+      },
+      "deep10m": {
+        "nprobe": 32,
+        "Faiss_IVFFlat": 51263.1,
+        "CM_FP32": 38805.6,
+        "Faiss_IVFSQ8": 53282.6,
+        "CM_SQ8_RR50": 88343.3,
+        "Tribase_GPU": 33914.5,
+        "TRIDENT_Raw": 134432.6,
+        "TRIDENT_Auto": 134432.6,
+        "speedup_auto_vs_faiss": 2.62,
+        "speedup_auto_vs_cm": 3.46,
+        "speedup_raw_vs_faiss": 2.62,
+        "speedup_raw_vs_cm": 3.46,
+        "speedup_vs_tribase_same_run": 3.02,
+        "tribase_dim_pruned_pct": 2.07,
+        "trident_dim_pruned_pct": 58.91,
+        "trident_cand_pruned_pct": 99.58
+      },
+      "t2i10m": {
+        "nprobe": 128,
+        "Faiss_IVFFlat": 7325.7,
+        "CM_FP32": 8391.3,
+        "Faiss_IVFSQ8": 7457.0,
+        "CM_SQ8_RR50": 16444.6,
+        "Tribase_GPU": 0.0,
+        "TRIDENT_Raw": 18691.0,
+        "TRIDENT_Auto": 18691.0,
+        "speedup_auto_vs_faiss": 2.55,
+        "speedup_auto_vs_cm": 2.23,
+        "speedup_raw_vs_faiss": 2.55,
+        "speedup_raw_vs_cm": 2.23,
+        "speedup_vs_tribase_same_run": 0.0,
+        "tribase_dim_pruned_pct": 0.0,
+        "trident_dim_pruned_pct": 0.0,
+        "trident_cand_pruned_pct": 0.0
+      }
+    },
+    "R0.99": {
+      "sift1m": {
+        "nprobe": 48,
+        "Faiss_IVFFlat": 66989.6,
+        "CM_FP32": 71563.3,
+        "Faiss_IVFSQ8": 66131.1,
+        "CM_SQ8_RR50": 120018.4,
+        "Tribase_GPU": 66361.7,
+        "TRIDENT_Raw": 226381.9,
+        "TRIDENT_Auto": 226381.9,
+        "speedup_auto_vs_faiss": 3.38,
+        "speedup_auto_vs_cm": 3.16,
+        "speedup_raw_vs_faiss": 3.38,
+        "speedup_raw_vs_cm": 3.16,
+        "speedup_vs_tribase_same_run": 2.83,
+        "tribase_dim_pruned_pct": 1.15,
+        "trident_dim_pruned_pct": 70.47,
+        "trident_cand_pruned_pct": 99.36
+      },
+      "glove100": {
+        "nprobe": 384,
+        "Faiss_IVFFlat": 9651.7,
+        "CM_FP32": 9230.3,
+        "Faiss_IVFSQ8": 9834.9,
+        "CM_SQ8_RR50": 21918.3,
+        "Tribase_GPU": 8963.5,
+        "TRIDENT_Raw": 28772.2,
+        "TRIDENT_Auto": 28772.2,
+        "speedup_auto_vs_faiss": 2.98,
+        "speedup_auto_vs_cm": 3.12,
+        "speedup_raw_vs_faiss": 2.98,
+        "speedup_raw_vs_cm": 3.12,
+        "speedup_vs_tribase_same_run": 2.98,
+        "tribase_dim_pruned_pct": 0.07,
+        "trident_dim_pruned_pct": 38.96,
+        "trident_cand_pruned_pct": 99.91
+      },
+      "msong": {
+        "nprobe": 24,
+        "Faiss_IVFFlat": 25510.7,
+        "CM_FP32": 33162.6,
+        "Faiss_IVFSQ8": 25280.9,
+        "CM_SQ8_RR50": 60030.8,
+        "Tribase_GPU": 41658.5,
+        "TRIDENT_Raw": 143636.7,
+        "TRIDENT_Auto": 143636.7,
+        "speedup_auto_vs_faiss": 5.63,
+        "speedup_auto_vs_cm": 4.33,
+        "speedup_raw_vs_faiss": 5.63,
+        "speedup_raw_vs_cm": 4.33,
+        "speedup_vs_tribase_same_run": 2.72,
+        "tribase_dim_pruned_pct": 5.4,
+        "trident_dim_pruned_pct": 88.65,
+        "trident_cand_pruned_pct": 97.9
+      },
+      "nuswide": {
+        "nprobe": 8,
+        "Faiss_IVFFlat": 508898.1,
+        "CM_FP32": 564925.8,
+        "Faiss_IVFSQ8": 412943.0,
+        "CM_SQ8_RR50": 220281.0,
+        "Tribase_GPU": 934716.9,
+        "TRIDENT_Raw": 526784.2,
+        "TRIDENT_Auto": 564925.8,
+        "speedup_auto_vs_faiss": 1.11,
+        "speedup_auto_vs_cm": 1.0,
+        "speedup_raw_vs_faiss": 1.04,
+        "speedup_raw_vs_cm": 0.93,
+        "speedup_vs_tribase_same_run": 0.69,
+        "tribase_dim_pruned_pct": 69.8,
+        "trident_dim_pruned_pct": 76.04,
+        "trident_cand_pruned_pct": 82.98
+      },
+      "gist1m": {
+        "nprobe": 128,
+        "Faiss_IVFFlat": 2621.0,
+        "CM_FP32": 4618.1,
+        "Faiss_IVFSQ8": 2651.7,
+        "CM_SQ8_RR50": 8245.2,
+        "Tribase_GPU": 6170.2,
+        "TRIDENT_Raw": 24523.4,
+        "TRIDENT_Auto": 24523.4,
+        "speedup_auto_vs_faiss": 9.36,
+        "speedup_auto_vs_cm": 5.31,
+        "speedup_raw_vs_faiss": 9.36,
+        "speedup_raw_vs_cm": 5.31,
+        "speedup_vs_tribase_same_run": 3.12,
+        "tribase_dim_pruned_pct": 1.12,
+        "trident_dim_pruned_pct": 92.51,
+        "trident_cand_pruned_pct": 99.47
+      },
+      "bge1024": {
+        "nprobe": 128,
+        "Faiss_IVFFlat": 2980.1,
+        "CM_FP32": 5741.4,
+        "Faiss_IVFSQ8": 3028.9,
+        "CM_SQ8_RR50": 8692.9,
+        "Tribase_GPU": 7212.4,
+        "TRIDENT_Raw": 43504.4,
+        "TRIDENT_Auto": 43504.4,
+        "speedup_auto_vs_faiss": 14.6,
+        "speedup_auto_vs_cm": 7.58,
+        "speedup_raw_vs_faiss": 14.6,
+        "speedup_raw_vs_cm": 7.58,
+        "speedup_vs_tribase_same_run": 4.91,
+        "tribase_dim_pruned_pct": 5.98,
+        "trident_dim_pruned_pct": 91.46,
+        "trident_cand_pruned_pct": 99.36
+      },
+      "sift10m": {
+        "nprobe": 96,
+        "Faiss_IVFFlat": 13740.8,
+        "CM_FP32": 15144.5,
+        "Faiss_IVFSQ8": 14380.3,
+        "CM_SQ8_RR50": 33013.6,
+        "Tribase_GPU": 14139.2,
+        "TRIDENT_Raw": 63048.5,
+        "TRIDENT_Auto": 63048.5,
+        "speedup_auto_vs_faiss": 4.59,
+        "speedup_auto_vs_cm": 4.16,
+        "speedup_raw_vs_faiss": 4.59,
+        "speedup_raw_vs_cm": 4.16,
+        "speedup_vs_tribase_same_run": 3.61,
+        "tribase_dim_pruned_pct": 4.06,
+        "trident_dim_pruned_pct": 73.56,
+        "trident_cand_pruned_pct": 99.85
+      },
+      "deep10m": {
+        "nprobe": 96,
+        "Faiss_IVFFlat": 18289.6,
+        "CM_FP32": 15213.6,
+        "Faiss_IVFSQ8": 19278.4,
+        "CM_SQ8_RR50": 44840.5,
+        "Tribase_GPU": 14430.8,
+        "TRIDENT_Raw": 63909.2,
+        "TRIDENT_Auto": 63909.2,
+        "speedup_auto_vs_faiss": 3.49,
+        "speedup_auto_vs_cm": 4.2,
+        "speedup_raw_vs_faiss": 3.49,
+        "speedup_raw_vs_cm": 4.2,
+        "speedup_vs_tribase_same_run": 3.53,
+        "tribase_dim_pruned_pct": 3.4,
+        "trident_dim_pruned_pct": 61.91,
+        "trident_cand_pruned_pct": 99.85
+      },
+      "t2i10m": {
+        "nprobe": 512,
+        "Faiss_IVFFlat": 1837.9,
+        "CM_FP32": 2259.7,
+        "Faiss_IVFSQ8": 1886.8,
+        "CM_SQ8_RR50": 4824.2,
+        "Tribase_GPU": 0.0,
+        "TRIDENT_Raw": 5396.4,
+        "TRIDENT_Auto": 5396.4,
+        "speedup_auto_vs_faiss": 2.94,
+        "speedup_auto_vs_cm": 2.39,
+        "speedup_raw_vs_faiss": 2.94,
+        "speedup_raw_vs_cm": 2.39,
+        "speedup_vs_tribase_same_run": 0.0,
+        "tribase_dim_pruned_pct": 0.0,
+        "trident_dim_pruned_pct": 0.0,
+        "trident_cand_pruned_pct": 0.0
+      }
+    }
+  },
+  "agg_R0.95": {
+    "all9_mean_vs_faiss": 3.49,
+    "all9_geomean_vs_faiss": 3.05,
+    "all9_mean_vs_cm": 2.99,
+    "all9_geomean_vs_cm": 2.81,
+    "active8_mean_vs_faiss": 3.81,
+    "active8_geomean_vs_faiss": 3.51,
+    "active8_max_vs_faiss": 7.91,
+    "active8_min_vs_faiss": 2.53,
+    "active8_mean_vs_cm": 3.23,
+    "active8_geomean_vs_cm": 3.16,
+    "active8_max_vs_cm": 4.72,
+    "active8_min_vs_cm": 2.23,
+    "active7_mean_vs_tribase": 2.45,
+    "active7_geomean_vs_tribase": 2.4,
+    "active7_max_vs_tribase": 3.02,
+    "active7_min_vs_tribase": 1.79
+  },
+  "agg_R0.99": {
+    "all9_mean_vs_faiss": 5.34,
+    "all9_geomean_vs_faiss": 4.2,
+    "all9_mean_vs_cm": 3.92,
+    "all9_geomean_vs_cm": 3.46,
+    "active8_mean_vs_faiss": 5.87,
+    "active8_geomean_vs_faiss": 4.96,
+    "active8_max_vs_faiss": 14.6,
+    "active8_min_vs_faiss": 2.94,
+    "active8_mean_vs_cm": 4.28,
+    "active8_geomean_vs_cm": 4.05,
+    "active8_max_vs_cm": 7.58,
+    "active8_min_vs_cm": 2.39,
+    "active7_mean_vs_tribase": 3.39,
+    "active7_geomean_vs_tribase": 3.32,
+    "active7_max_vs_tribase": 4.91,
+    "active7_min_vs_tribase": 2.72
+  },
+  "ncu_v2": {
+    "gist1m": {
+      "Faiss_IVFFlat": {
+        "gpu_time_us": 172342.3,
+        "dram_read_mb": 282813.19,
+        "l2_bytes_mb": 570840.59,
+        "inst_executed_M": 11623.44,
+        "ffma_inst_M": 75770.74
+      },
+      "B0_CM_FP32": {
+        "gpu_time_us": 104781.4,
+        "dram_read_mb": 3890.15,
+        "l2_bytes_mb": 249239.1,
+        "inst_executed_M": 16460.69,
+        "ffma_inst_M": 74851.83
+      },
+      "B1_GlobalSQ8_Uni32_Serial": {
+        "gpu_time_us": 69057.6,
+        "dram_read_mb": 5162.77,
+        "l2_bytes_mb": 66930.38,
+        "inst_executed_M": 22242.09,
+        "ffma_inst_M": 97005.76
+      },
+      "B2_PerClusterSQ8_Uni32_Serial": {
+        "gpu_time_us": 65250.7,
+        "dram_read_mb": 4605.47,
+        "l2_bytes_mb": 63768.53,
+        "inst_executed_M": 21476.7,
+        "ffma_inst_M": 93650.86
+      },
+      "B3_PCA_PerClusterSQ8_Serial": {
+        "gpu_time_us": 33221.4,
+        "dram_read_mb": 4136.22,
+        "l2_bytes_mb": 21731.79,
+        "inst_executed_M": 7035.56,
+        "ffma_inst_M": 16736.11
+      },
+      "B4_Full_TRIDENT": {
+        "gpu_time_us": 27504.5,
+        "dram_read_mb": 3664.76,
+        "l2_bytes_mb": 21429.83,
+        "inst_executed_M": 7035.29,
+        "ffma_inst_M": 16736.11
+      },
+      "Full_minus_PCA": {
+        "gpu_time_us": 59908.6,
+        "dram_read_mb": 4308.92,
+        "l2_bytes_mb": 63654.17,
+        "inst_executed_M": 21476.43,
+        "ffma_inst_M": 93650.86
+      },
+      "Full_minus_EarlyStop": {
+        "gpu_time_us": 63599.2,
+        "dram_read_mb": 2303.02,
+        "l2_bytes_mb": 74972.23,
+        "inst_executed_M": 16478.74,
+        "ffma_inst_M": 149800.98
+      }
+    },
+    "bge1024": {
+      "Faiss_IVFFlat": {
+        "gpu_time_us": 30617.6,
+        "dram_read_mb": 47234.25,
+        "l2_bytes_mb": 107883.71,
+        "inst_executed_M": 2357.3,
+        "ffma_inst_M": 15861.65
+      },
+      "B0_CM_FP32": {
+        "gpu_time_us": 20670.2,
+        "dram_read_mb": 3428.56,
+        "l2_bytes_mb": 52400.91,
+        "inst_executed_M": 3142.95,
+        "ffma_inst_M": 15634.28
+      },
+      "B1_GlobalSQ8_Uni32_Serial": {
+        "gpu_time_us": 14839.2,
+        "dram_read_mb": 2153.42,
+        "l2_bytes_mb": 13488.15,
+        "inst_executed_M": 3297.05,
+        "ffma_inst_M": 16991.82
+      },
+      "B2_PerClusterSQ8_Uni32_Serial": {
+        "gpu_time_us": 14498.9,
+        "dram_read_mb": 2116.16,
+        "l2_bytes_mb": 13279.8,
+        "inst_executed_M": 3259.83,
+        "ffma_inst_M": 16794.5
+      },
+      "B3_PCA_PerClusterSQ8_Serial": {
+        "gpu_time_us": 11217.5,
+        "dram_read_mb": 1613.78,
+        "l2_bytes_mb": 8212.2,
+        "inst_executed_M": 1830.7,
+        "ffma_inst_M": 8040.88
+      },
+      "B4_Full_TRIDENT": {
+        "gpu_time_us": 7573.9,
+        "dram_read_mb": 1454.35,
+        "l2_bytes_mb": 8070.5,
+        "inst_executed_M": 1830.66,
+        "ffma_inst_M": 8040.88
+      },
+      "Full_minus_PCA": {
+        "gpu_time_us": 10978.9,
+        "dram_read_mb": 1954.85,
+        "l2_bytes_mb": 13089.18,
+        "inst_executed_M": 3259.78,
+        "ffma_inst_M": 16794.5
+      },
+      "Full_minus_EarlyStop": {
+        "gpu_time_us": 19047.5,
+        "dram_read_mb": 1502.47,
+        "l2_bytes_mb": 16171.2,
+        "inst_executed_M": 3636.41,
+        "ffma_inst_M": 31372.37
+      }
+    },
+    "msong": {
+      "Faiss_IVFFlat": {
+        "gpu_time_us": 16897.9,
+        "dram_read_mb": 26336.19,
+        "l2_bytes_mb": 55104.9,
+        "inst_executed_M": 1251.56,
+        "ffma_inst_M": 7751.57
+      },
+      "B0_CM_FP32": {
+        "gpu_time_us": 14027.0,
+        "dram_read_mb": 1605.32,
+        "l2_bytes_mb": 26958.73,
+        "inst_executed_M": 2329.54,
+        "ffma_inst_M": 7687.86
+      },
+      "B1_GlobalSQ8_Uni32_Serial": {
+        "gpu_time_us": 13367.0,
+        "dram_read_mb": 2395.11,
+        "l2_bytes_mb": 10711.24,
+        "inst_executed_M": 2577.18,
+        "ffma_inst_M": 10322.85
+      },
+      "B2_PerClusterSQ8_Uni32_Serial": {
+        "gpu_time_us": 10041.6,
+        "dram_read_mb": 1454.2,
+        "l2_bytes_mb": 7809.15,
+        "inst_executed_M": 2177.16,
+        "ffma_inst_M": 7848.06
+      },
+      "B3_PCA_PerClusterSQ8_Serial": {
+        "gpu_time_us": 7602.8,
+        "dram_read_mb": 1205.97,
+        "l2_bytes_mb": 4249.84,
+        "inst_executed_M": 1047.67,
+        "ffma_inst_M": 2938.41
+      },
+      "B4_Full_TRIDENT": {
+        "gpu_time_us": 4913.9,
+        "dram_read_mb": 1048.83,
+        "l2_bytes_mb": 4121.3,
+        "inst_executed_M": 1047.58,
+        "ffma_inst_M": 2938.41
+      },
+      "Full_minus_PCA": {
+        "gpu_time_us": 7285.3,
+        "dram_read_mb": 1322.94,
+        "l2_bytes_mb": 7674.59,
+        "inst_executed_M": 2177.05,
+        "ffma_inst_M": 7848.06
+      },
+      "Full_minus_EarlyStop": {
+        "gpu_time_us": 11933.8,
+        "dram_read_mb": 1013.06,
+        "l2_bytes_mb": 8502.53,
+        "inst_executed_M": 2136.22,
+        "ffma_inst_M": 16107.37
+      }
+    },
+    "sift1m": {
+      "Faiss_IVFFlat": {
+        "gpu_time_us": 7565.6,
+        "dram_read_mb": 11646.95,
+        "l2_bytes_mb": 25316.37,
+        "inst_executed_M": 801.43,
+        "ffma_inst_M": 3535.3
+      },
+      "B0_CM_FP32": {
+        "gpu_time_us": 7729.9,
+        "dram_read_mb": 511.35,
+        "l2_bytes_mb": 7775.52,
+        "inst_executed_M": 1780.75,
+        "ffma_inst_M": 3487.04
+      },
+      "B1_GlobalSQ8_Uni32_Serial": {
+        "gpu_time_us": 3810.2,
+        "dram_read_mb": 343.66,
+        "l2_bytes_mb": 2893.79,
+        "inst_executed_M": 1063.76,
+        "ffma_inst_M": 4209.41
+      },
+      "B2_PerClusterSQ8_Uni32_Serial": {
+        "gpu_time_us": 3790.0,
+        "dram_read_mb": 343.56,
+        "l2_bytes_mb": 2891.78,
+        "inst_executed_M": 1060.15,
+        "ffma_inst_M": 4195.74
+      },
+      "B3_PCA_PerClusterSQ8_Serial": {
+        "gpu_time_us": 3057.0,
+        "dram_read_mb": 312.81,
+        "l2_bytes_mb": 2084.33,
+        "inst_executed_M": 744.24,
+        "ffma_inst_M": 2369.26
+      },
+      "B4_Full_TRIDENT": {
+        "gpu_time_us": 2997.5,
+        "dram_read_mb": 311.69,
+        "l2_bytes_mb": 2065.71,
+        "inst_executed_M": 744.18,
+        "ffma_inst_M": 2369.26
+      },
+      "Full_minus_PCA": {
+        "gpu_time_us": 3723.4,
+        "dram_read_mb": 342.85,
+        "l2_bytes_mb": 2903.63,
+        "inst_executed_M": 1060.08,
+        "ffma_inst_M": 4195.74
+      },
+      "Full_minus_EarlyStop": {
+        "gpu_time_us": 8342.2,
+        "dram_read_mb": 302.37,
+        "l2_bytes_mb": 3312.76,
+        "inst_executed_M": 1272.21,
+        "ffma_inst_M": 6870.0
+      }
+    },
+    "sift10m": {
+      "Faiss_IVFFlat": {
+        "gpu_time_us": 26273.4,
+        "dram_read_mb": 41466.95,
+        "l2_bytes_mb": 83550.35,
+        "inst_executed_M": 2242.01,
+        "ffma_inst_M": 11483.39
+      },
+      "B0_CM_FP32": {
+        "gpu_time_us": 26795.5,
+        "dram_read_mb": 5131.73,
+        "l2_bytes_mb": 34120.32,
+        "inst_executed_M": 5409.8,
+        "ffma_inst_M": 11422.88
+      },
+      "B4_Full_TRIDENT": {
+        "gpu_time_us": 8410.5,
+        "dram_read_mb": 1734.82,
+        "l2_bytes_mb": 6784.02,
+        "inst_executed_M": 1900.99,
+        "ffma_inst_M": 6784.15
+      },
+      "Full_minus_EarlyStop": {
+        "gpu_time_us": 19078.7,
+        "dram_read_mb": 1923.1,
+        "l2_bytes_mb": 11420.92,
+        "inst_executed_M": 3074.76,
+        "ffma_inst_M": 22334.58
+      }
+    },
+    "deep10m": {
+      "Faiss_IVFFlat": {
+        "gpu_time_us": 14990.1,
+        "dram_read_mb": 23711.24,
+        "l2_bytes_mb": 47905.47,
+        "inst_executed_M": 1413.43,
+        "ffma_inst_M": 6682.07
+      },
+      "B0_CM_FP32": {
+        "gpu_time_us": 21213.3,
+        "dram_read_mb": 3778.79,
+        "l2_bytes_mb": 21158.89,
+        "inst_executed_M": 4200.68,
+        "ffma_inst_M": 6649.21
+      },
+      "B4_Full_TRIDENT": {
+        "gpu_time_us": 6501.7,
+        "dram_read_mb": 1491.85,
+        "l2_bytes_mb": 5598.83,
+        "inst_executed_M": 1591.14,
+        "ffma_inst_M": 5776.07
+      },
+      "Full_minus_EarlyStop": {
+        "gpu_time_us": 12866.6,
+        "dram_read_mb": 1457.06,
+        "l2_bytes_mb": 7211.84,
+        "inst_executed_M": 2021.94,
+        "ffma_inst_M": 12914.02
+      }
+    }
+  },
+  "sens_k": {
+    "gist1m": {
+      "1": {
+        "Faiss_IVFFlat": {
+          "qps": 6173.1,
+          "recall_at_k": 0.961,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 16055.2,
+          "recall_at_k": 0.96,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 15536.3,
+          "recall_at_k": 0.96,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 14073.6,
+          "recall_at_k": 0.96,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 47103.0,
+          "recall_at_k": 0.96,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "10": {
+        "Faiss_IVFFlat": {
+          "qps": 6032.9,
+          "recall_at_k": 0.9621,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 13737.2,
+          "recall_at_k": 0.9622,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 15531.0,
+          "recall_at_k": 0.9622,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 14067.7,
+          "recall_at_k": 0.9622,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 28601.4,
+          "recall_at_k": 0.9622,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "50": {
+        "Faiss_IVFFlat": {
+          "qps": 5687.8,
+          "recall_at_k": 0.9438,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 7256.6,
+          "recall_at_k": 0.9438,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 15308.6,
+          "recall_at_k": 0.9081,
+          "strict_ov_pct": 87.29
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 13639.9,
+          "recall_at_k": 0.9438,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 18245.9,
+          "recall_at_k": 0.9438,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "100": {
+        "Faiss_IVFFlat": {
+          "qps": 5496.5,
+          "recall_at_k": 0.9323,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 2983.6,
+          "recall_at_k": 0.9323,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 12828.3,
+          "recall_at_k": 0.9045,
+          "strict_ov_pct": 86.37
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 9657.3,
+          "recall_at_k": 0.9322,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 12707.7,
+          "recall_at_k": 0.9323,
+          "strict_ov_pct": 100.0
+        }
+      }
+    },
+    "bge1024": {
+      "1": {
+        "Faiss_IVFFlat": {
+          "qps": 34027.3,
+          "recall_at_k": 0.965,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 80362.2,
+          "recall_at_k": 0.965,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 60810.9,
+          "recall_at_k": 0.965,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 44547.9,
+          "recall_at_k": 0.965,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 155612.2,
+          "recall_at_k": 0.965,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "10": {
+        "Faiss_IVFFlat": {
+          "qps": 32629.6,
+          "recall_at_k": 0.952,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 67116.2,
+          "recall_at_k": 0.952,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 60757.6,
+          "recall_at_k": 0.952,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 44510.8,
+          "recall_at_k": 0.952,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 105863.7,
+          "recall_at_k": 0.952,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "50": {
+        "Faiss_IVFFlat": {
+          "qps": 29392.8,
+          "recall_at_k": 0.934,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 31606.2,
+          "recall_at_k": 0.934,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 59511.5,
+          "recall_at_k": 0.9281,
+          "strict_ov_pct": 99.06
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 43377.3,
+          "recall_at_k": 0.934,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 66352.3,
+          "recall_at_k": 0.934,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "100": {
+        "Faiss_IVFFlat": {
+          "qps": 27766.0,
+          "recall_at_k": 0.9242,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 13002.4,
+          "recall_at_k": 0.9242,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 39956.2,
+          "recall_at_k": 0.9191,
+          "strict_ov_pct": 98.98
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 27637.9,
+          "recall_at_k": 0.9242,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 39024.6,
+          "recall_at_k": 0.9242,
+          "strict_ov_pct": 100.0
+        }
+      }
+    },
+    "sift10m": {
+      "1": {
+        "Faiss_IVFFlat": {
+          "qps": 39781.5,
+          "recall_at_k": 0.9707,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 51469.0,
+          "recall_at_k": 0.9707,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 73067.1,
+          "recall_at_k": 0.9707,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 46970.5,
+          "recall_at_k": 0.9707,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 119577.3,
+          "recall_at_k": 0.9707,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "10": {
+        "Faiss_IVFFlat": {
+          "qps": 38563.3,
+          "recall_at_k": 0.9523,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 49052.0,
+          "recall_at_k": 0.9523,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 72970.5,
+          "recall_at_k": 0.9523,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 46910.1,
+          "recall_at_k": 0.9523,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 92179.2,
+          "recall_at_k": 0.9523,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "50": {
+        "Faiss_IVFFlat": {
+          "qps": 35476.3,
+          "recall_at_k": 0.9302,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 24160.8,
+          "recall_at_k": 0.9302,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 68536.4,
+          "recall_at_k": 0.9211,
+          "strict_ov_pct": 96.64
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 43623.3,
+          "recall_at_k": 0.9302,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 60146.6,
+          "recall_at_k": 0.9302,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "100": {
+        "Faiss_IVFFlat": {
+          "qps": 33550.2,
+          "recall_at_k": 0.917,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 9223.4,
+          "recall_at_k": 0.917,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 38241.5,
+          "recall_at_k": 0.9101,
+          "strict_ov_pct": 96.28
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 23659.0,
+          "recall_at_k": 0.917,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 36114.8,
+          "recall_at_k": 0.917,
+          "strict_ov_pct": 100.0
+        }
+      }
+    },
+    "deep10m": {
+      "1": {
+        "Faiss_IVFFlat": {
+          "qps": 69576.3,
+          "recall_at_k": 0.96,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 65040.9,
+          "recall_at_k": 0.96,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 106678.7,
+          "recall_at_k": 0.96,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 60326.2,
+          "recall_at_k": 0.96,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 137239.5,
+          "recall_at_k": 0.96,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "10": {
+        "Faiss_IVFFlat": {
+          "qps": 67191.2,
+          "recall_at_k": 0.9472,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 62312.1,
+          "recall_at_k": 0.9472,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 106819.2,
+          "recall_at_k": 0.9472,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 60506.8,
+          "recall_at_k": 0.9472,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 119856.5,
+          "recall_at_k": 0.9472,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "50": {
+        "Faiss_IVFFlat": {
+          "qps": 61629.2,
+          "recall_at_k": 0.9279,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 31828.1,
+          "recall_at_k": 0.9279,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 100202.5,
+          "recall_at_k": 0.9166,
+          "strict_ov_pct": 96.61
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 55962.0,
+          "recall_at_k": 0.9279,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 78585.2,
+          "recall_at_k": 0.9279,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "100": {
+        "Faiss_IVFFlat": {
+          "qps": 57246.2,
+          "recall_at_k": 0.9162,
+          "strict_ov_pct": 100.0
+        },
+        "CM_FP32": {
+          "qps": 12005.8,
+          "recall_at_k": 0.9162,
+          "strict_ov_pct": 100.0
+        },
+        "CM_SQ8_RR50": {
+          "qps": 49275.9,
+          "recall_at_k": 0.9077,
+          "strict_ov_pct": 96.34
+        },
+        "CM_SQ8_RR2K": {
+          "qps": 27446.7,
+          "recall_at_k": 0.9162,
+          "strict_ov_pct": 100.0
+        },
+        "TRIDENT": {
+          "qps": 45181.3,
+          "recall_at_k": 0.9162,
+          "strict_ov_pct": 100.0
+        }
+      }
+    }
+  },
+  "ooc": {
+    "gist1m": {
+      "R0.95": {
+        "CM_FP32_InVRAM": {
+          "qps": 13376.8,
+          "speedup_vs_cm_ooc": 227.22,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 3.576,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_InVRAM": {
+          "qps": 28196.1,
+          "speedup_vs_cm_ooc": 478.95,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 4.485,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 1.179
+        },
+        "Faiss_CPU_IVFFlat_24T": {
+          "qps": 228.4,
+          "speedup_vs_cm_ooc": 3.88,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.0,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 100.0
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf16": {
+          "qps": 22916.1,
+          "speedup_vs_cm_ooc": 389.26,
+          "pcie_mb_estimated": 5.62,
+          "pcie_mb_measured": 5.62,
+          "strict_ov_pct": 62.41,
+          "vram_resident_gb": 0.056,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.213
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf64": {
+          "qps": 10335.1,
+          "speedup_vs_cm_ooc": 175.56,
+          "pcie_mb_estimated": 11.25,
+          "pcie_mb_measured": 11.25,
+          "strict_ov_pct": 93.35,
+          "vram_resident_gb": 0.056,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.852
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256": {
+          "qps": 3926.1,
+          "speedup_vs_cm_ooc": 66.69,
+          "pcie_mb_estimated": 27.75,
+          "pcie_mb_measured": 27.75,
+          "strict_ov_pct": 99.73,
+          "vram_resident_gb": 0.056,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 2.727
+        },
+        "CM_FP32_OOC_Pinned": {
+          "qps": 58.9,
+          "speedup_vs_cm_ooc": 1.0,
+          "pcie_mb_estimated": 281673.32,
+          "pcie_mb_measured": 401123.77,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.05,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_OOC_Pinned": {
+          "qps": 3425.5,
+          "speedup_vs_cm_ooc": 58.19,
+          "pcie_mb_estimated": 3321.65,
+          "pcie_mb_measured": 4978.27,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.909,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 1.179
+        }
+      },
+      "R0.99": {
+        "CM_FP32_InVRAM": {
+          "qps": 6149.8,
+          "speedup_vs_cm_ooc": 97.59,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 3.576,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_InVRAM": {
+          "qps": 19092.8,
+          "speedup_vs_cm_ooc": 302.97,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 4.485,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 0.531
+        },
+        "Faiss_CPU_IVFFlat_24T": {
+          "qps": 103.4,
+          "speedup_vs_cm_ooc": 1.64,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.0,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 100.0
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf16": {
+          "qps": 18152.6,
+          "speedup_vs_cm_ooc": 288.05,
+          "pcie_mb_estimated": 5.62,
+          "pcie_mb_measured": 5.62,
+          "strict_ov_pct": 60.21,
+          "vram_resident_gb": 0.056,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.095
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf64": {
+          "qps": 9260.4,
+          "speedup_vs_cm_ooc": 146.95,
+          "pcie_mb_estimated": 11.25,
+          "pcie_mb_measured": 11.25,
+          "strict_ov_pct": 90.85,
+          "vram_resident_gb": 0.056,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.382
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256": {
+          "qps": 3922.7,
+          "speedup_vs_cm_ooc": 62.25,
+          "pcie_mb_estimated": 27.75,
+          "pcie_mb_measured": 27.75,
+          "strict_ov_pct": 99.02,
+          "vram_resident_gb": 0.056,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 1.222
+        },
+        "CM_FP32_OOC_Pinned": {
+          "qps": 63.0,
+          "speedup_vs_cm_ooc": 1.0,
+          "pcie_mb_estimated": 628644.27,
+          "pcie_mb_measured": 911303.45,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.05,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_OOC_Pinned": {
+          "qps": 3234.7,
+          "speedup_vs_cm_ooc": 51.33,
+          "pcie_mb_estimated": 3340.35,
+          "pcie_mb_measured": 5016.09,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.909,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.531
+        }
+      }
+    },
+    "bge1024": {
+      "R0.95": {
+        "CM_FP32_InVRAM": {
+          "qps": 65745.3,
+          "speedup_vs_cm_ooc": 183.5,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 3.815,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_InVRAM": {
+          "qps": 103222.3,
+          "speedup_vs_cm_ooc": 288.09,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 4.784,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 4.308
+        },
+        "Faiss_CPU_IVFFlat_24T": {
+          "qps": 1366.7,
+          "speedup_vs_cm_ooc": 3.81,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.0,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 100.0
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf16": {
+          "qps": 81237.1,
+          "speedup_vs_cm_ooc": 226.73,
+          "pcie_mb_estimated": 5.88,
+          "pcie_mb_measured": 5.88,
+          "strict_ov_pct": 77.75,
+          "vram_resident_gb": 0.041,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 1.154
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf64": {
+          "qps": 24032.3,
+          "speedup_vs_cm_ooc": 67.07,
+          "pcie_mb_estimated": 11.5,
+          "pcie_mb_measured": 11.5,
+          "strict_ov_pct": 94.03,
+          "vram_resident_gb": 0.041,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 4.616
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256": {
+          "qps": 7890.9,
+          "speedup_vs_cm_ooc": 22.02,
+          "pcie_mb_estimated": 28.0,
+          "pcie_mb_measured": 28.0,
+          "strict_ov_pct": 98.84,
+          "vram_resident_gb": 0.041,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 14.772
+        },
+        "CM_FP32_OOC_Pinned": {
+          "qps": 358.3,
+          "speedup_vs_cm_ooc": 1.0,
+          "pcie_mb_estimated": 55456.05,
+          "pcie_mb_measured": 63362.1,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.05,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_OOC_Pinned": {
+          "qps": 4973.4,
+          "speedup_vs_cm_ooc": 13.88,
+          "pcie_mb_estimated": 2389.09,
+          "pcie_mb_measured": 3577.18,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.969,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 4.308
+        }
+      },
+      "R0.99": {
+        "CM_FP32_InVRAM": {
+          "qps": 7025.4,
+          "speedup_vs_cm_ooc": 92.82,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 3.815,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_InVRAM": {
+          "qps": 35769.9,
+          "speedup_vs_cm_ooc": 472.62,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 4.784,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 0.636
+        },
+        "Faiss_CPU_IVFFlat_24T": {
+          "qps": 112.6,
+          "speedup_vs_cm_ooc": 1.49,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.0,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 100.0
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf16": {
+          "qps": 14274.2,
+          "speedup_vs_cm_ooc": 188.6,
+          "pcie_mb_estimated": 5.88,
+          "pcie_mb_measured": 5.88,
+          "strict_ov_pct": 75.26,
+          "vram_resident_gb": 0.041,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 0.115
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf64": {
+          "qps": 9033.2,
+          "speedup_vs_cm_ooc": 119.35,
+          "pcie_mb_estimated": 11.5,
+          "pcie_mb_measured": 11.5,
+          "strict_ov_pct": 90.05,
+          "vram_resident_gb": 0.041,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 0.46
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256": {
+          "qps": 5769.9,
+          "speedup_vs_cm_ooc": 76.24,
+          "pcie_mb_estimated": 28.0,
+          "pcie_mb_measured": 28.0,
+          "strict_ov_pct": 95.41,
+          "vram_resident_gb": 0.041,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 1.471
+        },
+        "CM_FP32_OOC_Pinned": {
+          "qps": 75.7,
+          "speedup_vs_cm_ooc": 1.0,
+          "pcie_mb_estimated": 556986.02,
+          "pcie_mb_measured": 724817.11,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.05,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_OOC_Pinned": {
+          "qps": 3207.2,
+          "speedup_vs_cm_ooc": 42.38,
+          "pcie_mb_estimated": 3545.21,
+          "pcie_mb_measured": 5326.89,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.969,
+          "host_pinned_gb": 3.815,
+          "survivor_pct": 0.636
+        }
+      }
+    },
+    "sift10m": {
+      "R0.95": {
+        "CM_FP32_InVRAM": {
+          "qps": 48933.7,
+          "speedup_vs_cm_ooc": 95.11,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 4.768,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_InVRAM": {
+          "qps": 92231.6,
+          "speedup_vs_cm_ooc": 179.27,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 6.004,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 0.428
+        },
+        "Faiss_CPU_IVFFlat_24T": {
+          "qps": 1700.5,
+          "speedup_vs_cm_ooc": 3.31,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.0,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 100.0
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf16": {
+          "qps": 62689.8,
+          "speedup_vs_cm_ooc": 121.85,
+          "pcie_mb_estimated": 2.38,
+          "pcie_mb_measured": 2.38,
+          "strict_ov_pct": 96.71,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 0.193
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf64": {
+          "qps": 29237.0,
+          "speedup_vs_cm_ooc": 56.83,
+          "pcie_mb_estimated": 8.0,
+          "pcie_mb_measured": 8.0,
+          "strict_ov_pct": 99.88,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 0.771
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256": {
+          "qps": 10411.6,
+          "speedup_vs_cm_ooc": 20.24,
+          "pcie_mb_estimated": 24.5,
+          "pcie_mb_measured": 24.5,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 2.467
+        },
+        "CM_FP32_OOC_Pinned": {
+          "qps": 514.5,
+          "speedup_vs_cm_ooc": 1.0,
+          "pcie_mb_estimated": 41510.33,
+          "pcie_mb_measured": 64835.94,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.05,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_OOC_Pinned": {
+          "qps": 42566.4,
+          "speedup_vs_cm_ooc": 82.74,
+          "pcie_mb_estimated": 177.59,
+          "pcie_mb_measured": 281.33,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 1.235,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 0.428
+        }
+      },
+      "R0.99": {
+        "CM_FP32_InVRAM": {
+          "qps": 19877.2,
+          "speedup_vs_cm_ooc": 77.43,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 4.768,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_InVRAM": {
+          "qps": 50830.5,
+          "speedup_vs_cm_ooc": 198.0,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 6.004,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 0.149
+        },
+        "Faiss_CPU_IVFFlat_24T": {
+          "qps": 606.9,
+          "speedup_vs_cm_ooc": 2.36,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.0,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 100.0
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf16": {
+          "qps": 15524.4,
+          "speedup_vs_cm_ooc": 60.47,
+          "pcie_mb_estimated": 2.38,
+          "pcie_mb_measured": 2.38,
+          "strict_ov_pct": 95.57,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 0.067
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf64": {
+          "qps": 10173.0,
+          "speedup_vs_cm_ooc": 39.63,
+          "pcie_mb_estimated": 8.0,
+          "pcie_mb_measured": 8.0,
+          "strict_ov_pct": 99.77,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 0.266
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256": {
+          "qps": 8833.6,
+          "speedup_vs_cm_ooc": 34.41,
+          "pcie_mb_estimated": 24.5,
+          "pcie_mb_measured": 24.5,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 0.852
+        },
+        "CM_FP32_OOC_Pinned": {
+          "qps": 256.7,
+          "speedup_vs_cm_ooc": 1.0,
+          "pcie_mb_estimated": 120190.64,
+          "pcie_mb_measured": 159614.12,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.05,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_OOC_Pinned": {
+          "qps": 30891.5,
+          "speedup_vs_cm_ooc": 120.33,
+          "pcie_mb_estimated": 178.84,
+          "pcie_mb_measured": 278.49,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 1.235,
+          "host_pinned_gb": 4.768,
+          "survivor_pct": 0.149
+        }
+      }
+    },
+    "deep10m": {
+      "R0.95": {
+        "CM_FP32_InVRAM": {
+          "qps": 49937.1,
+          "speedup_vs_cm_ooc": 71.46,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 3.576,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_InVRAM": {
+          "qps": 102183.0,
+          "speedup_vs_cm_ooc": 146.23,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 4.512,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 0.423
+        },
+        "Faiss_CPU_IVFFlat_24T": {
+          "qps": 2252.1,
+          "speedup_vs_cm_ooc": 3.22,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.0,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 100.0
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf16": {
+          "qps": 78955.1,
+          "speedup_vs_cm_ooc": 112.99,
+          "pcie_mb_estimated": 2.25,
+          "pcie_mb_measured": 2.25,
+          "strict_ov_pct": 93.29,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.191
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf64": {
+          "qps": 32427.3,
+          "speedup_vs_cm_ooc": 46.41,
+          "pcie_mb_estimated": 7.88,
+          "pcie_mb_measured": 7.88,
+          "strict_ov_pct": 99.49,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.763
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256": {
+          "qps": 12753.2,
+          "speedup_vs_cm_ooc": 18.25,
+          "pcie_mb_estimated": 24.38,
+          "pcie_mb_measured": 24.38,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 2.442
+        },
+        "CM_FP32_OOC_Pinned": {
+          "qps": 698.8,
+          "speedup_vs_cm_ooc": 1.0,
+          "pcie_mb_estimated": 31453.73,
+          "pcie_mb_measured": 42843.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.05,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_OOC_Pinned": {
+          "qps": 51947.8,
+          "speedup_vs_cm_ooc": 74.34,
+          "pcie_mb_estimated": 132.95,
+          "pcie_mb_measured": 213.54,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.936,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.423
+        }
+      },
+      "R0.99": {
+        "CM_FP32_InVRAM": {
+          "qps": 20072.7,
+          "speedup_vs_cm_ooc": 55.81,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 3.576,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_InVRAM": {
+          "qps": 50864.2,
+          "speedup_vs_cm_ooc": 141.43,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 4.512,
+          "host_pinned_gb": 0.0,
+          "survivor_pct": 0.148
+        },
+        "Faiss_CPU_IVFFlat_24T": {
+          "qps": 711.8,
+          "speedup_vs_cm_ooc": 1.98,
+          "pcie_mb_estimated": 0.0,
+          "pcie_mb_measured": 0.0,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.0,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 100.0
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf16": {
+          "qps": 19857.3,
+          "speedup_vs_cm_ooc": 55.21,
+          "pcie_mb_estimated": 2.25,
+          "pcie_mb_measured": 2.25,
+          "strict_ov_pct": 92.26,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.067
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf64": {
+          "qps": 12567.3,
+          "speedup_vs_cm_ooc": 34.94,
+          "pcie_mb_estimated": 7.88,
+          "pcie_mb_measured": 7.88,
+          "strict_ov_pct": 99.42,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.267
+        },
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256": {
+          "qps": 5203.0,
+          "speedup_vs_cm_ooc": 14.47,
+          "pcie_mb_estimated": 24.38,
+          "pcie_mb_measured": 24.38,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.225,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.853
+        },
+        "CM_FP32_OOC_Pinned": {
+          "qps": 359.6,
+          "speedup_vs_cm_ooc": 1.0,
+          "pcie_mb_estimated": 90013.12,
+          "pcie_mb_measured": 110467.04,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.05,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 100.0
+        },
+        "TRIDENT_OOC_Pinned": {
+          "qps": 34384.4,
+          "speedup_vs_cm_ooc": 95.61,
+          "pcie_mb_estimated": 133.62,
+          "pcie_mb_measured": 215.99,
+          "strict_ov_pct": 100.0,
+          "vram_resident_gb": 0.936,
+          "host_pinned_gb": 3.576,
+          "survivor_pct": 0.148
+        }
+      }
+    }
+  },
+  "rabitq_cpu": {
+    "sift1m": {
+      "R0.95": {
+        "Faiss_IVFFlat_CPU24T": {
+          "cpu_qps": 5203.3,
+          "recall_at_10": 0.9608,
+          "strict_ov_pct": 100.0
+        },
+        "Faiss_IVFRaBitQ_Raw_qb8_CPU24T": {
+          "cpu_qps": 5196.8,
+          "recall_at_10": 0.3628,
+          "strict_ov_pct": 7.47
+        },
+        "Faiss_IVFRaBitQ_Refine_kf1_CPU24T": {
+          "cpu_qps": 5265.6,
+          "recall_at_10": 0.3628,
+          "strict_ov_pct": 16.38
+        },
+        "Faiss_IVFRaBitQ_Refine_kf4_CPU24T": {
+          "cpu_qps": 5084.5,
+          "recall_at_10": 0.6795,
+          "strict_ov_pct": 40.64
+        },
+        "Faiss_IVFRaBitQ_Refine_kf16_CPU24T": {
+          "cpu_qps": 4408.7,
+          "recall_at_10": 0.8864,
+          "strict_ov_pct": 76.87
+        },
+        "Faiss_IVFRaBitQ_Refine_kf64_CPU24T": {
+          "cpu_qps": 4528.6,
+          "recall_at_10": 0.9553,
+          "strict_ov_pct": 97.43
+        }
+      },
+      "R0.99": {
+        "Faiss_IVFFlat_CPU24T": {
+          "cpu_qps": 2650.5,
+          "recall_at_10": 0.9924,
+          "strict_ov_pct": 100.0
+        },
+        "Faiss_IVFRaBitQ_Raw_qb8_CPU24T": {
+          "cpu_qps": 2625.8,
+          "recall_at_10": 0.3625,
+          "strict_ov_pct": 7.43
+        },
+        "Faiss_IVFRaBitQ_Refine_kf1_CPU24T": {
+          "cpu_qps": 2668.2,
+          "recall_at_10": 0.3625,
+          "strict_ov_pct": 15.89
+        },
+        "Faiss_IVFRaBitQ_Refine_kf4_CPU24T": {
+          "cpu_qps": 2820.5,
+          "recall_at_10": 0.682,
+          "strict_ov_pct": 39.25
+        },
+        "Faiss_IVFRaBitQ_Refine_kf16_CPU24T": {
+          "cpu_qps": 2780.7,
+          "recall_at_10": 0.9035,
+          "strict_ov_pct": 74.78
+        },
+        "Faiss_IVFRaBitQ_Refine_kf64_CPU24T": {
+          "cpu_qps": 2690.2,
+          "recall_at_10": 0.9818,
+          "strict_ov_pct": 96.03
+        }
+      }
+    },
+    "gist1m": {
+      "R0.95": {
+        "Faiss_IVFFlat_CPU24T": {
+          "cpu_qps": 227.7,
+          "recall_at_10": 0.9622,
+          "strict_ov_pct": 100.0
+        },
+        "Faiss_IVFRaBitQ_Raw_qb8_CPU24T": {
+          "cpu_qps": 237.2,
+          "recall_at_10": 0.4126,
+          "strict_ov_pct": 8.14
+        },
+        "Faiss_IVFRaBitQ_Refine_kf1_CPU24T": {
+          "cpu_qps": 328.3,
+          "recall_at_10": 0.4126,
+          "strict_ov_pct": 17.81
+        },
+        "Faiss_IVFRaBitQ_Refine_kf4_CPU24T": {
+          "cpu_qps": 337.1,
+          "recall_at_10": 0.7406,
+          "strict_ov_pct": 46.31
+        },
+        "Faiss_IVFRaBitQ_Refine_kf16_CPU24T": {
+          "cpu_qps": 351.3,
+          "recall_at_10": 0.9197,
+          "strict_ov_pct": 85.28
+        },
+        "Faiss_IVFRaBitQ_Refine_kf64_CPU24T": {
+          "cpu_qps": 309.9,
+          "recall_at_10": 0.9572,
+          "strict_ov_pct": 98.18
+        }
+      },
+      "R0.99": {
+        "Faiss_IVFFlat_CPU24T": {
+          "cpu_qps": 97.2,
+          "recall_at_10": 0.9937,
+          "strict_ov_pct": 100.0
+        },
+        "Faiss_IVFRaBitQ_Raw_qb8_CPU24T": {
+          "cpu_qps": 153.1,
+          "recall_at_10": 0.4106,
+          "strict_ov_pct": 8.04
+        },
+        "Faiss_IVFRaBitQ_Refine_kf1_CPU24T": {
+          "cpu_qps": 154.6,
+          "recall_at_10": 0.4106,
+          "strict_ov_pct": 17.39
+        },
+        "Faiss_IVFRaBitQ_Refine_kf4_CPU24T": {
+          "cpu_qps": 154.8,
+          "recall_at_10": 0.7472,
+          "strict_ov_pct": 44.18
+        },
+        "Faiss_IVFRaBitQ_Refine_kf16_CPU24T": {
+          "cpu_qps": 148.7,
+          "recall_at_10": 0.941,
+          "strict_ov_pct": 83.51
+        },
+        "Faiss_IVFRaBitQ_Refine_kf64_CPU24T": {
+          "cpu_qps": 152.2,
+          "recall_at_10": 0.9862,
+          "strict_ov_pct": 97.43
+        }
+      }
+    },
+    "bge1024": {
+      "R0.95": {
+        "Faiss_IVFFlat_CPU24T": {
+          "cpu_qps": 1414.9,
+          "recall_at_10": 0.952,
+          "strict_ov_pct": 100.0
+        },
+        "Faiss_IVFRaBitQ_Raw_qb8_CPU24T": {
+          "cpu_qps": 1580.6,
+          "recall_at_10": 0.8186,
+          "strict_ov_pct": 38.01
+        },
+        "Faiss_IVFRaBitQ_Refine_kf1_CPU24T": {
+          "cpu_qps": 1748.6,
+          "recall_at_10": 0.8186,
+          "strict_ov_pct": 73.82
+        },
+        "Faiss_IVFRaBitQ_Refine_kf4_CPU24T": {
+          "cpu_qps": 1659.5,
+          "recall_at_10": 0.951,
+          "strict_ov_pct": 99.54
+        },
+        "Faiss_IVFRaBitQ_Refine_kf16_CPU24T": {
+          "cpu_qps": 1565.5,
+          "recall_at_10": 0.952,
+          "strict_ov_pct": 100.0
+        },
+        "Faiss_IVFRaBitQ_Refine_kf64_CPU24T": {
+          "cpu_qps": 1482.4,
+          "recall_at_10": 0.952,
+          "strict_ov_pct": 100.0
+        }
+      },
+      "R0.99": {
+        "Faiss_IVFFlat_CPU24T": {
+          "cpu_qps": 125.7,
+          "recall_at_10": 0.992,
+          "strict_ov_pct": 100.0
+        },
+        "Faiss_IVFRaBitQ_Raw_qb8_CPU24T": {
+          "cpu_qps": 197.8,
+          "recall_at_10": 0.8366,
+          "strict_ov_pct": 37.95
+        },
+        "Faiss_IVFRaBitQ_Refine_kf1_CPU24T": {
+          "cpu_qps": 179.9,
+          "recall_at_10": 0.8366,
+          "strict_ov_pct": 73.81
+        },
+        "Faiss_IVFRaBitQ_Refine_kf4_CPU24T": {
+          "cpu_qps": 180.7,
+          "recall_at_10": 0.9884,
+          "strict_ov_pct": 99.08
+        },
+        "Faiss_IVFRaBitQ_Refine_kf16_CPU24T": {
+          "cpu_qps": 171.9,
+          "recall_at_10": 0.9918,
+          "strict_ov_pct": 99.92
+        },
+        "Faiss_IVFRaBitQ_Refine_kf64_CPU24T": {
+          "cpu_qps": 172.6,
+          "recall_at_10": 0.992,
+          "strict_ov_pct": 100.0
+        }
+      }
+    }
+  },
+  "cuvs_summary": {
+    "R0.95": {
+      "sift1m": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk32",
+          "qps": 379746.4,
+          "recall_at_10": 0.9745,
+          "strict_ov_pct": 83.02,
+          "build_s": 11.88,
+          "vram_gb": 0.715
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe24",
+          "qps": 119932.2,
+          "recall_at_10": 0.9615,
+          "strict_ov_pct": 81.16,
+          "build_s": 0.31,
+          "vram_gb": 0.477
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M32_kf4_np24",
+          "qps": 36851.8,
+          "recall_at_10": 0.9509,
+          "strict_ov_pct": 80.02,
+          "build_s": 0.6,
+          "vram_gb": 0.507
+        }
+      },
+      "glove100": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk256",
+          "qps": 112713.7,
+          "recall_at_10": 0.9534,
+          "strict_ov_pct": 81.3,
+          "build_s": 14.09,
+          "vram_gb": 0.723
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe128",
+          "qps": 26155.3,
+          "recall_at_10": 0.9567,
+          "strict_ov_pct": 84.9,
+          "build_s": 0.33,
+          "vram_gb": 0.441
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M24_kf16_np384",
+          "qps": 16845.7,
+          "recall_at_10": 0.9654,
+          "strict_ov_pct": 89.42,
+          "build_s": 0.58,
+          "vram_gb": 0.467
+        }
+      },
+      "nuswide": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk32",
+          "qps": 87838.1,
+          "recall_at_10": 0.989,
+          "strict_ov_pct": 92.45,
+          "build_s": 3.92,
+          "vram_gb": 0.564
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe8",
+          "qps": 323407.9,
+          "recall_at_10": 0.9603,
+          "strict_ov_pct": 89.87,
+          "build_s": 0.3,
+          "vram_gb": 0.5
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M120_kf16_np3",
+          "qps": 28214.5,
+          "recall_at_10": 0.9513,
+          "strict_ov_pct": 84.97,
+          "build_s": 1.71,
+          "vram_gb": 0.53
+        }
+      },
+      "msong": {
+        "cuvs_cagra": {
+          "param_tag": "deg32_itopk32",
+          "qps": 242044.7,
+          "recall_at_10": 0.995,
+          "strict_ov_pct": 88.63,
+          "build_s": 11.26,
+          "vram_gb": 1.674
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe10",
+          "qps": 73041.8,
+          "recall_at_10": 0.9511,
+          "strict_ov_pct": 83.1,
+          "build_s": 0.63,
+          "vram_gb": 1.556
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M104_kf8_np10",
+          "qps": 32988.8,
+          "recall_at_10": 0.9503,
+          "strict_ov_pct": 82.54,
+          "build_s": 2.04,
+          "vram_gb": 1.652
+        }
+      },
+      "gist1m": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk128",
+          "qps": 45956.8,
+          "recall_at_10": 0.9644,
+          "strict_ov_pct": 79.84,
+          "build_s": 18.13,
+          "vram_gb": 3.815
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe56",
+          "qps": 6432.1,
+          "recall_at_10": 0.9528,
+          "strict_ov_pct": 80.08,
+          "build_s": 1.01,
+          "vram_gb": 3.576
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M240_kf8_np56",
+          "qps": 11138.6,
+          "recall_at_10": 0.9524,
+          "strict_ov_pct": 79.94,
+          "build_s": 3.61,
+          "vram_gb": 3.8
+        }
+      },
+      "bge1024": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk32",
+          "qps": 143689.7,
+          "recall_at_10": 0.9594,
+          "strict_ov_pct": 84.7,
+          "build_s": 18.29,
+          "vram_gb": 4.053
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe32",
+          "qps": 12237.1,
+          "recall_at_10": 0.969,
+          "strict_ov_pct": 91.54,
+          "build_s": 1.08,
+          "vram_gb": 3.815
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M256_kf4_np128",
+          "qps": 6277.9,
+          "recall_at_10": 0.9899,
+          "strict_ov_pct": 96.97,
+          "build_s": 3.15,
+          "vram_gb": 4.053
+        }
+      },
+      "sift10m": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk64",
+          "qps": 264770.4,
+          "recall_at_10": 0.9849,
+          "strict_ov_pct": 82.85,
+          "build_s": 121.0,
+          "vram_gb": 7.153
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "R0.95_np32",
+          "qps": 35889.1,
+          "recall_at_10": 0.9529,
+          "strict_ov_pct": 79.43,
+          "build_s": 1.37,
+          "vram_gb": 4.768
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M32_kf8_R0.95_np32",
+          "qps": 33120.0,
+          "recall_at_10": 0.952,
+          "strict_ov_pct": 79.33,
+          "build_s": 2.19,
+          "vram_gb": 5.066
+        }
+      },
+      "deep10m": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk64",
+          "qps": 299103.5,
+          "recall_at_10": 0.9791,
+          "strict_ov_pct": 85.32,
+          "build_s": 119.58,
+          "vram_gb": 5.96
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "R0.95_np32",
+          "qps": 48465.7,
+          "recall_at_10": 0.963,
+          "strict_ov_pct": 84.91,
+          "build_s": 1.22,
+          "vram_gb": 3.576
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M24_kf16_R0.95_np32",
+          "qps": 33960.8,
+          "recall_at_10": 0.9627,
+          "strict_ov_pct": 84.7,
+          "build_s": 1.79,
+          "vram_gb": 3.8
+        }
+      }
+    },
+    "R0.99": {
+      "sift1m": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk64",
+          "qps": 275370.5,
+          "recall_at_10": 0.9947,
+          "strict_ov_pct": 85.67,
+          "build_s": 11.88,
+          "vram_gb": 0.715
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe48",
+          "qps": 61171.3,
+          "recall_at_10": 0.9905,
+          "strict_ov_pct": 94.83,
+          "build_s": 0.31,
+          "vram_gb": 0.477
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M32_kf16_np48",
+          "qps": 34202.5,
+          "recall_at_10": 0.9909,
+          "strict_ov_pct": 95.07,
+          "build_s": 0.6,
+          "vram_gb": 0.507
+        }
+      },
+      "glove100": {
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe384",
+          "qps": 8806.7,
+          "recall_at_10": 0.9936,
+          "strict_ov_pct": 96.4,
+          "build_s": 0.33,
+          "vram_gb": 0.441
+        }
+      },
+      "nuswide": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk64",
+          "qps": 75079.6,
+          "recall_at_10": 1.0,
+          "strict_ov_pct": 93.1,
+          "build_s": 3.92,
+          "vram_gb": 0.564
+        }
+      },
+      "msong": {
+        "cuvs_cagra": {
+          "param_tag": "deg32_itopk32",
+          "qps": 242044.7,
+          "recall_at_10": 0.995,
+          "strict_ov_pct": 88.63,
+          "build_s": 11.26,
+          "vram_gb": 1.674
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe32",
+          "qps": 23340.6,
+          "recall_at_10": 0.9942,
+          "strict_ov_pct": 97.81,
+          "build_s": 0.63,
+          "vram_gb": 1.556
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M104_kf16_np24",
+          "qps": 29343.8,
+          "recall_at_10": 0.9904,
+          "strict_ov_pct": 96.39,
+          "build_s": 2.04,
+          "vram_gb": 1.652
+        }
+      },
+      "gist1m": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk512",
+          "qps": 12586.8,
+          "recall_at_10": 0.9974,
+          "strict_ov_pct": 85.7,
+          "build_s": 18.13,
+          "vram_gb": 3.815
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe128",
+          "qps": 2850.0,
+          "recall_at_10": 0.9918,
+          "strict_ov_pct": 95.3,
+          "build_s": 1.01,
+          "vram_gb": 3.576
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M240_kf8_np128",
+          "qps": 5957.6,
+          "recall_at_10": 0.9924,
+          "strict_ov_pct": 96.07,
+          "build_s": 3.61,
+          "vram_gb": 3.8
+        }
+      },
+      "bge1024": {
+        "cuvs_cagra": {
+          "param_tag": "deg32_itopk256",
+          "qps": 56578.3,
+          "recall_at_10": 0.9908,
+          "strict_ov_pct": 87.84,
+          "build_s": 14.64,
+          "vram_gb": 3.934
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "nprobe128",
+          "qps": 2940.3,
+          "recall_at_10": 0.9913,
+          "strict_ov_pct": 96.97,
+          "build_s": 1.08,
+          "vram_gb": 3.815
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M256_kf8_np128",
+          "qps": 6008.9,
+          "recall_at_10": 0.991,
+          "strict_ov_pct": 97.13,
+          "build_s": 3.15,
+          "vram_gb": 4.053
+        }
+      },
+      "sift10m": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk128",
+          "qps": 180200.1,
+          "recall_at_10": 0.9966,
+          "strict_ov_pct": 83.68,
+          "build_s": 121.0,
+          "vram_gb": 7.153
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "R0.99_np96",
+          "qps": 12626.9,
+          "recall_at_10": 0.9922,
+          "strict_ov_pct": 95.21,
+          "build_s": 1.37,
+          "vram_gb": 4.768
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M32_kf8_R0.99_np96",
+          "qps": 24816.9,
+          "recall_at_10": 0.9911,
+          "strict_ov_pct": 95.11,
+          "build_s": 2.19,
+          "vram_gb": 5.066
+        }
+      },
+      "deep10m": {
+        "cuvs_cagra": {
+          "param_tag": "deg64_itopk128",
+          "qps": 181562.6,
+          "recall_at_10": 0.9943,
+          "strict_ov_pct": 87.44,
+          "build_s": 119.58,
+          "vram_gb": 5.96
+        },
+        "cuvs_ivf_flat": {
+          "param_tag": "R0.99_np96",
+          "qps": 17135.2,
+          "recall_at_10": 0.993,
+          "strict_ov_pct": 96.27,
+          "build_s": 1.22,
+          "vram_gb": 3.576
+        },
+        "cuvs_ivf_pq_refine": {
+          "param_tag": "M24_kf16_R0.99_np96",
+          "qps": 27138.8,
+          "recall_at_10": 0.9918,
+          "strict_ov_pct": 95.92,
+          "build_s": 1.79,
+          "vram_gb": 3.8
+        }
+      }
+    }
+  },
+  "active_tile_curves_gist1m": {
+    "orig_b32": {
+      "b=0_dim=32": 100.0,
+      "b=1_dim=64": 100.0,
+      "b=2_dim=96": 100.0,
+      "b=3_dim=128": 99.96,
+      "b=4_dim=160": 99.92,
+      "b=5_dim=192": 99.81,
+      "b=6_dim=224": 99.71,
+      "b=7_dim=256": 99.42,
+      "b=8_dim=288": 99.19,
+      "b=9_dim=320": 98.88,
+      "b=10_dim=352": 98.33,
+      "b=11_dim=384": 97.7,
+      "b=12_dim=416": 97.08,
+      "b=13_dim=448": 95.68,
+      "b=14_dim=480": 94.89,
+      "b=15_dim=512": 93.43,
+      "b=16_dim=544": 91.89,
+      "b=17_dim=576": 88.6,
+      "b=18_dim=608": 86.0,
+      "b=19_dim=640": 82.9,
+      "b=20_dim=672": 78.73,
+      "b=21_dim=704": 71.03,
+      "b=22_dim=736": 64.29,
+      "b=23_dim=768": 53.75,
+      "b=24_dim=800": 45.93,
+      "b=25_dim=832": 34.35,
+      "b=26_dim=864": 25.64,
+      "b=27_dim=896": 15.41,
+      "b=28_dim=928": 9.38,
+      "b=29_dim=960": 5.54
+    },
+    "pca_b32": {
+      "b=0_dim=32": 100.0,
+      "b=1_dim=64": 89.97,
+      "b=2_dim=96": 76.79,
+      "b=3_dim=128": 63.43,
+      "b=4_dim=160": 50.63,
+      "b=5_dim=192": 40.15,
+      "b=6_dim=224": 31.95,
+      "b=7_dim=256": 25.14,
+      "b=8_dim=288": 19.63,
+      "b=9_dim=320": 15.77,
+      "b=10_dim=352": 12.94,
+      "b=11_dim=384": 10.68,
+      "b=12_dim=416": 8.98,
+      "b=13_dim=448": 7.75,
+      "b=14_dim=480": 6.78,
+      "b=15_dim=512": 6.07,
+      "b=16_dim=544": 5.51,
+      "b=17_dim=576": 5.06,
+      "b=18_dim=608": 4.69,
+      "b=19_dim=640": 4.41,
+      "b=20_dim=672": 4.18,
+      "b=21_dim=704": 4.0,
+      "b=22_dim=736": 3.86,
+      "b=23_dim=768": 3.74,
+      "b=24_dim=800": 3.64,
+      "b=25_dim=832": 3.56,
+      "b=26_dim=864": 3.49,
+      "b=27_dim=896": 3.44,
+      "b=28_dim=928": 3.4,
+      "b=29_dim=960": 3.37
+    },
+    "pca_varblk": {
+      "b=0_dim=16": 100.0,
+      "b=1_dim=32": 95.1,
+      "b=2_dim=64": 89.97,
+      "b=3_dim=96": 76.79,
+      "b=4_dim=128": 63.43,
+      "b=5_dim=160": 50.63,
+      "b=6_dim=192": 40.15,
+      "b=7_dim=224": 31.95,
+      "b=8_dim=256": 25.14,
+      "b=9_dim=288": 19.63,
+      "b=10_dim=320": 15.77,
+      "b=11_dim=352": 12.94,
+      "b=12_dim=384": 10.68,
+      "b=13_dim=416": 8.98,
+      "b=14_dim=448": 7.75,
+      "b=15_dim=480": 6.78,
+      "b=16_dim=512": 6.07,
+      "b=17_dim=544": 5.51,
+      "b=18_dim=576": 5.06,
+      "b=19_dim=608": 4.69,
+      "b=20_dim=640": 4.41,
+      "b=21_dim=672": 4.18,
+      "b=22_dim=704": 4.0,
+      "b=23_dim=736": 3.86,
+      "b=24_dim=768": 3.74,
+      "b=25_dim=800": 3.64,
+      "b=26_dim=832": 3.56,
+      "b=27_dim=864": 3.49,
+      "b=28_dim=896": 3.44,
+      "b=29_dim=928": 3.4,
+      "b=30_dim=960": 3.37
+    },
+    "var_b32": {
+      "b=0_dim=32": 100.0,
+      "b=1_dim=64": 99.92,
+      "b=2_dim=96": 99.76,
+      "b=3_dim=128": 99.5,
+      "b=4_dim=160": 99.13,
+      "b=5_dim=192": 98.7,
+      "b=6_dim=224": 98.05,
+      "b=7_dim=256": 97.3,
+      "b=8_dim=288": 96.48,
+      "b=9_dim=320": 95.45,
+      "b=10_dim=352": 94.33,
+      "b=11_dim=384": 92.74,
+      "b=12_dim=416": 90.82,
+      "b=13_dim=448": 88.4,
+      "b=14_dim=480": 85.32,
+      "b=15_dim=512": 81.39,
+      "b=16_dim=544": 76.85,
+      "b=17_dim=576": 71.64,
+      "b=18_dim=608": 65.6,
+      "b=19_dim=640": 59.22,
+      "b=20_dim=672": 52.3,
+      "b=21_dim=704": 44.79,
+      "b=22_dim=736": 37.38,
+      "b=23_dim=768": 30.32,
+      "b=24_dim=800": 23.67,
+      "b=25_dim=832": 17.67,
+      "b=26_dim=864": 12.92,
+      "b=27_dim=896": 9.14,
+      "b=28_dim=928": 6.28,
+      "b=29_dim=960": 4.29
+    }
+  },
+  "ablation_A100": {
+    "gist1m": {
+      "B0_CM_FP32": 9619.2,
+      "B1_GlobalSQ8_Uni32_Serial": 14773.0,
+      "B2_PerClusterSQ8_Uni32_Serial": 15548.0,
+      "B3_PCA_PerClusterSQ8_Serial": 31235.1,
+      "B4_Full_TRIDENT": 37774.6,
+      "Full_minus_PCA": 16940.5,
+      "Full_minus_PerClusterSQ8": 30556.7,
+      "Full_minus_EarlyStop": 16019.7,
+      "Full_minus_WarpRefine": 31231.3,
+      "Full_plus_VarBlk": 37702.6,
+      "Full_plus_L1": 37605.1
+    },
+    "bge1024": {
+      "B0_CM_FP32": 46068.8,
+      "B1_GlobalSQ8_Uni32_Serial": 67154.9,
+      "B2_PerClusterSQ8_Uni32_Serial": 68330.9,
+      "B3_PCA_PerClusterSQ8_Serial": 89104.6,
+      "B4_Full_TRIDENT": 130735.6,
+      "Full_minus_PCA": 89297.0,
+      "Full_minus_PerClusterSQ8": 126977.3,
+      "Full_minus_EarlyStop": 49169.9,
+      "Full_minus_WarpRefine": 89010.3,
+      "Full_plus_VarBlk": 134617.0,
+      "Full_plus_L1": 130514.8
+    },
+    "sift1m": {
+      "B0_CM_FP32": 131149.1,
+      "B1_GlobalSQ8_Uni32_Serial": 260828.5,
+      "B2_PerClusterSQ8_Uni32_Serial": 261789.3,
+      "B3_PCA_PerClusterSQ8_Serial": 328119.2,
+      "B4_Full_TRIDENT": 336360.0,
+      "Full_minus_PCA": 266119.1,
+      "Full_minus_PerClusterSQ8": 327570.4,
+      "Full_minus_EarlyStop": 123407.6,
+      "Full_minus_WarpRefine": 328280.7,
+      "Full_plus_VarBlk": 326859.6,
+      "Full_plus_L1": 331789.2
+    },
+    "msong": {
+      "B0_CM_FP32": 73148.8,
+      "B1_GlobalSQ8_Uni32_Serial": 71431.7,
+      "B2_PerClusterSQ8_Uni32_Serial": 105456.6,
+      "B3_PCA_PerClusterSQ8_Serial": 139659.3,
+      "B4_Full_TRIDENT": 205002.3,
+      "Full_minus_PCA": 137516.6,
+      "Full_minus_PerClusterSQ8": 93261.3,
+      "Full_minus_EarlyStop": 84224.5,
+      "Full_minus_WarpRefine": 139649.2,
+      "Full_plus_VarBlk": 203971.4,
+      "Full_plus_L1": 203892.4
+    },
+    "glove100": {
+      "B0_CM_FP32": 26524.1,
+      "B1_GlobalSQ8_Uni32_Serial": 74054.9,
+      "B2_PerClusterSQ8_Uni32_Serial": 74207.6,
+      "B3_PCA_PerClusterSQ8_Serial": 77382.0,
+      "B4_Full_TRIDENT": 77818.5,
+      "Full_minus_PCA": 75052.5,
+      "Full_minus_PerClusterSQ8": 77134.9,
+      "Full_minus_EarlyStop": 49743.7,
+      "Full_minus_WarpRefine": 77366.0,
+      "Full_plus_VarBlk": 75084.6,
+      "Full_plus_L1": 76727.1
+    },
+    "nuswide": {
+      "B0_CM_FP32": 576322.7,
+      "B1_GlobalSQ8_Uni32_Serial": 477187.4,
+      "B2_PerClusterSQ8_Uni32_Serial": 496636.3,
+      "B3_PCA_PerClusterSQ8_Serial": 496532.2,
+      "B4_Full_TRIDENT": 535622.7,
+      "Full_minus_PCA": 543656.6,
+      "Full_minus_PerClusterSQ8": 540337.4,
+      "Full_minus_EarlyStop": 127884.1,
+      "Full_minus_WarpRefine": 496558.9,
+      "Full_plus_VarBlk": 543749.0,
+      "Full_plus_L1": 544065.5
+    }
+  },
+  "phase4c_cpu": {
+    "tribase_opt1": [
+      {
+        "dataset": "sift1m",
+        "nprobe": 24,
+        "qps": 6592.2472,
+        "recall": 0.935
+      },
+      {
+        "dataset": "sift1m",
+        "nprobe": 48,
+        "qps": 3340.4878,
+        "recall": 0.9821
+      },
+      {
+        "dataset": "sift1m",
+        "nprobe": 24,
+        "qps": 817.0573,
+        "recall": 0.935
+      },
+      {
+        "dataset": "sift1m",
+        "nprobe": 48,
+        "qps": 417.5583,
+        "recall": 0.9821
+      },
+      {
+        "dataset": "glove100",
+        "nprobe": 128,
+        "qps": 1679.3952,
+        "recall": 0.9112
+      },
+      {
+        "dataset": "glove100",
+        "nprobe": 384,
+        "qps": 538.67,
+        "recall": 0.9827
+      },
+      {
+        "dataset": "glove100",
+        "nprobe": 128,
+        "qps": 202.2126,
+        "recall": 0.9112
+      },
+      {
+        "dataset": "glove100",
+        "nprobe": 384,
+        "qps": 68.8273,
+        "recall": 0.9827
+      },
+      {
+        "dataset": "gist1m",
+        "nprobe": 56,
+        "qps": 264.1664,
+        "recall": 0.938
+      },
+      {
+        "dataset": "gist1m",
+        "nprobe": 128,
+        "qps": 121.8042,
+        "recall": 0.9904
+      },
+      {
+        "dataset": "gist1m",
+        "nprobe": 56,
+        "qps": 31.1134,
+        "recall": 0.938
+      },
+      {
+        "dataset": "gist1m",
+        "nprobe": 128,
+        "qps": 13.9957,
+        "recall": 0.9904
+      }
+    ],
+    "adsampling_eps2": [
+      {
+        "dataset": "sift1m",
+        "nprobe": 24,
+        "qps": 380.7,
+        "recall_at_10": 0.9554
+      },
+      {
+        "dataset": "sift1m",
+        "nprobe": 48,
+        "qps": 221.5,
+        "recall_at_10": 0.9814
+      },
+      {
+        "dataset": "glove100",
+        "nprobe": 128,
+        "qps": 81.0,
+        "recall_at_10": 0.9507
+      },
+      {
+        "dataset": "glove100",
+        "nprobe": 384,
+        "qps": 29.1,
+        "recall_at_10": 0.9919
+      },
+      {
+        "dataset": "gist1m",
+        "nprobe": 56,
+        "qps": 44.2,
+        "recall_at_10": 0.8305
+      },
+      {
+        "dataset": "gist1m",
+        "nprobe": 128,
+        "qps": 23.3,
+        "recall_at_10": 0.8563
+      }
+    ],
+    "pdx_f32": [
+      {
+        "dataset": "sift",
+        "nprobe": 24,
+        "qps": 2140.5,
+        "recall": 0.8516
+      },
+      {
+        "dataset": "sift",
+        "nprobe": 48,
+        "qps": 1441.0,
+        "recall": 0.9337
+      },
+      {
+        "dataset": "sift",
+        "nprobe": 64,
+        "qps": 1013.5,
+        "recall": 0.9567
+      },
+      {
+        "dataset": "sift",
+        "nprobe": 96,
+        "qps": 931.6,
+        "recall": 0.9787
+      },
+      {
+        "dataset": "sift",
+        "nprobe": 128,
+        "qps": 739.7,
+        "recall": 0.9886
+      },
+      {
+        "dataset": "sift",
+        "nprobe": 160,
+        "qps": 671.8,
+        "recall": 0.9931
+      },
+      {
+        "dataset": "gist",
+        "nprobe": 56,
+        "qps": 247.5,
+        "recall": 0.8145
+      },
+      {
+        "dataset": "gist",
+        "nprobe": 128,
+        "qps": 177.8,
+        "recall": 0.9196
+      },
+      {
+        "dataset": "gist",
+        "nprobe": 192,
+        "qps": 142.3,
+        "recall": 0.9521
+      },
+      {
+        "dataset": "gist",
+        "nprobe": 256,
+        "qps": 119.9,
+        "recall": 0.9669
+      },
+      {
+        "dataset": "gist",
+        "nprobe": 384,
+        "qps": 97.5,
+        "recall": 0.9815
+      }
+    ]
+  },
+  "gpu_build_mem_A100": {
+    "sift1m": {
+      "dim": 128,
+      "nlist": 1024,
+      "kmeans_gpu_s": 0.364,
+      "cm_extra_gpu_s": 0.0019,
+      "trident_extra_gpu_s": 0.088,
+      "total_cm_gpu_s": 0.365,
+      "total_trident_gpu_s": 0.451,
+      "cuvs_ivfflat_build_s": 0.311,
+      "cuvs_cagra_build_s": 10.362,
+      "speedup_build_vs_cagra_mean": 23.06,
+      "trident_aux_vram_gb": 0.128,
+      "cuvs_cagra_vram_gb": 0.656
+    },
+    "glove100": {
+      "dim": 100,
+      "nlist": 1024,
+      "kmeans_gpu_s": 0.332,
+      "cm_extra_gpu_s": 0.0021,
+      "trident_extra_gpu_s": 0.098,
+      "total_cm_gpu_s": 0.334,
+      "total_trident_gpu_s": 0.429,
+      "cuvs_ivfflat_build_s": 0.325,
+      "cuvs_cagra_build_s": 12.345,
+      "speedup_build_vs_cagra_mean": 28.77,
+      "trident_aux_vram_gb": 0.151,
+      "cuvs_cagra_vram_gb": 0.652
+    },
+    "msong": {
+      "dim": 420,
+      "nlist": 1024,
+      "kmeans_gpu_s": 0.717,
+      "cm_extra_gpu_s": 0.0031,
+      "trident_extra_gpu_s": 0.311,
+      "total_cm_gpu_s": 0.72,
+      "total_trident_gpu_s": 1.028,
+      "cuvs_ivfflat_build_s": 0.632,
+      "cuvs_cagra_build_s": 12.887,
+      "speedup_build_vs_cagra_mean": 12.54,
+      "trident_aux_vram_gb": 0.499,
+      "cuvs_cagra_vram_gb": 1.733
+    },
+    "nuswide": {
+      "dim": 500,
+      "nlist": 1024,
+      "kmeans_gpu_s": 0.762,
+      "cm_extra_gpu_s": 0.0013,
+      "trident_extra_gpu_s": 0.118,
+      "total_cm_gpu_s": 0.763,
+      "total_trident_gpu_s": 0.879,
+      "cuvs_ivfflat_build_s": 0.303,
+      "cuvs_cagra_build_s": 3.498,
+      "speedup_build_vs_cagra_mean": 3.98,
+      "trident_aux_vram_gb": 0.238,
+      "cuvs_cagra_vram_gb": 0.548
+    },
+    "gist1m": {
+      "dim": 960,
+      "nlist": 1024,
+      "kmeans_gpu_s": 1.339,
+      "cm_extra_gpu_s": 0.0063,
+      "trident_extra_gpu_s": 0.643,
+      "total_cm_gpu_s": 1.345,
+      "total_trident_gpu_s": 1.982,
+      "cuvs_ivfflat_build_s": 1.008,
+      "cuvs_cagra_build_s": 16.35,
+      "speedup_build_vs_cagra_mean": 8.25,
+      "trident_aux_vram_gb": 1.077,
+      "cuvs_cagra_vram_gb": 3.755
+    },
+    "bge1024": {
+      "dim": 1024,
+      "nlist": 1024,
+      "kmeans_gpu_s": 1.4,
+      "cm_extra_gpu_s": 0.0065,
+      "trident_extra_gpu_s": 0.831,
+      "total_cm_gpu_s": 1.406,
+      "total_trident_gpu_s": 2.231,
+      "cuvs_ivfflat_build_s": 1.084,
+      "cuvs_cagra_build_s": 16.466,
+      "speedup_build_vs_cagra_mean": 7.38,
+      "trident_aux_vram_gb": 1.101,
+      "cuvs_cagra_vram_gb": 3.993
+    },
+    "sift10m": {
+      "dim": 128,
+      "nlist": 4096,
+      "kmeans_gpu_s": 4.4,
+      "cm_extra_gpu_s": 0.0139,
+      "trident_extra_gpu_s": 0.746,
+      "total_cm_gpu_s": 4.414,
+      "total_trident_gpu_s": 5.146,
+      "cuvs_ivfflat_build_s": 1.367,
+      "cuvs_cagra_build_s": 105.867,
+      "speedup_build_vs_cagra_mean": 20.58,
+      "trident_aux_vram_gb": 1.251,
+      "cuvs_cagra_vram_gb": 6.557
+    },
+    "deep10m": {
+      "dim": 96,
+      "nlist": 4096,
+      "kmeans_gpu_s": 3.746,
+      "cm_extra_gpu_s": 0.0138,
+      "trident_extra_gpu_s": 0.659,
+      "total_cm_gpu_s": 3.76,
+      "total_trident_gpu_s": 4.406,
+      "cuvs_ivfflat_build_s": 1.225,
+      "cuvs_cagra_build_s": 103.893,
+      "speedup_build_vs_cagra_mean": 23.58,
+      "trident_aux_vram_gb": 0.948,
+      "cuvs_cagra_vram_gb": 5.364
+    },
+    "t2i10m": {
+      "dim": 200,
+      "nlist": 4096,
+      "kmeans_gpu_s": 6.015,
+      "cm_extra_gpu_s": 0.0148,
+      "trident_extra_gpu_s": 1.274,
+      "total_cm_gpu_s": 6.029,
+      "total_trident_gpu_s": 7.289,
+      "cuvs_ivfflat_build_s": 0.0,
+      "cuvs_cagra_build_s": 0.0,
+      "speedup_build_vs_cagra_mean": 0.0,
+      "trident_aux_vram_gb": 2.161,
+      "cuvs_cagra_vram_gb": 0.0
+    }
+  },
+  "cagra_ooc_A100": {
+    "gist1m": {
+      "cuVS_CAGRA_InVRAM_EnforcedCap_cap2.2GB": {
+        "status": "OOM_FAILED",
+        "required_vram_gb": 3.815,
+        "qps": 0.0,
+        "error_msg": "MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal"
+      },
+      "cuVS_CAGRA_InVRAM_EnforcedCap_cap2.5GB": {
+        "status": "OOM_FAILED",
+        "required_vram_gb": 3.815,
+        "qps": 0.0,
+        "error_msg": "MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal"
+      },
+      "cuVS_CAGRA_AfterBuild_ResidentCheck_cap2.2GB": {
+        "status": "EXCEEDS_CAP_OOM",
+        "required_vram_gb": 4.418,
+        "qps": 0.0,
+        "error_msg": "Resident 4.42GB > 2.2GB cap"
+      },
+      "cuVS_CAGRA_AfterBuild_ResidentCheck_cap2.5GB": {
+        "status": "EXCEEDS_CAP_OOM",
+        "required_vram_gb": 4.418,
+        "qps": 0.0,
+        "error_msg": "Resident 4.42GB > 2.5GB cap"
+      }
+    },
+    "bge1024": {
+      "cuVS_CAGRA_InVRAM_EnforcedCap_cap2.2GB": {
+        "status": "OOM_FAILED",
+        "required_vram_gb": 4.053,
+        "qps": 0.0,
+        "error_msg": "MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal"
+      },
+      "cuVS_CAGRA_InVRAM_EnforcedCap_cap2.5GB": {
+        "status": "OOM_FAILED",
+        "required_vram_gb": 4.053,
+        "qps": 0.0,
+        "error_msg": "MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal"
+      },
+      "cuVS_CAGRA_AfterBuild_ResidentCheck_cap2.2GB": {
+        "status": "EXCEEDS_CAP_OOM",
+        "required_vram_gb": 4.604,
+        "qps": 0.0,
+        "error_msg": "Resident 4.60GB > 2.2GB cap"
+      },
+      "cuVS_CAGRA_AfterBuild_ResidentCheck_cap2.5GB": {
+        "status": "EXCEEDS_CAP_OOM",
+        "required_vram_gb": 4.604,
+        "qps": 0.0,
+        "error_msg": "Resident 4.60GB > 2.5GB cap"
+      }
+    },
+    "sift10m": {
+      "cuVS_CAGRA_InVRAM_EnforcedCap_cap2.5GB": {
+        "status": "OOM_FAILED",
+        "required_vram_gb": 7.153,
+        "qps": 0.0,
+        "error_msg": "MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal"
+      },
+      "cuVS_CAGRA_InVRAM_EnforcedCap_cap3.0GB": {
+        "status": "OOM_FAILED",
+        "required_vram_gb": 7.153,
+        "qps": 0.0,
+        "error_msg": "MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal"
+      }
+    },
+    "deep10m": {
+      "cuVS_CAGRA_InVRAM_EnforcedCap_cap2.5GB": {
+        "status": "OOM_FAILED",
+        "required_vram_gb": 5.96,
+        "qps": 0.0,
+        "error_msg": "MemoryError: std::bad_alloc: out_of_memory: RMM failure at:/tmp/pip-build-env-ky0drc4i/normal"
+      }
+    }
+  },
+  "cagra_uvm_capped": {
+    "gist1m": {
+      "UVM_capped_cap2.2GB_deg64_itopk128": {
+        "cap_gb": 2.2,
+        "mode": "UVM_capped",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 4.4,
+        "steady_qps_mean": 4.4,
+        "steady_qps_std": 0.0,
+        "recall_at_10": 0.9781,
+        "strict_overlap_pct": 91.48
+      },
+      "UVM_capped_cap2.2GB_deg64_itopk512": {
+        "cap_gb": 2.2,
+        "mode": "UVM_capped",
+        "graph_degree": 64,
+        "itopk": 512,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 1.1,
+        "steady_qps_mean": 1.1,
+        "steady_qps_std": 0.0,
+        "recall_at_10": 0.9969,
+        "strict_overlap_pct": 96.56
+      },
+      "UVM_capped_cap2.5GB_deg64_itopk128": {
+        "cap_gb": 2.5,
+        "mode": "UVM_capped",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 4.7,
+        "steady_qps_mean": 4.8,
+        "steady_qps_std": 0.0,
+        "recall_at_10": 0.9789,
+        "strict_overlap_pct": 91.48
+      },
+      "UVM_capped_cap2.5GB_deg64_itopk512": {
+        "cap_gb": 2.5,
+        "mode": "UVM_capped",
+        "graph_degree": 64,
+        "itopk": 512,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 1.2,
+        "steady_qps_mean": 1.2,
+        "steady_qps_std": 0.0,
+        "recall_at_10": 0.9969,
+        "strict_overlap_pct": 96.48
+      },
+      "UVM_uncapped_control_cap75.0GB_deg64_itopk128": {
+        "cap_gb": 75.0,
+        "mode": "UVM_uncapped_control",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 71.254,
+        "status": "OK",
+        "cold_qps": 45556.7,
+        "steady_qps_mean": 44555.6,
+        "steady_qps_std": 4061.1,
+        "recall_at_10": 0.9641,
+        "strict_overlap_pct": 86.6
+      },
+      "UVM_uncapped_control_cap75.0GB_deg64_itopk512": {
+        "cap_gb": 75.0,
+        "mode": "UVM_uncapped_control",
+        "graph_degree": 64,
+        "itopk": 512,
+        "free_after_load_gb": 71.254,
+        "status": "OK",
+        "cold_qps": 12539.8,
+        "steady_qps_mean": 12669.4,
+        "steady_qps_std": 193.3,
+        "recall_at_10": 0.9979,
+        "strict_overlap_pct": 97.22
+      },
+      "VPQ_hardcap_M240_cap2.2GB_deg64_itopk128": {
+        "cap_gb": 2.2,
+        "mode": "VPQ_hardcap_M240",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 1.729,
+        "status": "OK",
+        "cold_qps": 5090.7,
+        "steady_qps_mean": 53375.8,
+        "steady_qps_std": 2696.5,
+        "recall_at_10": 0.7259,
+        "strict_overlap_pct": 19.46
+      },
+      "VPQ_hardcap_M240_cap2.2GB_deg64_itopk512": {
+        "cap_gb": 2.2,
+        "mode": "VPQ_hardcap_M240",
+        "graph_degree": 64,
+        "itopk": 512,
+        "free_after_load_gb": 1.729,
+        "status": "OK",
+        "cold_qps": 15312.5,
+        "steady_qps_mean": 15863.5,
+        "steady_qps_std": 242.0,
+        "recall_at_10": 0.7343,
+        "strict_overlap_pct": 19.7
+      },
+      "VPQ_hardcap_M240_cap2.5GB_deg64_itopk128": {
+        "cap_gb": 2.5,
+        "mode": "VPQ_hardcap_M240",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 2.029,
+        "status": "OK",
+        "cold_qps": 5129.9,
+        "steady_qps_mean": 54095.8,
+        "steady_qps_std": 1324.0,
+        "recall_at_10": 0.7259,
+        "strict_overlap_pct": 19.46
+      },
+      "VPQ_hardcap_M240_cap2.5GB_deg64_itopk512": {
+        "cap_gb": 2.5,
+        "mode": "VPQ_hardcap_M240",
+        "graph_degree": 64,
+        "itopk": 512,
+        "free_after_load_gb": 2.029,
+        "status": "OK",
+        "cold_qps": 14584.8,
+        "steady_qps_mean": 15742.8,
+        "steady_qps_std": 396.6,
+        "recall_at_10": 0.7343,
+        "strict_overlap_pct": 19.7
+      }
+    },
+    "bge1024": {
+      "UVM_capped_cap2.2GB_deg32_itopk128": {
+        "cap_gb": 2.2,
+        "mode": "UVM_capped",
+        "graph_degree": 32,
+        "itopk": 128,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 13.2,
+        "steady_qps_mean": 15.3,
+        "steady_qps_std": 0.1,
+        "recall_at_10": 0.9172,
+        "strict_overlap_pct": 85.31
+      },
+      "UVM_capped_cap2.2GB_deg32_itopk256": {
+        "cap_gb": 2.2,
+        "mode": "UVM_capped",
+        "graph_degree": 32,
+        "itopk": 256,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 6.6,
+        "steady_qps_mean": 7.3,
+        "steady_qps_std": 0.0,
+        "recall_at_10": 0.9781,
+        "strict_overlap_pct": 92.58
+      },
+      "UVM_capped_cap2.5GB_deg32_itopk128": {
+        "cap_gb": 2.5,
+        "mode": "UVM_capped",
+        "graph_degree": 32,
+        "itopk": 128,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 14.3,
+        "steady_qps_mean": 17.1,
+        "steady_qps_std": 0.1,
+        "recall_at_10": 0.9258,
+        "strict_overlap_pct": 86.8
+      },
+      "UVM_capped_cap2.5GB_deg32_itopk256": {
+        "cap_gb": 2.5,
+        "mode": "UVM_capped",
+        "graph_degree": 32,
+        "itopk": 256,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 7.2,
+        "steady_qps_mean": 8.1,
+        "steady_qps_std": 0.0,
+        "recall_at_10": 0.9781,
+        "strict_overlap_pct": 92.97
+      },
+      "UVM_uncapped_control_cap75.0GB_deg32_itopk128": {
+        "cap_gb": 75.0,
+        "mode": "UVM_uncapped_control",
+        "graph_degree": 32,
+        "itopk": 128,
+        "free_after_load_gb": 71.129,
+        "status": "OK",
+        "cold_qps": 86396.0,
+        "steady_qps_mean": 93410.3,
+        "steady_qps_std": 4585.0,
+        "recall_at_10": 0.9069,
+        "strict_overlap_pct": 86.54
+      },
+      "UVM_uncapped_control_cap75.0GB_deg32_itopk256": {
+        "cap_gb": 75.0,
+        "mode": "UVM_uncapped_control",
+        "graph_degree": 32,
+        "itopk": 256,
+        "free_after_load_gb": 71.129,
+        "status": "OK",
+        "cold_qps": 59431.0,
+        "steady_qps_mean": 56939.6,
+        "steady_qps_std": 3417.5,
+        "recall_at_10": 0.9909,
+        "strict_overlap_pct": 95.89
+      },
+      "VPQ_hardcap_M256_cap2.2GB_deg32_itopk128": {
+        "cap_gb": 2.2,
+        "mode": "VPQ_hardcap_M256",
+        "graph_degree": 32,
+        "itopk": 128,
+        "free_after_load_gb": 1.833,
+        "status": "OK",
+        "cold_qps": 5441.7,
+        "steady_qps_mean": 91548.5,
+        "steady_qps_std": 5669.1,
+        "recall_at_10": 0.8377,
+        "strict_overlap_pct": 43.48
+      },
+      "VPQ_hardcap_M256_cap2.2GB_deg32_itopk256": {
+        "cap_gb": 2.2,
+        "mode": "VPQ_hardcap_M256",
+        "graph_degree": 32,
+        "itopk": 256,
+        "free_after_load_gb": 1.833,
+        "status": "OK",
+        "cold_qps": 57559.5,
+        "steady_qps_mean": 58717.6,
+        "steady_qps_std": 2049.2,
+        "recall_at_10": 0.8745,
+        "strict_overlap_pct": 45.25
+      },
+      "VPQ_hardcap_M256_cap2.5GB_deg32_itopk128": {
+        "cap_gb": 2.5,
+        "mode": "VPQ_hardcap_M256",
+        "graph_degree": 32,
+        "itopk": 128,
+        "free_after_load_gb": 2.133,
+        "status": "OK",
+        "cold_qps": 5190.8,
+        "steady_qps_mean": 95376.3,
+        "steady_qps_std": 6666.6,
+        "recall_at_10": 0.8377,
+        "strict_overlap_pct": 43.48
+      },
+      "VPQ_hardcap_M256_cap2.5GB_deg32_itopk256": {
+        "cap_gb": 2.5,
+        "mode": "VPQ_hardcap_M256",
+        "graph_degree": 32,
+        "itopk": 256,
+        "free_after_load_gb": 2.133,
+        "status": "OK",
+        "cold_qps": 56678.9,
+        "steady_qps_mean": 59685.0,
+        "steady_qps_std": 1255.3,
+        "recall_at_10": 0.8745,
+        "strict_overlap_pct": 45.25
+      }
+    },
+    "sift10m": {
+      "UVM_capped_cap2.5GB_deg64_itopk128": {
+        "cap_gb": 2.5,
+        "mode": "UVM_capped",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 4.1,
+        "steady_qps_mean": 2.0,
+        "steady_qps_std": 0.0,
+        "recall_at_10": 0.993,
+        "strict_overlap_pct": 92.81
+      },
+      "UVM_capped_cap3.0GB_deg64_itopk128": {
+        "cap_gb": 3.0,
+        "mode": "UVM_capped",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 4.6,
+        "steady_qps_mean": 2.8,
+        "steady_qps_std": 0.0,
+        "recall_at_10": 0.9914,
+        "strict_overlap_pct": 93.12
+      },
+      "UVM_uncapped_control_cap75.0GB_deg64_itopk128": {
+        "cap_gb": 75.0,
+        "mode": "UVM_uncapped_control",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 67.889,
+        "status": "OK",
+        "cold_qps": 164447.5,
+        "steady_qps_mean": 191817.9,
+        "steady_qps_std": 17489.1,
+        "recall_at_10": 0.9958,
+        "strict_overlap_pct": 95.58
+      }
+    },
+    "deep10m": {
+      "UVM_capped_cap2.5GB_deg64_itopk128": {
+        "cap_gb": 2.5,
+        "mode": "UVM_capped",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 0.049,
+        "status": "OK",
+        "cold_qps": 4.9,
+        "steady_qps_mean": 3.1,
+        "steady_qps_std": 0.0,
+        "recall_at_10": 0.9906,
+        "strict_overlap_pct": 92.97
+      },
+      "UVM_uncapped_control_cap75.0GB_deg64_itopk128": {
+        "cap_gb": 75.0,
+        "mode": "UVM_uncapped_control",
+        "graph_degree": 64,
+        "itopk": 128,
+        "free_after_load_gb": 69.139,
+        "status": "OK",
+        "cold_qps": 187873.5,
+        "steady_qps_mean": 180976.2,
+        "steady_qps_std": 46523.5,
+        "recall_at_10": 0.9928,
+        "strict_overlap_pct": 95.93
+      }
+    }
+  },
+  "gpu_build_quality": {
+    "sift1m": {
+      "dim": 128,
+      "nlist": 1024,
+      "nprobe": 48,
+      "n_train": 131072,
+      "kmeans_iters": 25,
+      "cm_fp32_qps": 92155.4,
+      "trident_qps": 188878.4,
+      "main_table_qps": 226381.9,
+      "recall_at_10": 0.9913,
+      "main_table_recall_at_10": 0.9909,
+      "recall_diff": 0.0004,
+      "strict_overlap_pct": 100.0,
+      "passed_check": 1,
+      "total_trident_gpu_build_s": 0.8461
+    },
+    "gist1m": {
+      "dim": 960,
+      "nlist": 1024,
+      "nprobe": 128,
+      "n_train": 131072,
+      "kmeans_iters": 25,
+      "cm_fp32_qps": 6277.3,
+      "trident_qps": 18671.5,
+      "main_table_qps": 24523.4,
+      "recall_at_10": 0.9944,
+      "main_table_recall_at_10": 0.9918,
+      "recall_diff": 0.0026,
+      "strict_overlap_pct": 100.0,
+      "passed_check": 1,
+      "total_trident_gpu_build_s": 1.0978
+    },
+    "bge1024": {
+      "dim": 1024,
+      "nlist": 1024,
+      "nprobe": 128,
+      "n_train": 131072,
+      "kmeans_iters": 25,
+      "cm_fp32_qps": 7689.0,
+      "trident_qps": 35641.2,
+      "main_table_qps": 43504.4,
+      "recall_at_10": 0.9944,
+      "main_table_recall_at_10": 0.9913,
+      "recall_diff": 0.0031,
+      "strict_overlap_pct": 100.0,
+      "passed_check": 1,
+      "total_trident_gpu_build_s": 1.3461
+    },
+    "sift10m": {
+      "dim": 128,
+      "nlist": 4096,
+      "nprobe": 96,
+      "n_train": 524288,
+      "kmeans_iters": 25,
+      "cm_fp32_qps": 20388.7,
+      "trident_qps": 53677.0,
+      "main_table_qps": 63048.5,
+      "recall_at_10": 0.9905,
+      "main_table_recall_at_10": 0.9922,
+      "recall_diff": 0.0017,
+      "strict_overlap_pct": 100.0,
+      "passed_check": 1,
+      "total_trident_gpu_build_s": 2.7869
+    },
+    "deep10m": {
+      "dim": 96,
+      "nlist": 4096,
+      "nprobe": 96,
+      "n_train": 524288,
+      "kmeans_iters": 25,
+      "cm_fp32_qps": 20143.9,
+      "trident_qps": 52977.4,
+      "main_table_qps": 63909.2,
+      "recall_at_10": 0.9926,
+      "main_table_recall_at_10": 0.993,
+      "recall_diff": 0.0004,
+      "strict_overlap_pct": 100.0,
+      "passed_check": 1,
+      "total_trident_gpu_build_s": 2.3904
+    }
+  },
+  "gpu_build_v2": {
+    "sift1m": {
+      "dim": 128,
+      "nlist": 1024,
+      "cagra_r99_deg": 64,
+      "kmeans_gpu_s": 0.095,
+      "cm_extra_gpu_s": 0.0019,
+      "pca_sq8_gpu_s": 0.081,
+      "pack_gpu_s": 0.0036,
+      "total_cm_gpu_s": 0.097,
+      "total_trident_gpu_s": 0.181,
+      "cuvs_ivfflat_build_s": 0.421,
+      "cagra_r99_build_s": 11.922,
+      "cagra_deg64_build_s": 11.922,
+      "speedup_vs_cagra_r99": 65.77,
+      "speedup_vs_cagra_deg64": 65.77,
+      "ratio_trident_vs_ivfflat": 0.43,
+      "trident_aux_vram_gb": 0.128
+    },
+    "glove100": {
+      "dim": 100,
+      "nlist": 1024,
+      "cagra_r99_deg": 64,
+      "kmeans_gpu_s": 0.09,
+      "cm_extra_gpu_s": 0.0021,
+      "pca_sq8_gpu_s": 0.093,
+      "pack_gpu_s": 0.0034,
+      "total_cm_gpu_s": 0.092,
+      "total_trident_gpu_s": 0.189,
+      "cuvs_ivfflat_build_s": 0.381,
+      "cagra_r99_build_s": 14.173,
+      "cagra_deg64_build_s": 14.173,
+      "speedup_vs_cagra_r99": 75.06,
+      "speedup_vs_cagra_deg64": 75.06,
+      "ratio_trident_vs_ivfflat": 0.5,
+      "trident_aux_vram_gb": 0.151
+    },
+    "msong": {
+      "dim": 420,
+      "nlist": 1024,
+      "cagra_r99_deg": 32,
+      "kmeans_gpu_s": 0.222,
+      "cm_extra_gpu_s": 0.0032,
+      "pca_sq8_gpu_s": 0.288,
+      "pack_gpu_s": 0.0069,
+      "total_cm_gpu_s": 0.225,
+      "total_trident_gpu_s": 0.52,
+      "cuvs_ivfflat_build_s": 0.675,
+      "cagra_r99_build_s": 11.342,
+      "cagra_deg64_build_s": 14.543,
+      "speedup_vs_cagra_r99": 21.8,
+      "speedup_vs_cagra_deg64": 27.95,
+      "ratio_trident_vs_ivfflat": 0.77,
+      "trident_aux_vram_gb": 0.481
+    },
+    "nuswide": {
+      "dim": 500,
+      "nlist": 1024,
+      "cagra_r99_deg": 64,
+      "kmeans_gpu_s": 0.192,
+      "cm_extra_gpu_s": 0.0014,
+      "pca_sq8_gpu_s": 0.107,
+      "pack_gpu_s": 0.0034,
+      "total_cm_gpu_s": 0.193,
+      "total_trident_gpu_s": 0.303,
+      "cuvs_ivfflat_build_s": 0.537,
+      "cagra_r99_build_s": 4.004,
+      "cagra_deg64_build_s": 4.004,
+      "speedup_vs_cagra_r99": 13.19,
+      "speedup_vs_cagra_deg64": 13.19,
+      "ratio_trident_vs_ivfflat": 0.56,
+      "trident_aux_vram_gb": 0.217
+    },
+    "gist1m": {
+      "dim": 960,
+      "nlist": 1024,
+      "cagra_r99_deg": 64,
+      "kmeans_gpu_s": 0.447,
+      "cm_extra_gpu_s": 0.0064,
+      "pca_sq8_gpu_s": 0.628,
+      "pack_gpu_s": 0.0112,
+      "total_cm_gpu_s": 0.453,
+      "total_trident_gpu_s": 1.092,
+      "cuvs_ivfflat_build_s": 1.103,
+      "cagra_r99_build_s": 18.033,
+      "cagra_deg64_build_s": 18.033,
+      "speedup_vs_cagra_r99": 16.52,
+      "speedup_vs_cagra_deg64": 16.52,
+      "ratio_trident_vs_ivfflat": 0.99,
+      "trident_aux_vram_gb": 1.04
+    },
+    "bge1024": {
+      "dim": 1024,
+      "nlist": 1024,
+      "cagra_r99_deg": 32,
+      "kmeans_gpu_s": 0.472,
+      "cm_extra_gpu_s": 0.0066,
+      "pca_sq8_gpu_s": 0.85,
+      "pack_gpu_s": 0.0112,
+      "total_cm_gpu_s": 0.479,
+      "total_trident_gpu_s": 1.34,
+      "cuvs_ivfflat_build_s": 1.115,
+      "cagra_r99_build_s": 14.547,
+      "cagra_deg64_build_s": 17.859,
+      "speedup_vs_cagra_r99": 10.86,
+      "speedup_vs_cagra_deg64": 13.33,
+      "ratio_trident_vs_ivfflat": 1.2,
+      "trident_aux_vram_gb": 1.098
+    },
+    "sift10m": {
+      "dim": 128,
+      "nlist": 4096,
+      "cagra_r99_deg": 64,
+      "kmeans_gpu_s": 2.05,
+      "cm_extra_gpu_s": 0.0139,
+      "pca_sq8_gpu_s": 0.708,
+      "pack_gpu_s": 0.0199,
+      "total_cm_gpu_s": 2.064,
+      "total_trident_gpu_s": 2.792,
+      "cuvs_ivfflat_build_s": 2.065,
+      "cagra_r99_build_s": 118.892,
+      "cagra_deg64_build_s": 118.892,
+      "speedup_vs_cagra_r99": 42.58,
+      "speedup_vs_cagra_deg64": 42.58,
+      "ratio_trident_vs_ivfflat": 1.35,
+      "trident_aux_vram_gb": 1.251
+    },
+    "deep10m": {
+      "dim": 96,
+      "nlist": 4096,
+      "cagra_r99_deg": 64,
+      "kmeans_gpu_s": 1.744,
+      "cm_extra_gpu_s": 0.0139,
+      "pca_sq8_gpu_s": 0.62,
+      "pack_gpu_s": 0.017,
+      "total_cm_gpu_s": 1.758,
+      "total_trident_gpu_s": 2.394,
+      "cuvs_ivfflat_build_s": 1.754,
+      "cagra_r99_build_s": 118.285,
+      "cagra_deg64_build_s": 118.285,
+      "speedup_vs_cagra_r99": 49.4,
+      "speedup_vs_cagra_deg64": 49.4,
+      "ratio_trident_vs_ivfflat": 1.36,
+      "trident_aux_vram_gb": 0.948
+    },
+    "t2i10m": {
+      "dim": 200,
+      "nlist": 4096,
+      "cagra_r99_deg": 64,
+      "kmeans_gpu_s": 2.807,
+      "cm_extra_gpu_s": 0.0149,
+      "pca_sq8_gpu_s": 1.231,
+      "pack_gpu_s": 0.0242,
+      "total_cm_gpu_s": 2.822,
+      "total_trident_gpu_s": 4.077,
+      "cuvs_ivfflat_build_s": 2.58,
+      "cagra_r99_build_s": 129.493,
+      "cagra_deg64_build_s": 129.493,
+      "speedup_vs_cagra_r99": 31.76,
+      "speedup_vs_cagra_deg64": 31.76,
+      "ratio_trident_vs_ivfflat": 1.58,
+      "trident_aux_vram_gb": 2.161
+    }
+  },
+  "ooc_100m_RTX4080": {
+    "sift100m": {
+      "N": 100000000,
+      "dim": 128,
+      "nlist": 16384,
+      "fp32_raw_gb_decimal": 51.2,
+      "fp32_raw_gib": 47.68,
+      "gpu_total_vram_gb": 16.0,
+      "gpu_total_vram_gib": 15.57,
+      "gpu_free_vram_gib": 13.33,
+      "trident_vram_gib": 12.74,
+      "trident_vram_gb_decimal": 13.68,
+      "ivfpq_vram_gib": 2.24,
+      "tribase_vram_gib": 0.68,
+      "cm_vram_gib": 0.18,
+      "index_build_total_s": 411.4,
+      "R0.95": {
+        "nprobe": 48,
+        "recall_at_10": 0.954,
+        "strict_overlap_pct": 100.0,
+        "dims_pruned_pct": 73.1,
+        "surv_pct": 0.123,
+        "TRIDENT_OOC_Pinned_qps": 34017.6,
+        "TRIDENT_OOC_Pinned_std": 115.0,
+        "CM_FP32_OOC_Pinned_qps": 108.4,
+        "CM_FP32_OOC_Pinned_std": 0.4,
+        "Tribase_GPU_OOC_Pinned_qps": 102.1,
+        "Tribase_GPU_OOC_Pinned_std": 0.2,
+        "Tribase_dims_pruned_pct": 2.68,
+        "Tribase_surv_pct": 97.32,
+        "Faiss_CPU_IVFFlat_24T_qps": 381.5,
+        "Faiss_CPU_IVFFlat_24T_std": 12.9,
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256_qps": 9251.9,
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256_std": 312.6,
+        "speedup_vs_cm_ooc": 313.88,
+        "speedup_vs_tribase_ooc": 333.18,
+        "speedup_vs_cpu_24t": 89.16,
+        "speedup_vs_ivfpq_ref": 3.68,
+        "pcie_mb_trident": 208.75,
+        "pcie_gb_trident": 0.21,
+        "pcie_mb_cm": 164742.45,
+        "pcie_gb_cm": 164.74,
+        "pcie_mb_tribase": 158235.99,
+        "pcie_gb_tribase": 158.24,
+        "pcie_reduction_vs_cm_x": 789.19,
+        "pcie_reduction_pct": 99.87
+      },
+      "R0.99": {
+        "nprobe": 160,
+        "recall_at_10": 0.9922,
+        "strict_overlap_pct": 100.0,
+        "dims_pruned_pct": 74.1,
+        "surv_pct": 0.039,
+        "TRIDENT_OOC_Pinned_qps": 19866.6,
+        "TRIDENT_OOC_Pinned_std": 243.3,
+        "CM_FP32_OOC_Pinned_qps": 42.7,
+        "CM_FP32_OOC_Pinned_std": 0.2,
+        "Tribase_GPU_OOC_Pinned_qps": 38.8,
+        "Tribase_GPU_OOC_Pinned_std": 0.1,
+        "Tribase_dims_pruned_pct": 5.64,
+        "Tribase_surv_pct": 94.36,
+        "Faiss_CPU_IVFFlat_24T_qps": 117.1,
+        "Faiss_CPU_IVFFlat_24T_std": 3.1,
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256_qps": 4900.7,
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256_std": 94.0,
+        "Faiss_GPU_IVFPQ_CPU_Refine_kf256_ov": 99.96,
+        "speedup_vs_cm_ooc": 464.88,
+        "speedup_vs_tribase_ooc": 512.03,
+        "speedup_vs_cpu_24t": 169.59,
+        "speedup_vs_ivfpq_ref": 4.05,
+        "pcie_mb_trident": 220.03,
+        "pcie_gb_trident": 0.22,
+        "pcie_mb_cm": 471723.57,
+        "pcie_gb_cm": 471.72,
+        "pcie_mb_tribase": 488341.92,
+        "pcie_gb_tribase": 488.34,
+        "pcie_reduction_vs_cm_x": 2143.91,
+        "pcie_reduction_pct": 99.95
+      }
+    }
+  },
+  "b2_10m_sanity_RTX4080": {
+    "sift10m": {
+      "R0.95": {
+        "trident_invram_qps": 198242.7,
+        "cm_invram_qps": 76952.4,
+        "speedup_invram": 2.58,
+        "trident_ooc_qps": 58717.3,
+        "cm_ooc_qps": 529.0,
+        "speedup_ooc": 111.0
+      },
+      "R0.99": {
+        "trident_invram_qps": 105617.5,
+        "cm_invram_qps": 32370.2,
+        "speedup_invram": 3.26,
+        "trident_ooc_qps": 45976.2,
+        "cm_ooc_qps": 264.8,
+        "speedup_ooc": 173.61
+      }
+    },
+    "deep10m": {
+      "R0.95": {
+        "trident_invram_qps": 212505.8,
+        "cm_invram_qps": 82374.5,
+        "speedup_invram": 2.58,
+        "trident_ooc_qps": 73461.4,
+        "cm_ooc_qps": 731.4,
+        "speedup_ooc": 100.44
+      },
+      "R0.99": {
+        "trident_invram_qps": 98450.2,
+        "cm_invram_qps": 32237.7,
+        "speedup_invram": 3.05,
+        "trident_ooc_qps": 52680.9,
+        "cm_ooc_qps": 366.0,
+        "speedup_ooc": 143.92
+      }
+    }
+  },
+  "phase10": {
+    "lossless_A100": {
+      "sift1m": {
+        "ub0": {
+          "qps_mean": 229910.3,
+          "qps_std": 210.6,
+          "recall_at_10": 0.9924,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.6368,
+          "dims_pruned_pct": 70.47,
+          "refined_per_query": 320.53,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub1": {
+          "qps_mean": 196341.4,
+          "qps_std": 775.1,
+          "recall_at_10": 0.9924,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.1097,
+          "dims_pruned_pct": 71.01,
+          "refined_per_query": 55.24,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub2": {
+          "qps_mean": 82630.1,
+          "qps_std": 43.6,
+          "recall_at_10": 0.9924,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.1097,
+          "dims_pruned_pct": 71.01,
+          "refined_per_query": 55.21,
+          "max_abs_dist_diff": 0.0
+        }
+      },
+      "glove100": {
+        "ub0": {
+          "qps_mean": 29099.1,
+          "qps_std": 8.6,
+          "recall_at_10": 0.9931,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.0876,
+          "dims_pruned_pct": 52.32,
+          "refined_per_query": 370.53,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub1": {
+          "qps_mean": 28265.6,
+          "qps_std": 10.7,
+          "recall_at_10": 0.9931,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.0237,
+          "dims_pruned_pct": 52.36,
+          "refined_per_query": 100.14,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub2": {
+          "qps_mean": 10516.5,
+          "qps_std": 3.3,
+          "recall_at_10": 0.9931,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.0234,
+          "dims_pruned_pct": 52.36,
+          "refined_per_query": 99.04,
+          "max_abs_dist_diff": 0.0
+        }
+      },
+      "msong": {
+        "ub0": {
+          "qps_mean": 146039.8,
+          "qps_std": 59.4,
+          "recall_at_10": 0.9952,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 2.0992,
+          "dims_pruned_pct": 89.36,
+          "refined_per_query": 848.11,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub1": {
+          "qps_mean": 109421.5,
+          "qps_std": 72.3,
+          "recall_at_10": 0.9952,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.1334,
+          "dims_pruned_pct": 91.2,
+          "refined_per_query": 53.88,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub2": {
+          "qps_mean": 36343.6,
+          "qps_std": 7.6,
+          "recall_at_10": 0.9952,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.1333,
+          "dims_pruned_pct": 91.2,
+          "refined_per_query": 53.87,
+          "max_abs_dist_diff": 0.0
+        }
+      },
+      "nuswide": {
+        "ub0": {
+          "qps_mean": 711096.8,
+          "qps_std": 3229.1,
+          "recall_at_10": 0.995,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 17.0191,
+          "dims_pruned_pct": 76.6,
+          "refined_per_query": 50.22,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub1": {
+          "qps_mean": 689331.5,
+          "qps_std": 2278.2,
+          "recall_at_10": 0.995,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 7.4106,
+          "dims_pruned_pct": 84.28,
+          "refined_per_query": 21.86,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub2": {
+          "qps_mean": 467640.8,
+          "qps_std": 863.2,
+          "recall_at_10": 0.995,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 7.4106,
+          "dims_pruned_pct": 84.28,
+          "refined_per_query": 21.86,
+          "max_abs_dist_diff": 0.0
+        }
+      },
+      "gist1m": {
+        "ub0": {
+          "qps_mean": 24381.6,
+          "qps_std": 8.3,
+          "recall_at_10": 0.9937,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.5319,
+          "dims_pruned_pct": 92.49,
+          "refined_per_query": 890.96,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub1": {
+          "qps_mean": 22289.5,
+          "qps_std": 5.7,
+          "recall_at_10": 0.9937,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.0618,
+          "dims_pruned_pct": 92.91,
+          "refined_per_query": 103.45,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub2": {
+          "qps_mean": 5510.9,
+          "qps_std": 0.7,
+          "recall_at_10": 0.9937,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.0615,
+          "dims_pruned_pct": 92.91,
+          "refined_per_query": 103.03,
+          "max_abs_dist_diff": 0.0
+        }
+      },
+      "bge1024": {
+        "ub0": {
+          "qps_mean": 43970.5,
+          "qps_std": 25.2,
+          "recall_at_10": 0.992,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.6361,
+          "dims_pruned_pct": 91.48,
+          "refined_per_query": 885.88,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub1": {
+          "qps_mean": 38582.7,
+          "qps_std": 39.2,
+          "recall_at_10": 0.992,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.0437,
+          "dims_pruned_pct": 91.99,
+          "refined_per_query": 60.82,
+          "max_abs_dist_diff": 0.0
+        },
+        "ub2": {
+          "qps_mean": 6758.2,
+          "qps_std": 1.6,
+          "recall_at_10": 0.992,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 0.0435,
+          "dims_pruned_pct": 91.99,
+          "refined_per_query": 60.61,
+          "max_abs_dist_diff": 0.0
+        }
+      }
+    },
+    "ooc_1m10m_A100": {
+      "gist1m": {
+        "R0.95": {
+          "TRIDENT_ub0": {
+            "qps_mean": 3506.8,
+            "qps_std": 1.3,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9622,
+            "surv_pct": 1.1804,
+            "dims_pruned_pct": 90.66,
+            "refined_per_query": 885.92,
+            "peak_alloc_gb": 1.469,
+            "cap_gb": 2.2
+          },
+          "TRIDENT_ub1": {
+            "qps_mean": 23894.1,
+            "qps_std": 20.0,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9622,
+            "surv_pct": 0.1311,
+            "dims_pruned_pct": 91.6,
+            "refined_per_query": 98.4,
+            "peak_alloc_gb": 1.469,
+            "cap_gb": 2.2
+          },
+          "TRIDENT_ub2": {
+            "qps_mean": 9754.2,
+            "qps_std": 6.6,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9622,
+            "surv_pct": 0.1306,
+            "dims_pruned_pct": 91.6,
+            "refined_per_query": 97.98,
+            "peak_alloc_gb": 1.469,
+            "cap_gb": 2.2
+          },
+          "CM-FP32-OOC_ub0": {
+            "qps_mean": 111.0,
+            "qps_std": 1.5,
+            "strict_overlap_pct": 100.0,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 1.469,
+            "cap_gb": 2.2
+          },
+          "Faiss-CPU-IVFFlat-24T": {
+            "qps_mean": 210.5,
+            "qps_std": 8.9,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9622,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 0.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m100": {
+            "qps_mean": 46710.1,
+            "qps_std": 204.8,
+            "strict_overlap_pct": 50.51,
+            "recall_at_10": 0.7603,
+            "refined_per_query": 100.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m200": {
+            "qps_mean": 33938.1,
+            "qps_std": 656.6,
+            "strict_overlap_pct": 69.39,
+            "recall_at_10": 0.8578,
+            "refined_per_query": 200.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m400": {
+            "qps_mean": 22757.4,
+            "qps_std": 268.8,
+            "strict_overlap_pct": 85.29,
+            "recall_at_10": 0.9188,
+            "refined_per_query": 400.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m800": {
+            "qps_mean": 13054.5,
+            "qps_std": 134.5,
+            "strict_overlap_pct": 95.11,
+            "recall_at_10": 0.9497,
+            "refined_per_query": 800.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m1600": {
+            "qps_mean": 7206.3,
+            "qps_std": 33.0,
+            "strict_overlap_pct": 99.14,
+            "recall_at_10": 0.9602,
+            "refined_per_query": 1600.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m2048": {
+            "qps_mean": 5900.0,
+            "qps_std": 79.6,
+            "strict_overlap_pct": 99.67,
+            "recall_at_10": 0.9614,
+            "refined_per_query": 2048.0,
+            "cap_gb": 2.2
+          }
+        },
+        "R0.99": {
+          "TRIDENT_ub0": {
+            "qps_mean": 3340.5,
+            "qps_std": 0.7,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9937,
+            "surv_pct": 0.5319,
+            "dims_pruned_pct": 92.49,
+            "refined_per_query": 890.96,
+            "peak_alloc_gb": 1.469,
+            "cap_gb": 2.2
+          },
+          "TRIDENT_ub1": {
+            "qps_mean": 17852.6,
+            "qps_std": 5.2,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9937,
+            "surv_pct": 0.0618,
+            "dims_pruned_pct": 92.91,
+            "refined_per_query": 103.45,
+            "peak_alloc_gb": 1.469,
+            "cap_gb": 2.2
+          },
+          "TRIDENT_ub2": {
+            "qps_mean": 5193.6,
+            "qps_std": 1.1,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9937,
+            "surv_pct": 0.0615,
+            "dims_pruned_pct": 92.91,
+            "refined_per_query": 103.03,
+            "peak_alloc_gb": 1.469,
+            "cap_gb": 2.2
+          },
+          "CM-FP32-OOC_ub0": {
+            "qps_mean": 81.1,
+            "qps_std": 2.0,
+            "strict_overlap_pct": 100.0,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 1.469,
+            "cap_gb": 2.2
+          },
+          "Faiss-CPU-IVFFlat-24T": {
+            "qps_mean": 103.8,
+            "qps_std": 9.6,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9937,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 0.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m100": {
+            "qps_mean": 23050.9,
+            "qps_std": 213.0,
+            "strict_overlap_pct": 48.54,
+            "recall_at_10": 0.7659,
+            "refined_per_query": 100.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m200": {
+            "qps_mean": 19745.4,
+            "qps_std": 75.6,
+            "strict_overlap_pct": 66.6,
+            "recall_at_10": 0.8682,
+            "refined_per_query": 200.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m400": {
+            "qps_mean": 14805.7,
+            "qps_std": 121.4,
+            "strict_overlap_pct": 82.53,
+            "recall_at_10": 0.9357,
+            "refined_per_query": 400.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m800": {
+            "qps_mean": 9606.7,
+            "qps_std": 96.8,
+            "strict_overlap_pct": 92.22,
+            "recall_at_10": 0.9725,
+            "refined_per_query": 800.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m1600": {
+            "qps_mean": 5389.2,
+            "qps_std": 26.7,
+            "strict_overlap_pct": 97.37,
+            "recall_at_10": 0.9876,
+            "refined_per_query": 1600.0,
+            "cap_gb": 2.2
+          },
+          "IVFPQ+CPU-Refine_m2048": {
+            "qps_mean": 4587.2,
+            "qps_std": 34.2,
+            "strict_overlap_pct": 98.65,
+            "recall_at_10": 0.9907,
+            "refined_per_query": 2048.0,
+            "cap_gb": 2.2
+          }
+        }
+      },
+      "bge1024": {
+        "R0.95": {
+          "TRIDENT_ub0": {
+            "qps_mean": 5052.9,
+            "qps_std": 0.7,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.952,
+            "surv_pct": 4.3046,
+            "dims_pruned_pct": 82.12,
+            "refined_per_query": 597.07,
+            "peak_alloc_gb": 1.534,
+            "cap_gb": 2.5
+          },
+          "TRIDENT_ub1": {
+            "qps_mean": 62329.1,
+            "qps_std": 41.1,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.952,
+            "surv_pct": 0.2839,
+            "dims_pruned_pct": 85.7,
+            "refined_per_query": 39.37,
+            "peak_alloc_gb": 1.534,
+            "cap_gb": 2.5
+          },
+          "TRIDENT_ub2": {
+            "qps_mean": 36345.9,
+            "qps_std": 24.9,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.952,
+            "surv_pct": 0.2816,
+            "dims_pruned_pct": 85.71,
+            "refined_per_query": 39.06,
+            "peak_alloc_gb": 1.534,
+            "cap_gb": 2.5
+          },
+          "CM-FP32-OOC_ub0": {
+            "qps_mean": 484.4,
+            "qps_std": 4.2,
+            "strict_overlap_pct": 100.0,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 1.534,
+            "cap_gb": 2.5
+          },
+          "Faiss-CPU-IVFFlat-24T": {
+            "qps_mean": 1328.1,
+            "qps_std": 44.5,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.952,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 0.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m100": {
+            "qps_mean": 109135.5,
+            "qps_std": 2964.9,
+            "strict_overlap_pct": 72.52,
+            "recall_at_10": 0.8041,
+            "refined_per_query": 100.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m200": {
+            "qps_mean": 67757.9,
+            "qps_std": 999.5,
+            "strict_overlap_pct": 78.32,
+            "recall_at_10": 0.8436,
+            "refined_per_query": 200.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m400": {
+            "qps_mean": 37043.6,
+            "qps_std": 1946.5,
+            "strict_overlap_pct": 83.86,
+            "recall_at_10": 0.8864,
+            "refined_per_query": 400.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m800": {
+            "qps_mean": 19171.6,
+            "qps_std": 663.1,
+            "strict_overlap_pct": 95.37,
+            "recall_at_10": 0.9387,
+            "refined_per_query": 800.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m1600": {
+            "qps_mean": 9522.2,
+            "qps_std": 262.6,
+            "strict_overlap_pct": 98.03,
+            "recall_at_10": 0.9473,
+            "refined_per_query": 1600.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m2048": {
+            "qps_mean": 7749.5,
+            "qps_std": 71.0,
+            "strict_overlap_pct": 98.65,
+            "recall_at_10": 0.9491,
+            "refined_per_query": 2048.0,
+            "cap_gb": 2.5
+          }
+        },
+        "R0.99": {
+          "TRIDENT_ub0": {
+            "qps_mean": 3277.7,
+            "qps_std": 1.3,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.992,
+            "surv_pct": 0.6361,
+            "dims_pruned_pct": 91.48,
+            "refined_per_query": 885.88,
+            "peak_alloc_gb": 1.534,
+            "cap_gb": 2.5
+          },
+          "TRIDENT_ub1": {
+            "qps_mean": 27426.5,
+            "qps_std": 22.3,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.992,
+            "surv_pct": 0.0437,
+            "dims_pruned_pct": 91.99,
+            "refined_per_query": 60.82,
+            "peak_alloc_gb": 1.534,
+            "cap_gb": 2.5
+          },
+          "TRIDENT_ub2": {
+            "qps_mean": 6311.2,
+            "qps_std": 0.7,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.992,
+            "surv_pct": 0.0435,
+            "dims_pruned_pct": 91.99,
+            "refined_per_query": 60.61,
+            "peak_alloc_gb": 1.534,
+            "cap_gb": 2.5
+          },
+          "CM-FP32-OOC_ub0": {
+            "qps_mean": 92.6,
+            "qps_std": 0.0,
+            "strict_overlap_pct": 100.0,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 1.534,
+            "cap_gb": 2.5
+          },
+          "Faiss-CPU-IVFFlat-24T": {
+            "qps_mean": 104.0,
+            "qps_std": 0.6,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.992,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 0.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m100": {
+            "qps_mean": 28665.9,
+            "qps_std": 375.7,
+            "strict_overlap_pct": 70.29,
+            "recall_at_10": 0.8101,
+            "refined_per_query": 100.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m200": {
+            "qps_mean": 24926.7,
+            "qps_std": 194.4,
+            "strict_overlap_pct": 75.43,
+            "recall_at_10": 0.8534,
+            "refined_per_query": 200.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m400": {
+            "qps_mean": 18364.7,
+            "qps_std": 206.8,
+            "strict_overlap_pct": 79.83,
+            "recall_at_10": 0.9,
+            "refined_per_query": 400.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m800": {
+            "qps_mean": 11740.2,
+            "qps_std": 235.7,
+            "strict_overlap_pct": 91.03,
+            "recall_at_10": 0.9588,
+            "refined_per_query": 800.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m1600": {
+            "qps_mean": 6665.9,
+            "qps_std": 75.3,
+            "strict_overlap_pct": 94.46,
+            "recall_at_10": 0.974,
+            "refined_per_query": 1600.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m2048": {
+            "qps_mean": 5546.0,
+            "qps_std": 56.3,
+            "strict_overlap_pct": 95.47,
+            "recall_at_10": 0.9783,
+            "refined_per_query": 2048.0,
+            "cap_gb": 2.5
+          }
+        }
+      },
+      "sift10m": {
+        "R0.95": {
+          "TRIDENT_ub0": {
+            "qps_mean": 47439.9,
+            "qps_std": 85.7,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9523,
+            "surv_pct": 0.4278,
+            "dims_pruned_pct": 72.0,
+            "refined_per_query": 355.18,
+            "peak_alloc_gb": 1.767,
+            "cap_gb": 3.0
+          },
+          "TRIDENT_ub1": {
+            "qps_mean": 86478.3,
+            "qps_std": 184.4,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9523,
+            "surv_pct": 0.0695,
+            "dims_pruned_pct": 72.54,
+            "refined_per_query": 57.74,
+            "peak_alloc_gb": 1.767,
+            "cap_gb": 3.0
+          },
+          "TRIDENT_ub2": {
+            "qps_mean": 40170.6,
+            "qps_std": 61.6,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9523,
+            "surv_pct": 0.0695,
+            "dims_pruned_pct": 72.54,
+            "refined_per_query": 57.71,
+            "peak_alloc_gb": 1.767,
+            "cap_gb": 3.0
+          },
+          "CM-FP32-OOC_ub0": {
+            "qps_mean": 523.9,
+            "qps_std": 0.7,
+            "strict_overlap_pct": 100.0,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 1.767,
+            "cap_gb": 3.0
+          },
+          "Faiss-CPU-IVFFlat-24T": {
+            "qps_mean": 1582.1,
+            "qps_std": 53.2,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9523,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 0.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m100": {
+            "qps_mean": 128203.6,
+            "qps_std": 1408.7,
+            "strict_overlap_pct": 92.63,
+            "recall_at_10": 0.9322,
+            "refined_per_query": 100.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m200": {
+            "qps_mean": 87520.5,
+            "qps_std": 1107.1,
+            "strict_overlap_pct": 97.8,
+            "recall_at_10": 0.9472,
+            "refined_per_query": 200.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m400": {
+            "qps_mean": 56518.3,
+            "qps_std": 1152.1,
+            "strict_overlap_pct": 99.75,
+            "recall_at_10": 0.9516,
+            "refined_per_query": 400.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m800": {
+            "qps_mean": 31769.0,
+            "qps_std": 311.0,
+            "strict_overlap_pct": 99.93,
+            "recall_at_10": 0.952,
+            "refined_per_query": 800.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m1600": {
+            "qps_mean": 17232.4,
+            "qps_std": 329.2,
+            "strict_overlap_pct": 99.97,
+            "recall_at_10": 0.9522,
+            "refined_per_query": 1600.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m2048": {
+            "qps_mean": 14943.1,
+            "qps_std": 162.6,
+            "strict_overlap_pct": 99.97,
+            "recall_at_10": 0.9522,
+            "refined_per_query": 2048.0,
+            "cap_gb": 3.0
+          }
+        },
+        "R0.99": {
+          "TRIDENT_ub0": {
+            "qps_mean": 35319.5,
+            "qps_std": 27.5,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9908,
+            "surv_pct": 0.1488,
+            "dims_pruned_pct": 73.56,
+            "refined_per_query": 357.69,
+            "peak_alloc_gb": 1.767,
+            "cap_gb": 3.0
+          },
+          "TRIDENT_ub1": {
+            "qps_mean": 53179.4,
+            "qps_std": 65.4,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9908,
+            "surv_pct": 0.0251,
+            "dims_pruned_pct": 73.75,
+            "refined_per_query": 60.25,
+            "peak_alloc_gb": 1.767,
+            "cap_gb": 3.0
+          },
+          "TRIDENT_ub2": {
+            "qps_mean": 18262.8,
+            "qps_std": 6.2,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9908,
+            "surv_pct": 0.025,
+            "dims_pruned_pct": 73.75,
+            "refined_per_query": 60.21,
+            "peak_alloc_gb": 1.767,
+            "cap_gb": 3.0
+          },
+          "CM-FP32-OOC_ub0": {
+            "qps_mean": 260.4,
+            "qps_std": 4.0,
+            "strict_overlap_pct": 100.0,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 1.767,
+            "cap_gb": 3.0
+          },
+          "Faiss-CPU-IVFFlat-24T": {
+            "qps_mean": 568.7,
+            "qps_std": 4.3,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9908,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 0.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m100": {
+            "qps_mean": 38234.5,
+            "qps_std": 235.9,
+            "strict_overlap_pct": 90.85,
+            "recall_at_10": 0.9619,
+            "refined_per_query": 100.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m200": {
+            "qps_mean": 34961.5,
+            "qps_std": 293.2,
+            "strict_overlap_pct": 97.23,
+            "recall_at_10": 0.9823,
+            "refined_per_query": 200.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m400": {
+            "qps_mean": 25936.2,
+            "qps_std": 841.8,
+            "strict_overlap_pct": 99.54,
+            "recall_at_10": 0.9892,
+            "refined_per_query": 400.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m800": {
+            "qps_mean": 18005.7,
+            "qps_std": 197.1,
+            "strict_overlap_pct": 99.9,
+            "recall_at_10": 0.9903,
+            "refined_per_query": 800.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m1600": {
+            "qps_mean": 10469.7,
+            "qps_std": 45.4,
+            "strict_overlap_pct": 99.93,
+            "recall_at_10": 0.9906,
+            "refined_per_query": 1600.0,
+            "cap_gb": 3.0
+          },
+          "IVFPQ+CPU-Refine_m2048": {
+            "qps_mean": 9295.5,
+            "qps_std": 44.9,
+            "strict_overlap_pct": 99.93,
+            "recall_at_10": 0.9906,
+            "refined_per_query": 2048.0,
+            "cap_gb": 3.0
+          }
+        }
+      },
+      "deep10m": {
+        "R0.95": {
+          "TRIDENT_ub0": {
+            "qps_mean": 58393.2,
+            "qps_std": 71.7,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9623,
+            "surv_pct": 0.4227,
+            "dims_pruned_pct": 58.91,
+            "refined_per_query": 354.53,
+            "peak_alloc_gb": 1.463,
+            "cap_gb": 2.5
+          },
+          "TRIDENT_ub1": {
+            "qps_mean": 98341.9,
+            "qps_std": 158.8,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9623,
+            "surv_pct": 0.0693,
+            "dims_pruned_pct": 59.44,
+            "refined_per_query": 58.1,
+            "peak_alloc_gb": 1.463,
+            "cap_gb": 2.5
+          },
+          "TRIDENT_ub2": {
+            "qps_mean": 47066.3,
+            "qps_std": 36.5,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9623,
+            "surv_pct": 0.0691,
+            "dims_pruned_pct": 59.44,
+            "refined_per_query": 58.0,
+            "peak_alloc_gb": 1.463,
+            "cap_gb": 2.5
+          },
+          "CM-FP32-OOC_ub0": {
+            "qps_mean": 696.9,
+            "qps_std": 6.0,
+            "strict_overlap_pct": 100.0,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 1.463,
+            "cap_gb": 2.5
+          },
+          "Faiss-CPU-IVFFlat-24T": {
+            "qps_mean": 1784.0,
+            "qps_std": 35.9,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9623,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 0.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m100": {
+            "qps_mean": 137091.0,
+            "qps_std": 2867.2,
+            "strict_overlap_pct": 85.92,
+            "recall_at_10": 0.9176,
+            "refined_per_query": 100.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m200": {
+            "qps_mean": 99124.0,
+            "qps_std": 732.4,
+            "strict_overlap_pct": 95.3,
+            "recall_at_10": 0.9489,
+            "refined_per_query": 200.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m400": {
+            "qps_mean": 63323.6,
+            "qps_std": 1074.6,
+            "strict_overlap_pct": 98.87,
+            "recall_at_10": 0.9588,
+            "refined_per_query": 400.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m800": {
+            "qps_mean": 37090.4,
+            "qps_std": 1514.3,
+            "strict_overlap_pct": 99.74,
+            "recall_at_10": 0.9613,
+            "refined_per_query": 800.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m1600": {
+            "qps_mean": 20551.5,
+            "qps_std": 207.4,
+            "strict_overlap_pct": 99.93,
+            "recall_at_10": 0.9621,
+            "refined_per_query": 1600.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m2048": {
+            "qps_mean": 17855.3,
+            "qps_std": 103.8,
+            "strict_overlap_pct": 99.93,
+            "recall_at_10": 0.9621,
+            "refined_per_query": 2048.0,
+            "cap_gb": 2.5
+          }
+        },
+        "R0.99": {
+          "TRIDENT_ub0": {
+            "qps_mean": 39408.0,
+            "qps_std": 41.3,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9908,
+            "surv_pct": 0.1484,
+            "dims_pruned_pct": 61.91,
+            "refined_per_query": 356.31,
+            "peak_alloc_gb": 1.463,
+            "cap_gb": 2.5
+          },
+          "TRIDENT_ub1": {
+            "qps_mean": 54317.8,
+            "qps_std": 36.3,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9908,
+            "surv_pct": 0.0249,
+            "dims_pruned_pct": 62.1,
+            "refined_per_query": 59.88,
+            "peak_alloc_gb": 1.463,
+            "cap_gb": 2.5
+          },
+          "TRIDENT_ub2": {
+            "qps_mean": 20739.4,
+            "qps_std": 16.2,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9908,
+            "surv_pct": 0.0249,
+            "dims_pruned_pct": 62.1,
+            "refined_per_query": 59.77,
+            "peak_alloc_gb": 1.463,
+            "cap_gb": 2.5
+          },
+          "CM-FP32-OOC_ub0": {
+            "qps_mean": 359.4,
+            "qps_std": 3.5,
+            "strict_overlap_pct": 100.0,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 1.463,
+            "cap_gb": 2.5
+          },
+          "Faiss-CPU-IVFFlat-24T": {
+            "qps_mean": 639.3,
+            "qps_std": 26.1,
+            "strict_overlap_pct": 100.0,
+            "recall_at_10": 0.9908,
+            "surv_pct": 100.0,
+            "dims_pruned_pct": 0.0,
+            "peak_alloc_gb": 0.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m100": {
+            "qps_mean": 51240.9,
+            "qps_std": 133.6,
+            "strict_overlap_pct": 84.77,
+            "recall_at_10": 0.9367,
+            "refined_per_query": 100.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m200": {
+            "qps_mean": 43520.6,
+            "qps_std": 447.0,
+            "strict_overlap_pct": 94.43,
+            "recall_at_10": 0.9729,
+            "refined_per_query": 200.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m400": {
+            "qps_mean": 33142.9,
+            "qps_std": 493.5,
+            "strict_overlap_pct": 98.52,
+            "recall_at_10": 0.986,
+            "refined_per_query": 400.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m800": {
+            "qps_mean": 20828.1,
+            "qps_std": 392.7,
+            "strict_overlap_pct": 99.72,
+            "recall_at_10": 0.9896,
+            "refined_per_query": 800.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m1600": {
+            "qps_mean": 12886.5,
+            "qps_std": 86.5,
+            "strict_overlap_pct": 99.93,
+            "recall_at_10": 0.9906,
+            "refined_per_query": 1600.0,
+            "cap_gb": 2.5
+          },
+          "IVFPQ+CPU-Refine_m2048": {
+            "qps_mean": 11440.9,
+            "qps_std": 158.1,
+            "strict_overlap_pct": 99.93,
+            "recall_at_10": 0.9906,
+            "refined_per_query": 2048.0,
+            "cap_gb": 2.5
+          }
+        }
+      }
+    },
+    "ncu_perpass_1m10m_A100": {
+      "gist1m": {
+        "TRIDENT-OOC_ub0": {
+          "total_mb_per_1024q": 5009.88,
+          "total_gb_per_1000q": 5.0099,
+          "pass1_mb_per_1024q": 4774.74,
+          "pass2_mb_per_1024q": 235.14
+        },
+        "TRIDENT-OOC_ub1": {
+          "total_mb_per_1024q": 575.42,
+          "total_gb_per_1000q": 0.5754,
+          "pass1_mb_per_1024q": 333.08,
+          "pass2_mb_per_1024q": 242.34
+        },
+        "TRIDENT-OOC_ub2": {
+          "total_mb_per_1024q": 651.62,
+          "total_gb_per_1000q": 0.6516,
+          "pass1_mb_per_1024q": 321.53,
+          "pass2_mb_per_1024q": 330.09
+        },
+        "CM-FP32-OOC_ub0": {
+          "total_mb_per_1024q": 705800.7,
+          "total_gb_per_1000q": 705.8007
+        }
+      },
+      "bge1024": {
+        "TRIDENT-OOC_ub0": {
+          "total_mb_per_1024q": 5284.2,
+          "total_gb_per_1000q": 5.2842,
+          "pass1_mb_per_1024q": 5219.19,
+          "pass2_mb_per_1024q": 65.01
+        },
+        "TRIDENT-OOC_ub1": {
+          "total_mb_per_1024q": 406.51,
+          "total_gb_per_1000q": 0.4065,
+          "pass1_mb_per_1024q": 339.62,
+          "pass2_mb_per_1024q": 66.89
+        },
+        "TRIDENT-OOC_ub2": {
+          "total_mb_per_1024q": 476.06,
+          "total_gb_per_1000q": 0.4761,
+          "pass1_mb_per_1024q": 325.87,
+          "pass2_mb_per_1024q": 150.19
+        },
+        "CM-FP32-OOC_ub0": {
+          "total_mb_per_1024q": 557507.71,
+          "total_gb_per_1000q": 557.5077
+        }
+      },
+      "sift10m": {
+        "TRIDENT-OOC_ub0": {
+          "total_mb_per_1024q": 295.78,
+          "total_gb_per_1000q": 0.2958,
+          "pass1_mb_per_1024q": 278.03,
+          "pass2_mb_per_1024q": 17.75
+        },
+        "TRIDENT-OOC_ub1": {
+          "total_mb_per_1024q": 52.49,
+          "total_gb_per_1000q": 0.0525,
+          "pass1_mb_per_1024q": 40.73,
+          "pass2_mb_per_1024q": 11.76
+        },
+        "TRIDENT-OOC_ub2": {
+          "total_mb_per_1024q": 76.33,
+          "total_gb_per_1000q": 0.0763,
+          "pass1_mb_per_1024q": 34.33,
+          "pass2_mb_per_1024q": 42.0
+        },
+        "CM-FP32-OOC_ub0": {
+          "total_mb_per_1024q": 157251.48,
+          "total_gb_per_1000q": 157.2515
+        }
+      },
+      "deep10m": {
+        "TRIDENT-OOC_ub0": {
+          "total_mb_per_1024q": 212.11,
+          "total_gb_per_1000q": 0.2121,
+          "pass1_mb_per_1024q": 203.2,
+          "pass2_mb_per_1024q": 8.91
+        },
+        "TRIDENT-OOC_ub1": {
+          "total_mb_per_1024q": 41.33,
+          "total_gb_per_1000q": 0.0413,
+          "pass1_mb_per_1024q": 32.8,
+          "pass2_mb_per_1024q": 8.53
+        },
+        "TRIDENT-OOC_ub2": {
+          "total_mb_per_1024q": 54.36,
+          "total_gb_per_1000q": 0.0544,
+          "pass1_mb_per_1024q": 27.41,
+          "pass2_mb_per_1024q": 26.95
+        },
+        "CM-FP32-OOC_ub0": {
+          "total_mb_per_1024q": 109749.06,
+          "total_gb_per_1000q": 109.7491
+        }
+      }
+    },
+    "ooc_100m_RTX4080": {
+      "R0.95": {
+        "TRIDENT-OOC_ub0": {
+          "qps_mean": 30119.7,
+          "qps_std": 21.8,
+          "strict_overlap_pct": 100.0,
+          "recall_at_10": 0.954,
+          "surv_pct": 0.1227,
+          "dims_pruned_pct": 73.05,
+          "refined_per_query": 398.91,
+          "peak_alloc_gib": 12.737
+        },
+        "TRIDENT-OOC_ub1": {
+          "qps_mean": 40449.1,
+          "qps_std": 50.7,
+          "strict_overlap_pct": 100.0,
+          "recall_at_10": 0.954,
+          "surv_pct": 0.0207,
+          "dims_pruned_pct": 73.29,
+          "refined_per_query": 67.21,
+          "peak_alloc_gib": 12.737
+        },
+        "TRIDENT-OOC_ub2": {
+          "qps_mean": 16939.4,
+          "qps_std": 70.1,
+          "strict_overlap_pct": 100.0,
+          "recall_at_10": 0.954,
+          "surv_pct": 0.0206,
+          "dims_pruned_pct": 73.29,
+          "refined_per_query": 67.15,
+          "peak_alloc_gib": 12.737
+        },
+        "CM-FP32-OOC_ub0": {
+          "qps_mean": 108.9,
+          "qps_std": 0.3,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 100.0,
+          "dims_pruned_pct": 0.0,
+          "peak_alloc_gib": 12.737
+        },
+        "Faiss-CPU-IVFFlat-24T": {
+          "qps_mean": 322.9,
+          "qps_std": 7.9,
+          "strict_overlap_pct": 100.0,
+          "recall_at_10": 0.954,
+          "surv_pct": 100.0,
+          "dims_pruned_pct": 0.0,
+          "peak_alloc_gib": 0.0
+        },
+        "IVFPQ+CPU-Refine_m100": {
+          "qps_mean": 41270.7,
+          "qps_std": 451.4,
+          "strict_overlap_pct": 83.24,
+          "recall_at_10": 0.9051,
+          "refined_per_query": 100.0
+        },
+        "IVFPQ+CPU-Refine_m200": {
+          "qps_mean": 35638.3,
+          "qps_std": 702.4,
+          "strict_overlap_pct": 94.53,
+          "recall_at_10": 0.9401,
+          "refined_per_query": 200.0
+        },
+        "IVFPQ+CPU-Refine_m400": {
+          "qps_mean": 28659.4,
+          "qps_std": 236.7,
+          "strict_overlap_pct": 98.57,
+          "recall_at_10": 0.95,
+          "refined_per_query": 400.0
+        },
+        "IVFPQ+CPU-Refine_m800": {
+          "qps_mean": 19970.2,
+          "qps_std": 249.3,
+          "strict_overlap_pct": 99.81,
+          "recall_at_10": 0.9535,
+          "refined_per_query": 800.0
+        },
+        "IVFPQ+CPU-Refine_m1600": {
+          "qps_mean": 11260.9,
+          "qps_std": 143.8,
+          "strict_overlap_pct": 99.9,
+          "recall_at_10": 0.9538,
+          "refined_per_query": 1600.0
+        },
+        "IVFPQ+CPU-Refine_m2048": {
+          "qps_mean": 9361.4,
+          "qps_std": 103.6,
+          "strict_overlap_pct": 99.94,
+          "recall_at_10": 0.9538,
+          "refined_per_query": 2048.0
+        }
+      },
+      "R0.99": {
+        "TRIDENT-OOC_ub0": {
+          "qps_mean": 18100.7,
+          "qps_std": 22.3,
+          "strict_overlap_pct": 100.0,
+          "recall_at_10": 0.9922,
+          "surv_pct": 0.0389,
+          "dims_pruned_pct": 74.07,
+          "refined_per_query": 402.34,
+          "peak_alloc_gib": 12.737
+        },
+        "TRIDENT-OOC_ub1": {
+          "qps_mean": 21244.6,
+          "qps_std": 42.7,
+          "strict_overlap_pct": 100.0,
+          "recall_at_10": 0.9922,
+          "surv_pct": 0.0068,
+          "dims_pruned_pct": 74.14,
+          "refined_per_query": 70.64,
+          "peak_alloc_gib": 12.737
+        },
+        "TRIDENT-OOC_ub2": {
+          "qps_mean": 6281.4,
+          "qps_std": 7.0,
+          "strict_overlap_pct": 100.0,
+          "recall_at_10": 0.9922,
+          "surv_pct": 0.0068,
+          "dims_pruned_pct": 74.14,
+          "refined_per_query": 70.56,
+          "peak_alloc_gib": 12.737
+        },
+        "CM-FP32-OOC_ub0": {
+          "qps_mean": 42.9,
+          "qps_std": 0.1,
+          "strict_overlap_pct": 100.0,
+          "surv_pct": 100.0,
+          "dims_pruned_pct": 0.0,
+          "peak_alloc_gib": 12.737
+        },
+        "Faiss-CPU-IVFFlat-24T": {
+          "qps_mean": 123.5,
+          "qps_std": 2.3,
+          "strict_overlap_pct": 100.0,
+          "recall_at_10": 0.9922,
+          "surv_pct": 100.0,
+          "dims_pruned_pct": 0.0,
+          "peak_alloc_gib": 0.0
+        },
+        "IVFPQ+CPU-Refine_m100": {
+          "qps_mean": 10923.3,
+          "qps_std": 87.9,
+          "strict_overlap_pct": 81.63,
+          "recall_at_10": 0.9313,
+          "refined_per_query": 100.0
+        },
+        "IVFPQ+CPU-Refine_m200": {
+          "qps_mean": 10456.5,
+          "qps_std": 339.2,
+          "strict_overlap_pct": 93.0,
+          "recall_at_10": 0.9713,
+          "refined_per_query": 200.0
+        },
+        "IVFPQ+CPU-Refine_m400": {
+          "qps_mean": 9356.0,
+          "qps_std": 254.7,
+          "strict_overlap_pct": 97.89,
+          "recall_at_10": 0.9859,
+          "refined_per_query": 400.0
+        },
+        "IVFPQ+CPU-Refine_m800": {
+          "qps_mean": 8246.1,
+          "qps_std": 59.1,
+          "strict_overlap_pct": 99.64,
+          "recall_at_10": 0.9911,
+          "refined_per_query": 800.0
+        },
+        "IVFPQ+CPU-Refine_m1600": {
+          "qps_mean": 5397.1,
+          "qps_std": 12.2,
+          "strict_overlap_pct": 99.9,
+          "recall_at_10": 0.9917,
+          "refined_per_query": 1600.0
+        },
+        "IVFPQ+CPU-Refine_m2048": {
+          "qps_mean": 4981.8,
+          "qps_std": 17.1,
+          "strict_overlap_pct": 99.91,
+          "recall_at_10": 0.9918,
+          "refined_per_query": 2048.0
+        }
+      }
+    },
+    "ncu_perpass_100m_RTX4080": {
+      "R0.95": {
+        "TRIDENT-OOC_ub0": {
+          "total_mb_per_1024q": 214.74,
+          "total_gb_per_1000q": 0.2147,
+          "pass1_mb_per_1024q": 199.51,
+          "pass2_mb_per_1024q": 15.23
+        },
+        "TRIDENT-OOC_ub1": {
+          "total_mb_per_1024q": 55.19,
+          "total_gb_per_1000q": 0.0552,
+          "pass1_mb_per_1024q": 35.59,
+          "pass2_mb_per_1024q": 19.6
+        },
+        "TRIDENT-OOC_ub2": {
+          "total_mb_per_1024q": 58.61,
+          "total_gb_per_1000q": 0.0586,
+          "pass1_mb_per_1024q": 32.96,
+          "pass2_mb_per_1024q": 25.65
+        },
+        "CM-FP32-OOC_ub0": {
+          "total_mb_per_1024q": 163974.28,
+          "total_gb_per_1000q": 163.9743
+        }
+      },
+      "R0.99": {
+        "TRIDENT-OOC_ub0": {
+          "total_mb_per_1024q": 218.26,
+          "total_gb_per_1000q": 0.2183,
+          "pass1_mb_per_1024q": 195.22,
+          "pass2_mb_per_1024q": 23.04
+        },
+        "TRIDENT-OOC_ub1": {
+          "total_mb_per_1024q": 60.9,
+          "total_gb_per_1000q": 0.0609,
+          "pass1_mb_per_1024q": 35.64,
+          "pass2_mb_per_1024q": 25.26
+        },
+        "TRIDENT-OOC_ub2": {
+          "total_mb_per_1024q": 90.09,
+          "total_gb_per_1000q": 0.0901,
+          "pass1_mb_per_1024q": 30.95,
+          "pass2_mb_per_1024q": 59.14
+        },
+        "CM-FP32-OOC_ub0": {
+          "total_mb_per_1024q": 471090.07,
+          "total_gb_per_1000q": 471.0901
+        }
+      }
+    },
+    "gpu_baselines_100m_RTX4080": {
+      "faiss_ivfflat_device": {
+        "mode": "faiss_ivfflat_device",
+        "dataset": "sift100m",
+        "gpu": "NVIDIA GeForce RTX 4080",
+        "memory_space": "device",
+        "status": "OOM",
+        "error": "RuntimeError: Error in virtual void* faiss::gpu::StandardGpuResourcesImpl::allocMemory(const faiss::gpu::AllocRequest&) at /project/faiss/faiss/gpu/StandardGpuResources.cpp:5",
+        "elapsed_s": 59.4,
+        "timestamp": "2026-11-09 16:49:38"
+      },
+      "cagra_device_ivfpq": {
+        "mode": "cagra_device_ivfpq",
+        "dataset": "sift100m",
+        "gpu": "NVIDIA GeForce RTX 4080",
+        "memory_resource": "default device",
+        "build_algo": "ivf_pq",
+        "graph_degree": 32,
+        "intermediate_graph_degree": 64,
+        "build_s": 640.5,
+        "results": [
+          {
+            "itopk": 128,
+            "error": "CuvsException: RAFT failure at file=/__w/cuvs/cuvs/cpp/src/neighbors/cagra.cuh line=339: Number of query dimensions should equal number"
+          },
+          {
+            "itopk": 256,
+            "error": "CuvsException: RAFT failure at file=/__w/cuvs/cuvs/cpp/src/neighbors/cagra.cuh line=339: Number of query dimensions should equal number"
+          },
+          {
+            "itopk": 512,
+            "error": "CuvsException: RAFT failure at file=/__w/cuvs/cuvs/cpp/src/neighbors/cagra.cuh line=339: Number of query dimensions should equal number"
+          }
+        ],
+        "status": "OK",
+        "elapsed_s": 640.6,
+        "timestamp": "2026-11-09 17:01:44"
+      },
+      "cagra_uvm_ivfpq": {
+        "mode": "cagra_uvm_ivfpq",
+        "dataset": "sift100m",
+        "status": "TIMEOUT",
+        "timeout_s": 21600,
+        "elapsed_s": 21603.3,
+        "timestamp": "2026-11-09 23:01:49"
+      },
+      "cagra_uvm_nn_descent": {
+        "mode": "cagra_uvm_nn_descent",
+        "dataset": "sift100m",
+        "status": "TIMEOUT",
+        "timeout_s": 21600,
+        "elapsed_s": 21629.6,
+        "timestamp": "2026-11-10 05:02:19"
+      },
+      "faiss_ivfflat_uvm": {
+        "mode": "faiss_ivfflat_uvm",
+        "dataset": "sift100m",
+        "gpu": "NVIDIA GeForce RTX 4080",
+        "memory_space": "unified",
+        "build_s": 241.3,
+        "results": [
+          {
+            "recall_target": 0.95,
+            "nprobe": 48,
+            "qps_mean": 43.9,
+            "qps_std": 0.3,
+            "recall_at_10": 0.9541,
+            "strict_overlap_pct": 100.0
+          },
+          {
+            "recall_target": 0.99,
+            "nprobe": 160,
+            "qps_mean": 13.6,
+            "qps_std": 0.0,
+            "recall_at_10": 0.9923,
+            "strict_overlap_pct": 100.0
+          }
+        ],
+        "status": "OK",
+        "elapsed_s": 738.2,
+        "timestamp": "2026-11-10 05:15:03"
+      }
+    },
+    "summary_speedups": {
+      "sift100m_R0.99": {
+        "trident_ub1_qps": 21244.6,
+        "trident_ub0_qps": 18100.7,
+        "cm_fp32_ooc_qps": 42.9,
+        "tribase_gpu_ooc_qps": 38.8,
+        "faiss_cpu_24t_qps": 123.5,
+        "faiss_gpu_uvm_qps": 13.6,
+        "ivfpq_m2048_qps": 4981.8,
+        "ivfpq_m100_qps": 10923.3,
+        "speedup_ub1_vs_ub0": 1.17,
+        "speedup_vs_cm_ooc": 495.21,
+        "speedup_vs_tribase_ooc": 547.54,
+        "speedup_vs_cpu24t": 172.02,
+        "speedup_vs_faiss_uvm": 1562.1,
+        "speedup_vs_ivfpq_m2048": 4.26,
+        "speedup_vs_ivfpq_m100": 1.94,
+        "ncu_pcie_cm_mb": 471090.07,
+        "ncu_pcie_cm_gb": 471.09,
+        "ncu_pcie_ub0_mb": 218.26,
+        "ncu_pcie_ub1_mb": 60.9,
+        "ncu_pcie_ub1_gb": 0.0609,
+        "ncu_pcie_pass1_ub0_mb": 195.22,
+        "ncu_pcie_pass1_ub1_mb": 35.64,
+        "ncu_pcie_pass2_ub1_mb": 25.26,
+        "pcie_red_vs_cm_x": 7735.47,
+        "pcie_red_ub1_vs_ub0_x": 3.58,
+        "ivfpq_m100_est_pcie_mb": 12.5,
+        "ivfpq_m2048_est_pcie_mb": 256.0
+      },
+      "sift100m_R0.95": {
+        "trident_ub1_qps": 40449.1,
+        "trident_ub0_qps": 30119.7,
+        "cm_fp32_ooc_qps": 108.9,
+        "faiss_cpu_24t_qps": 322.9,
+        "faiss_gpu_uvm_qps": 43.9,
+        "ivfpq_m2048_qps": 9361.4,
+        "ivfpq_m100_qps": 41270.7,
+        "speedup_ub1_vs_ub0": 1.34,
+        "speedup_vs_cm_ooc": 371.43,
+        "speedup_vs_cpu24t": 125.27,
+        "speedup_vs_faiss_uvm": 921.39,
+        "speedup_vs_ivfpq_m2048": 4.32,
+        "speedup_vs_ivfpq_m100": 0.98,
+        "ncu_pcie_cm_mb": 163974.28,
+        "ncu_pcie_ub0_mb": 214.74,
+        "ncu_pcie_ub1_mb": 55.19,
+        "pcie_red_vs_cm_x": 2971.09,
+        "pcie_red_ub1_vs_ub0_x": 3.89
+      },
+      "ooc_1m10m_R0.99": {
+        "gist1m_trident_ub1_qps": 17852.6,
+        "gist1m_trident_ub0_qps": 3340.5,
+        "gist1m_cm_ooc_qps": 81.1,
+        "gist1m_cpu24t_qps": 103.8,
+        "gist1m_ivfpq_m100_qps": 23050.9,
+        "gist1m_ivfpq_m2048_qps": 4587.2,
+        "gist1m_speedup_ub1_vs_ub0": 5.34,
+        "gist1m_speedup_ub1_vs_ub0_r95": 6.81,
+        "gist1m_speedup_vs_cm_ooc": 220.13,
+        "gist1m_speedup_vs_cpu24t": 171.99,
+        "gist1m_speedup_vs_ivfpq_m2048": 3.89,
+        "gist1m_speedup_vs_ivfpq_m100": 0.77,
+        "gist1m_ivfpq_m100_vs_trident": 1.29,
+        "gist1m_pcie_red_vs_cm_x": 1226.58,
+        "gist1m_pcie_red_ub1_vs_ub0_x": 8.71,
+        "gist1m_ivfpq_m100_est_pcie_mb": 375.0,
+        "gist1m_ivfpq_m2048_est_pcie_mb": 7680.0,
+        "bge1024_trident_ub1_qps": 27426.5,
+        "bge1024_trident_ub0_qps": 3277.7,
+        "bge1024_cm_ooc_qps": 92.6,
+        "bge1024_cpu24t_qps": 104.0,
+        "bge1024_ivfpq_m100_qps": 28665.9,
+        "bge1024_ivfpq_m2048_qps": 5546.0,
+        "bge1024_speedup_ub1_vs_ub0": 8.37,
+        "bge1024_speedup_ub1_vs_ub0_r95": 12.34,
+        "bge1024_speedup_vs_cm_ooc": 296.18,
+        "bge1024_speedup_vs_cpu24t": 263.72,
+        "bge1024_speedup_vs_ivfpq_m2048": 4.95,
+        "bge1024_speedup_vs_ivfpq_m100": 0.96,
+        "bge1024_ivfpq_m100_vs_trident": 1.05,
+        "bge1024_pcie_red_vs_cm_x": 1371.45,
+        "bge1024_pcie_red_ub1_vs_ub0_x": 13.0,
+        "bge1024_ivfpq_m100_est_pcie_mb": 400.0,
+        "bge1024_ivfpq_m2048_est_pcie_mb": 8192.0,
+        "sift10m_trident_ub1_qps": 53179.4,
+        "sift10m_trident_ub0_qps": 35319.5,
+        "sift10m_cm_ooc_qps": 260.4,
+        "sift10m_cpu24t_qps": 568.7,
+        "sift10m_ivfpq_m100_qps": 38234.5,
+        "sift10m_ivfpq_m2048_qps": 9295.5,
+        "sift10m_speedup_ub1_vs_ub0": 1.51,
+        "sift10m_speedup_ub1_vs_ub0_r95": 1.82,
+        "sift10m_speedup_vs_cm_ooc": 204.22,
+        "sift10m_speedup_vs_cpu24t": 93.51,
+        "sift10m_speedup_vs_ivfpq_m2048": 5.72,
+        "sift10m_speedup_vs_ivfpq_m100": 1.39,
+        "sift10m_pcie_red_vs_cm_x": 2995.84,
+        "sift10m_pcie_red_ub1_vs_ub0_x": 5.63,
+        "sift10m_ivfpq_m100_est_pcie_mb": 50.0,
+        "sift10m_ivfpq_m2048_est_pcie_mb": 1024.0,
+        "deep10m_trident_ub1_qps": 54317.8,
+        "deep10m_trident_ub0_qps": 39408.0,
+        "deep10m_cm_ooc_qps": 359.4,
+        "deep10m_cpu24t_qps": 639.3,
+        "deep10m_ivfpq_m100_qps": 51240.9,
+        "deep10m_ivfpq_m2048_qps": 11440.9,
+        "deep10m_speedup_ub1_vs_ub0": 1.38,
+        "deep10m_speedup_ub1_vs_ub0_r95": 1.68,
+        "deep10m_speedup_vs_cm_ooc": 151.13,
+        "deep10m_speedup_vs_cpu24t": 84.96,
+        "deep10m_speedup_vs_ivfpq_m2048": 4.75,
+        "deep10m_speedup_vs_ivfpq_m100": 1.06,
+        "deep10m_pcie_red_vs_cm_x": 2655.43,
+        "deep10m_pcie_red_ub1_vs_ub0_x": 5.13,
+        "deep10m_ivfpq_m100_est_pcie_mb": 37.5,
+        "deep10m_ivfpq_m2048_est_pcie_mb": 768.0
+      }
+    }
+  },
+  "phase11": {
+    "matched_recall_speedups": {
+      "gist1m_R0.95": {
+        "status": "reached",
+        "smallest_m": 1600,
+        "trident_ub1_qps": 23894.1,
+        "trident_ub1_recall": 0.9622,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_qps": 7206.3,
+        "ivfpq_recall": 0.9602,
+        "ivfpq_overlap_pct": 99.14,
+        "speedup_vs_matched_ivfpq": 3.32
+      },
+      "gist1m_R0.99": {
+        "status": "reached",
+        "smallest_m": 2048,
+        "trident_ub1_qps": 17852.6,
+        "trident_ub1_recall": 0.9937,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_qps": 4587.2,
+        "ivfpq_recall": 0.9907,
+        "ivfpq_overlap_pct": 98.65,
+        "speedup_vs_matched_ivfpq": 3.89
+      },
+      "bge1024_R0.95": {
+        "status": "not_reached",
+        "max_m_tested": 2048,
+        "trident_ub1_qps": 62329.1,
+        "trident_ub1_recall": 0.952,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_max_m_qps": 7749.5,
+        "ivfpq_max_m_recall": 0.9491,
+        "ivfpq_max_m_overlap_pct": 98.65,
+        "speedup_vs_max_m": 8.04
+      },
+      "bge1024_R0.99": {
+        "status": "not_reached",
+        "max_m_tested": 2048,
+        "trident_ub1_qps": 27426.5,
+        "trident_ub1_recall": 0.992,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_max_m_qps": 5546.0,
+        "ivfpq_max_m_recall": 0.9783,
+        "ivfpq_max_m_overlap_pct": 95.47,
+        "speedup_vs_max_m": 4.95
+      },
+      "sift10m_R0.95": {
+        "status": "reached",
+        "smallest_m": 400,
+        "trident_ub1_qps": 86478.3,
+        "trident_ub1_recall": 0.9523,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_qps": 56518.3,
+        "ivfpq_recall": 0.9516,
+        "ivfpq_overlap_pct": 99.75,
+        "speedup_vs_matched_ivfpq": 1.53
+      },
+      "sift10m_R0.99": {
+        "status": "reached",
+        "smallest_m": 800,
+        "trident_ub1_qps": 53179.4,
+        "trident_ub1_recall": 0.9908,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_qps": 18005.7,
+        "ivfpq_recall": 0.9903,
+        "ivfpq_overlap_pct": 99.9,
+        "speedup_vs_matched_ivfpq": 2.95
+      },
+      "deep10m_R0.95": {
+        "status": "reached",
+        "smallest_m": 400,
+        "trident_ub1_qps": 98341.9,
+        "trident_ub1_recall": 0.9623,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_qps": 63323.6,
+        "ivfpq_recall": 0.9588,
+        "ivfpq_overlap_pct": 98.87,
+        "speedup_vs_matched_ivfpq": 1.55
+      },
+      "deep10m_R0.99": {
+        "status": "reached",
+        "smallest_m": 1600,
+        "trident_ub1_qps": 54317.8,
+        "trident_ub1_recall": 0.9908,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_qps": 12886.5,
+        "ivfpq_recall": 0.9906,
+        "ivfpq_overlap_pct": 99.93,
+        "speedup_vs_matched_ivfpq": 4.22
+      },
+      "sift100m_R0.95": {
+        "status": "reached",
+        "smallest_m": 400,
+        "trident_ub1_qps": 40449.1,
+        "trident_ub1_recall": 0.954,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_qps": 28659.4,
+        "ivfpq_recall": 0.95,
+        "ivfpq_overlap_pct": 98.57,
+        "speedup_vs_matched_ivfpq": 1.41
+      },
+      "sift100m_R0.99": {
+        "status": "reached",
+        "smallest_m": 800,
+        "trident_ub1_qps": 21244.6,
+        "trident_ub1_recall": 0.9922,
+        "trident_ub1_overlap_pct": 100.0,
+        "ivfpq_qps": 8246.1,
+        "ivfpq_recall": 0.9911,
+        "ivfpq_overlap_pct": 99.64,
+        "speedup_vs_matched_ivfpq": 2.58
+      }
+    },
+    "cagra_device_ivfpq_v11": {
+      "mode": "cagra_device_ivfpq_v11",
+      "supersedes": "cagra_device_ivfpq",
+      "dataset": "sift100m",
+      "gpu": "NVIDIA GeForce RTX 4080",
+      "memory_resource": "default device",
+      "build_algo": "ivf_pq",
+      "graph_degree": 32,
+      "intermediate_graph_degree": 64,
+      "self_check_1m_ok": true,
+      "idx_dim_1m": 128,
+      "idx_dim_100m": 0,
+      "vram_after_build_mib": 14626,
+      "vram_total_mib": 16376,
+      "peak_vram_mib": 14626,
+      "build_s": 632.5,
+      "status": "OOM",
+      "decision_branch": "Branch 1 (Hypothesis Confirmed: OOM during dataset attach; idx.dim=0)",
+      "error": "1M self-check succeeded (idx.dim=128, output shape (1000,10)); on 100M, graph (100M*32*4B = 12.80 GB) + dataset (100M*128*1B = 12.80 GB) = 25.60 GB > 16 GB VRAM (used 14626/16376 MiB after build, peak 14626 MiB), so cuVS drops the dataset attachment (idx.dim=0) and fails at search with: CuvsException: RAFT failure at file=/__w/cuvs/cuvs/cpp/src/neighbors/cagra.cuh line=339: Number of query dimensions should equal number of dimensions in the index.\nObtained 27 stack frames\n#1 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs.so: raft::logic_error::logic_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) +0x91 [0x708526f5ea91]\n#2 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs.so: void cuvs::neighbors::cagra::search<unsigned char, unsigned int, unsigned int>(raft::resources const&, cuvs::neighbors::cagra::search_params const&, cuvs::neighbors::cagra::index<unsigned char, unsigned int> const&, cuda::std::__4::mdspan<unsigned char const, cuda::std::__4::extents<long, 18446744073709551615ul, 18446744073709551615ul>, cuda::std::__4::layout_right, raft::host_device_accessor<cuda::std::__4::default_accessor<unsigned char const>, (raft::memory_type)2> >, cuda::std::__4::mdspan<unsigned int, cuda::std::__4::extents<long, 18446744073709551615ul, 18446744073709551615ul>, cuda::std::__4::layout_right, raft::host_device_accessor<cuda::std::__4::default_accessor<unsigned int>, (raft::memory_type)2> >, cuda::std::__4::mdspan<float, cuda::std::__4::extents<long, 18446744073709551615ul, 18446744073709551615ul>, cuda::std::__4::layout_right, raft::host_device_accessor<cuda::std::__4::default_accessor<float>, (raft::memory_type)2> >, cuvs::neighbors::filtering::base_filter const&) +0xfc2 [0x708528573932]\n#3 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs_c.so(+0xb28f3) [0x7085266b28f3]\n#4 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs_c.so(+0xb3b44) [0x7085266b3b44]\n#5 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs_c.so: cuvsCagraSearch +0x3f [0x7085266b55bf]\n#6 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/cuvs/neighbors/cagra/cagra.cpython-310-x86_64-linux-gnu.so(+0x2a5b0) [0x70862dbe95b0]\n#7 in /home/mazaiying/trident/.venv/bin/python: PyObject_Call +0xba [0x58147244651a]\n#8 in /home/mazaiying/trident/.venv/bin/python: _PyEval_EvalFrameDefault +0x2d09 [0x58147242b659]\n#9 in /home/mazaiying/trident/.venv/bin/python: _PyFunction_Vectorcall +0x6c [0x581472438e7c]\n#10 in /home/mazaiying/trident/.venv/bin/python: PyVectorcall_Call +0xc7 [0x5814724468a7]\n#11 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/cuvs/common/resources.cpython-310-x86_64-linux-gnu.so(+0xb63d) [0x70863c47063d]\n#12 in /home/mazaiying/trident/.venv/bin/python: _PyObject_MakeTpCall +0x273 [0x581472431a63]\n#13 in /home/mazaiying/trident/.venv/bin/python: _PyEval_EvalFrameDefault +0x519b [0x58147242daeb]\n#14 in /home/mazaiying/trident/.venv/bin/python: _PyFunction_Vectorcall +0x6c [0x581472438e7c]\n#15 in /home/mazaiying/trident/.venv/bin/python: _PyEval_EvalFrameDefault +0x313 [0x581472428c63]\n#16 in /home/mazaiying/trident/.venv/bin/python(+0x1d268c) [0x5814724cf68c]\n#17 in /home/mazaiying/trident/.venv/bin/python: PyEval_EvalCode +0x85 [0x5814724cf5d5]\n#18 in /home/mazaiying/trident/.venv/bin/python(+0x2042aa) [0x5814725012aa]\n#19 in /home/mazaiying/trident/.venv/bin/python(+0x1febf3) [0x5814724fbbf3]\n#20 in /home/mazaiying/trident/.venv/bin/python(+0x97160) [0x581472394160]\n#21 in /home/mazaiying/trident/.venv/bin/python: _PyRun_SimpleFileObject +0x1bb [0x5814724f649b]\n#22 in /home/mazaiying/trident/.venv/bin/python: _PyRun_AnyFileObject +0x44 [0x5814724f61f4]\n#23 in /home/mazaiying/trident/.venv/bin/python: Py_RunMain +0x371 [0x5814724f31e1]\n#24 in /home/mazaiying/trident/.venv/bin/python: Py_BytesMain +0x37 [0x5814724c1ec7]\n#25 in /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7086f0629d90]\n#26 in /lib/x86_64-linux-gnu/libc.so.6: __libc_start_main +0x80 [0x7086f0629e40]\n#27 in /home/mazaiying/trident/.venv/bin/python: _start +0x2e [0x5814724c1dde]",
+      "raw_search_exception": "CuvsException: RAFT failure at file=/__w/cuvs/cuvs/cpp/src/neighbors/cagra.cuh line=339: Number of query dimensions should equal number of dimensions in the index.\nObtained 27 stack frames\n#1 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs.so: raft::logic_error::logic_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) +0x91 [0x708526f5ea91]\n#2 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs.so: void cuvs::neighbors::cagra::search<unsigned char, unsigned int, unsigned int>(raft::resources const&, cuvs::neighbors::cagra::search_params const&, cuvs::neighbors::cagra::index<unsigned char, unsigned int> const&, cuda::std::__4::mdspan<unsigned char const, cuda::std::__4::extents<long, 18446744073709551615ul, 18446744073709551615ul>, cuda::std::__4::layout_right, raft::host_device_accessor<cuda::std::__4::default_accessor<unsigned char const>, (raft::memory_type)2> >, cuda::std::__4::mdspan<unsigned int, cuda::std::__4::extents<long, 18446744073709551615ul, 18446744073709551615ul>, cuda::std::__4::layout_right, raft::host_device_accessor<cuda::std::__4::default_accessor<unsigned int>, (raft::memory_type)2> >, cuda::std::__4::mdspan<float, cuda::std::__4::extents<long, 18446744073709551615ul, 18446744073709551615ul>, cuda::std::__4::layout_right, raft::host_device_accessor<cuda::std::__4::default_accessor<float>, (raft::memory_type)2> >, cuvs::neighbors::filtering::base_filter const&) +0xfc2 [0x708528573932]\n#3 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs_c.so(+0xb28f3) [0x7085266b28f3]\n#4 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs_c.so(+0xb3b44) [0x7085266b3b44]\n#5 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/libcuvs/lib64/libcuvs_c.so: cuvsCagraSearch +0x3f [0x7085266b55bf]\n#6 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/cuvs/neighbors/cagra/cagra.cpython-310-x86_64-linux-gnu.so(+0x2a5b0) [0x70862dbe95b0]\n#7 in /home/mazaiying/trident/.venv/bin/python: PyObject_Call +0xba [0x58147244651a]\n#8 in /home/mazaiying/trident/.venv/bin/python: _PyEval_EvalFrameDefault +0x2d09 [0x58147242b659]\n#9 in /home/mazaiying/trident/.venv/bin/python: _PyFunction_Vectorcall +0x6c [0x581472438e7c]\n#10 in /home/mazaiying/trident/.venv/bin/python: PyVectorcall_Call +0xc7 [0x5814724468a7]\n#11 in /home/mazaiying/trident/.venv/lib/python3.10/site-packages/cuvs/common/resources.cpython-310-x86_64-linux-gnu.so(+0xb63d) [0x70863c47063d]\n#12 in /home/mazaiying/trident/.venv/bin/python: _PyObject_MakeTpCall +0x273 [0x581472431a63]\n#13 in /home/mazaiying/trident/.venv/bin/python: _PyEval_EvalFrameDefault +0x519b [0x58147242daeb]\n#14 in /home/mazaiying/trident/.venv/bin/python: _PyFunction_Vectorcall +0x6c [0x581472438e7c]\n#15 in /home/mazaiying/trident/.venv/bin/python: _PyEval_EvalFrameDefault +0x313 [0x581472428c63]\n#16 in /home/mazaiying/trident/.venv/bin/python(+0x1d268c) [0x5814724cf68c]\n#17 in /home/mazaiying/trident/.venv/bin/python: PyEval_EvalCode +0x85 [0x5814724cf5d5]\n#18 in /home/mazaiying/trident/.venv/bin/python(+0x2042aa) [0x5814725012aa]\n#19 in /home/mazaiying/trident/.venv/bin/python(+0x1febf3) [0x5814724fbbf3]\n#20 in /home/mazaiying/trident/.venv/bin/python(+0x97160) [0x581472394160]\n#21 in /home/mazaiying/trident/.venv/bin/python: _PyRun_SimpleFileObject +0x1bb [0x5814724f649b]\n#22 in /home/mazaiying/trident/.venv/bin/python: _PyRun_AnyFileObject +0x44 [0x5814724f61f4]\n#23 in /home/mazaiying/trident/.venv/bin/python: Py_RunMain +0x371 [0x5814724f31e1]\n#24 in /home/mazaiying/trident/.venv/bin/python: Py_BytesMain +0x37 [0x5814724c1ec7]\n#25 in /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7086f0629d90]\n#26 in /lib/x86_64-linux-gnu/libc.so.6: __libc_start_main +0x80 [0x7086f0629e40]\n#27 in /home/mazaiying/trident/.venv/bin/python: _start +0x2e [0x5814724c1dde]",
+      "elapsed_s": 633.0,
+      "timestamp": "2026-11-10 10:03:08"
+    },
+    "cagra_100m_graph_gb": 12.8,
+    "cagra_100m_dataset_gb": 12.8,
+    "cagra_100m_total_required_gb": 25.6,
+    "sift100m_matched_r95_m": 400,
+    "sift100m_matched_r95_qps": 28659.4,
+    "sift100m_matched_r95_overlap_pct": 98.57,
+    "sift100m_matched_r95_speedup": 1.41,
+    "sift100m_matched_r99_m": 800,
+    "sift100m_matched_r99_qps": 8246.1,
+    "sift100m_matched_r99_overlap_pct": 99.64,
+    "sift100m_matched_r99_speedup": 2.58,
+    "1m10m_matched_speedup_min": 1.53,
+    "1m10m_matched_speedup_max": 4.22,
+    "bge1024_m2048_speedup_r95": 8.04,
+    "bge1024_m2048_speedup_r99": 4.95,
+    "nuswide_r95_auto_vs_faiss": 0.93,
+    "nuswide_r95_auto_vs_raw": 1.74,
+    "nuswide_r99_tribase_vs_auto": 1.65
+  }
+}

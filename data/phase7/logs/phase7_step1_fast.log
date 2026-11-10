@@ -1,0 +1,126 @@
+[Process A] Reusing existing /home/mazaiying/trident/indices/phase7_cagra/cagra_gist1m_deg64.bin (3.815 GiB)
+[Process A] Reusing existing /home/mazaiying/trident/indices/phase7_cagra/cagra_bge1024_deg32.bin (3.934 GiB)
+[Process A] Reusing existing /home/mazaiying/trident/indices/phase7_cagra/cagra_sift10m_deg64.bin (7.153 GiB)
+[Process A] Reusing existing /home/mazaiying/trident/indices/phase7_cagra/cagra_deep10m_deg64.bin (5.960 GiB)
+
+>>> Launching fresh Process B: ds=gist1m, cap=2.2GB, mode=UVM_capped
+[Worker gist1m mode=UVM_capped cap=2.2GB] Effective free before load=2.208 GiB
+[Worker gist1m cap=2.2GB] UVM_LOAD_FAILED: AssertionError: Self-check failed: free_after_gb=15.6292724609375 > cap_gb=2.2
+
+>>> Launching fresh Process B: ds=gist1m, cap=2.5GB, mode=UVM_capped
+[Worker gist1m mode=UVM_capped cap=2.5GB] Effective free before load=2.504 GiB
+[Worker gist1m cap=2.5GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker gist1m cap=2.5GB itopk=128] Cold (B=128) took 27.170s -> cold_qps=4.7
+[Worker gist1m cap=2.5GB itopk=128] UVM_SEARCH_FAILED: AcceleratorError: CUDA error: out of memory
+[Worker gist1m cap=2.5GB itopk=512] Cold (B=128) took 104.750s -> cold_qps=1.2
+[Worker gist1m cap=2.5GB itopk=512] UVM_SEARCH_FAILED: AcceleratorError: CUDA error: out of memory
+
+>>> Launching fresh Process B: ds=gist1m, cap=75.0GB, mode=UVM_uncapped_control
+[Worker gist1m mode=UVM_uncapped_control cap=75.0GB] Effective free before load=75.004 GiB
+[Worker gist1m cap=75.0GB] Loaded index via UVM! free_after_load=71.254 GiB
+[Worker gist1m cap=75.0GB itopk=128] Cold (B=1024) took 0.022s -> cold_qps=45556.7
+  steady[1/5] (B=1024) dt=0.027s -> qps=37725.5
+  steady[2/5] (B=1024) dt=0.023s -> qps=43871.1
+  steady[3/5] (B=1024) dt=0.022s -> qps=47071.5
+  steady[4/5] (B=1024) dt=0.022s -> qps=46937.7
+  steady[5/5] (B=1024) dt=0.022s -> qps=47172.4
+UVM_RESULT: ['gist1m', 75.0, 'UVM_uncapped_control', 64, 128, 71.254, 'OK', 45556.7, 44555.6, 4061.1, 0.9641, 86.6, 1]
+[Worker gist1m cap=75.0GB itopk=512] Cold (B=1024) took 0.082s -> cold_qps=12539.8
+  steady[1/5] (B=1024) dt=0.080s -> qps=12779.2
+  steady[2/5] (B=1024) dt=0.080s -> qps=12753.0
+  steady[3/5] (B=1024) dt=0.080s -> qps=12818.5
+  steady[4/5] (B=1024) dt=0.081s -> qps=12655.4
+  steady[5/5] (B=1024) dt=0.083s -> qps=12340.7
+UVM_RESULT: ['gist1m', 75.0, 'UVM_uncapped_control', 64, 512, 71.254, 'OK', 12539.8, 12669.4, 193.3, 0.9979, 97.22, 1]
+
+>>> Launching fresh Process B: ds=bge1024, cap=2.2GB, mode=UVM_capped
+[Worker bge1024 mode=UVM_capped cap=2.2GB] Effective free before load=2.207 GiB
+[Worker bge1024 cap=2.2GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker bge1024 cap=2.2GB itopk=128] Cold (B=128) took 9.770s -> cold_qps=13.1
+[Worker bge1024 cap=2.2GB itopk=128] UVM_SEARCH_FAILED: AcceleratorError: CUDA error: out of memory
+[Worker bge1024 cap=2.2GB itopk=256] Cold (B=128) took 19.219s -> cold_qps=6.7
+[Worker bge1024 cap=2.2GB itopk=256] UVM_SEARCH_FAILED: AcceleratorError: CUDA error: out of memory
+
+>>> Launching fresh Process B: ds=bge1024, cap=2.5GB, mode=UVM_capped
+[Worker bge1024 mode=UVM_capped cap=2.5GB] Effective free before load=2.504 GiB
+[Worker bge1024 cap=2.5GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker bge1024 cap=2.5GB itopk=128] Cold (B=128) took 8.871s -> cold_qps=14.4
+[Worker bge1024 cap=2.5GB itopk=128] UVM_SEARCH_FAILED: AcceleratorError: CUDA error: out of memory
+[Worker bge1024 cap=2.5GB itopk=256] Cold (B=128) took 17.542s -> cold_qps=7.3
+[Worker bge1024 cap=2.5GB itopk=256] UVM_SEARCH_FAILED: AcceleratorError: CUDA error: out of memory
+
+>>> Launching fresh Process B: ds=bge1024, cap=75.0GB, mode=UVM_uncapped_control
+[Worker bge1024 mode=UVM_uncapped_control cap=75.0GB] Effective free before load=75.004 GiB
+[Worker bge1024 cap=75.0GB] Loaded index via UVM! free_after_load=71.129 GiB
+[Worker bge1024 cap=75.0GB itopk=128] Cold (B=1024) took 0.012s -> cold_qps=86396.0
+  steady[1/5] (B=1024) dt=0.011s -> qps=95318.5
+  steady[2/5] (B=1024) dt=0.011s -> qps=96396.7
+  steady[3/5] (B=1024) dt=0.011s -> qps=96701.8
+  steady[4/5] (B=1024) dt=0.011s -> qps=93004.4
+  steady[5/5] (B=1024) dt=0.012s -> qps=85630.1
+UVM_RESULT: ['bge1024', 75.0, 'UVM_uncapped_control', 32, 128, 71.129, 'OK', 86396.0, 93410.3, 4585.0, 0.9069, 86.54, 1]
+[Worker bge1024 cap=75.0GB itopk=256] Cold (B=1024) took 0.017s -> cold_qps=59431.0
+  steady[1/5] (B=1024) dt=0.017s -> qps=58799.8
+  steady[2/5] (B=1024) dt=0.017s -> qps=59001.8
+  steady[3/5] (B=1024) dt=0.020s -> qps=50901.9
+  steady[4/5] (B=1024) dt=0.018s -> qps=58393.6
+  steady[5/5] (B=1024) dt=0.018s -> qps=57601.0
+UVM_RESULT: ['bge1024', 75.0, 'UVM_uncapped_control', 32, 256, 71.129, 'OK', 59431.0, 56939.6, 3417.5, 0.9909, 95.89, 1]
+
+>>> Launching fresh Process B: ds=sift10m, cap=2.5GB, mode=UVM_capped
+[Worker sift10m mode=UVM_capped cap=2.5GB] Effective free before load=2.514 GiB
+[Worker sift10m cap=2.5GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker sift10m cap=2.5GB itopk=128] Cold (B=128) took 31.516s -> cold_qps=4.1
+[Worker sift10m cap=2.5GB itopk=128] UVM_SEARCH_FAILED: AcceleratorError: CUDA error: out of memory
+
+>>> Launching fresh Process B: ds=sift10m, cap=3.0GB, mode=UVM_capped
+[Worker sift10m mode=UVM_capped cap=3.0GB] Effective free before load=3.014 GiB
+[Worker sift10m cap=3.0GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker sift10m cap=3.0GB itopk=128] Cold (B=128) took 28.090s -> cold_qps=4.6
+[Worker sift10m cap=3.0GB itopk=128] UVM_SEARCH_FAILED: AcceleratorError: CUDA error: out of memory
+
+>>> Launching fresh Process B: ds=sift10m, cap=75.0GB, mode=UVM_uncapped_control
+[Worker sift10m mode=UVM_uncapped_control cap=75.0GB] Effective free before load=75.014 GiB
+[Worker sift10m cap=75.0GB] Loaded index via UVM! free_after_load=67.889 GiB
+[Worker sift10m cap=75.0GB itopk=128] Cold (B=1024) took 0.006s -> cold_qps=164447.5
+  steady[1/5] (B=1024) dt=0.005s -> qps=195512.1
+  steady[2/5] (B=1024) dt=0.006s -> qps=160895.5
+  steady[3/5] (B=1024) dt=0.005s -> qps=198865.5
+  steady[4/5] (B=1024) dt=0.005s -> qps=201499.2
+  steady[5/5] (B=1024) dt=0.005s -> qps=202317.1
+UVM_RESULT: ['sift10m', 75.0, 'UVM_uncapped_control', 64, 128, 67.889, 'OK', 164447.5, 191817.9, 17489.1, 0.9958, 95.58, 1]
+
+>>> Launching fresh Process B: ds=deep10m, cap=2.5GB, mode=UVM_capped
+[Worker deep10m mode=UVM_capped cap=2.5GB] Effective free before load=2.514 GiB
+[Worker deep10m cap=2.5GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker deep10m cap=2.5GB itopk=128] Cold (B=128) took 26.373s -> cold_qps=4.9
+[Worker deep10m cap=2.5GB itopk=128] UVM_SEARCH_FAILED: AcceleratorError: CUDA error: out of memory
+
+>>> Launching fresh Process B: ds=deep10m, cap=75.0GB, mode=UVM_uncapped_control
+[Worker deep10m mode=UVM_uncapped_control cap=75.0GB] Effective free before load=75.014 GiB
+[Worker deep10m cap=75.0GB] Loaded index via UVM! free_after_load=69.139 GiB
+[Worker deep10m cap=75.0GB itopk=128] Cold (B=1024) took 0.005s -> cold_qps=187873.5
+  steady[1/5] (B=1024) dt=0.006s -> qps=177742.3
+  steady[2/5] (B=1024) dt=0.005s -> qps=200637.1
+  steady[3/5] (B=1024) dt=0.010s -> qps=101697.5
+  steady[4/5] (B=1024) dt=0.005s -> qps=211929.2
+  steady[5/5] (B=1024) dt=0.005s -> qps=212875.1
+UVM_RESULT: ['deep10m', 75.0, 'UVM_uncapped_control', 64, 128, 69.139, 'OK', 187873.5, 180976.2, 46523.5, 0.9928, 95.93, 1]
+
+>>> Launching fresh Process B: ds=gist1m, cap=2.2GB, mode=VPQ_hardcap
+[VPQ gist1m] Building CAGRA-VPQ (pq_dim=240, pq_bits=8)...
+VPQ_RESULT: ['gist1m', 2.2, 'VPQ_hardcap_M240', 64, 128, 1.729, 'OK', 5090.7, 53375.8, 2696.5, 0.7259, 19.46, 1]
+VPQ_RESULT: ['gist1m', 2.2, 'VPQ_hardcap_M240', 64, 512, 1.729, 'OK', 15312.5, 15863.5, 242.0, 0.7343, 19.7, 1]
+
+>>> Launching fresh Process B: ds=gist1m, cap=2.5GB, mode=VPQ_hardcap
+VPQ_RESULT: ['gist1m', 2.5, 'VPQ_hardcap_M240', 64, 128, 2.029, 'OK', 5129.9, 54095.8, 1324.0, 0.7259, 19.46, 1]
+VPQ_RESULT: ['gist1m', 2.5, 'VPQ_hardcap_M240', 64, 512, 2.029, 'OK', 14584.8, 15742.8, 396.6, 0.7343, 19.7, 1]
+
+>>> Launching fresh Process B: ds=bge1024, cap=2.2GB, mode=VPQ_hardcap
+[VPQ bge1024] Building CAGRA-VPQ (pq_dim=256, pq_bits=8)...
+VPQ_RESULT: ['bge1024', 2.2, 'VPQ_hardcap_M256', 32, 128, 1.833, 'OK', 5441.7, 91548.5, 5669.1, 0.8377, 43.48, 1]
+VPQ_RESULT: ['bge1024', 2.2, 'VPQ_hardcap_M256', 32, 256, 1.833, 'OK', 57559.5, 58717.6, 2049.2, 0.8745, 45.25, 1]
+
+>>> Launching fresh Process B: ds=bge1024, cap=2.5GB, mode=VPQ_hardcap
+VPQ_RESULT: ['bge1024', 2.5, 'VPQ_hardcap_M256', 32, 128, 2.133, 'OK', 5190.8, 95376.3, 6666.6, 0.8377, 43.48, 1]
+VPQ_RESULT: ['bge1024', 2.5, 'VPQ_hardcap_M256', 32, 256, 2.133, 'OK', 56678.9, 59685.0, 1255.3, 0.8745, 45.25, 1]

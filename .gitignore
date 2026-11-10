@@ -1,0 +1,24 @@
+# macOS and external drive metadata
+._*
+.DS_Store
+
+# Python & CUDA build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.Ninja*
+build/
+dist/
+*.egg-info/
+.venv/
+
+# Large binary vector datasets (downloaded via benchmarks/download_*.py)
+*.fvecs
+*.bvecs
+*.ivecs
+*.fbin
+*.ibin
+*.npy
+*.npz
+*.ncu-rep

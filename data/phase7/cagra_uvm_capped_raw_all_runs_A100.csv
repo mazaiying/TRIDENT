@@ -1,0 +1,37 @@
+dataset,cap_gb,mode,graph_degree,itopk,free_after_load_gb,status,cold_qps,steady_qps_mean,steady_qps_std,recall_at_10,strict_overlap_pct,measured
+gist1m,2.2,UVM_capped,64,128,-1.0,UVM_LOAD_FAILED (AssertionError: Self-check failed: free_after_gb=15.6292724609375 > cap_gb=2.2),0.0,0.0,0.0,0.0,0.0,1
+gist1m,2.2,UVM_capped,64,512,-1.0,UVM_LOAD_FAILED (AssertionError: Self-check failed: free_after_gb=15.6292724609375 > cap_gb=2.2),0.0,0.0,0.0,0.0,0.0,1
+gist1m,2.5,UVM_capped,64,128,0.049,UVM_SEARCH_FAILED (AcceleratorError: CUDA error: out of memory),0.0,0.0,0.0,0.0,0.0,1
+gist1m,2.5,UVM_capped,64,512,0.049,UVM_SEARCH_FAILED (AcceleratorError: CUDA error: out of memory),0.0,0.0,0.0,0.0,0.0,1
+gist1m,75.0,UVM_uncapped_control,64,128,71.254,OK,45556.7,44555.6,4061.1,0.9641,86.6,1
+gist1m,75.0,UVM_uncapped_control,64,512,71.254,OK,12539.8,12669.4,193.3,0.9979,97.22,1
+bge1024,2.2,UVM_capped,32,128,0.049,UVM_SEARCH_FAILED (AcceleratorError: CUDA error: out of memory),0.0,0.0,0.0,0.0,0.0,1
+bge1024,2.2,UVM_capped,32,256,0.049,UVM_SEARCH_FAILED (AcceleratorError: CUDA error: out of memory),0.0,0.0,0.0,0.0,0.0,1
+bge1024,2.5,UVM_capped,32,128,0.049,UVM_SEARCH_FAILED (AcceleratorError: CUDA error: out of memory),0.0,0.0,0.0,0.0,0.0,1
+bge1024,2.5,UVM_capped,32,256,0.049,UVM_SEARCH_FAILED (AcceleratorError: CUDA error: out of memory),0.0,0.0,0.0,0.0,0.0,1
+bge1024,75.0,UVM_uncapped_control,32,128,71.129,OK,86396.0,93410.3,4585.0,0.9069,86.54,1
+bge1024,75.0,UVM_uncapped_control,32,256,71.129,OK,59431.0,56939.6,3417.5,0.9909,95.89,1
+sift10m,2.5,UVM_capped,64,128,0.049,UVM_SEARCH_FAILED (AcceleratorError: CUDA error: out of memory),0.0,0.0,0.0,0.0,0.0,1
+sift10m,3.0,UVM_capped,64,128,0.049,UVM_SEARCH_FAILED (AcceleratorError: CUDA error: out of memory),0.0,0.0,0.0,0.0,0.0,1
+sift10m,75.0,UVM_uncapped_control,64,128,67.889,OK,164447.5,191817.9,17489.1,0.9958,95.58,1
+deep10m,2.5,UVM_capped,64,128,0.049,UVM_SEARCH_FAILED (AcceleratorError: CUDA error: out of memory),0.0,0.0,0.0,0.0,0.0,1
+deep10m,75.0,UVM_uncapped_control,64,128,69.139,OK,187873.5,180976.2,46523.5,0.9928,95.93,1
+gist1m,2.2,VPQ_hardcap_M240,64,128,1.729,OK,5090.7,53375.8,2696.5,0.7259,19.46,1
+gist1m,2.2,VPQ_hardcap_M240,64,512,1.729,OK,15312.5,15863.5,242.0,0.7343,19.7,1
+gist1m,2.5,VPQ_hardcap_M240,64,128,2.029,OK,5129.9,54095.8,1324.0,0.7259,19.46,1
+gist1m,2.5,VPQ_hardcap_M240,64,512,2.029,OK,14584.8,15742.8,396.6,0.7343,19.7,1
+bge1024,2.2,VPQ_hardcap_M256,32,128,1.833,OK,5441.7,91548.5,5669.1,0.8377,43.48,1
+bge1024,2.2,VPQ_hardcap_M256,32,256,1.833,OK,57559.5,58717.6,2049.2,0.8745,45.25,1
+bge1024,2.5,VPQ_hardcap_M256,32,128,2.133,OK,5190.8,95376.3,6666.6,0.8377,43.48,1
+bge1024,2.5,VPQ_hardcap_M256,32,256,2.133,OK,56678.9,59685.0,1255.3,0.8745,45.25,1
+bge1024,2.2,UVM_capped,32,128,0.049,OK,13.2,15.3,0.1,0.9172,85.31,1
+bge1024,2.2,UVM_capped,32,256,0.049,OK,6.6,7.3,0.0,0.9781,92.58,1
+bge1024,2.5,UVM_capped,32,128,0.049,OK,14.3,17.1,0.1,0.9258,86.8,1
+bge1024,2.5,UVM_capped,32,256,0.049,OK,7.2,8.1,0.0,0.9781,92.97,1
+sift10m,2.5,UVM_capped,64,128,0.049,OK,4.1,2.0,0.0,0.993,92.81,1
+sift10m,3.0,UVM_capped,64,128,0.049,OK,4.6,2.8,0.0,0.9914,93.12,1
+deep10m,2.5,UVM_capped,64,128,0.049,OK,4.9,3.1,0.0,0.9906,92.97,1
+gist1m,2.2,UVM_capped,64,128,0.049,OK,4.4,4.4,0.0,0.9781,91.48,1
+gist1m,2.2,UVM_capped,64,512,0.049,OK,1.1,1.1,0.0,0.9969,96.56,1
+gist1m,2.5,UVM_capped,64,128,0.049,OK,4.7,4.8,0.0,0.9789,91.48,1
+gist1m,2.5,UVM_capped,64,512,0.049,OK,1.2,1.2,0.0,0.9969,96.48,1

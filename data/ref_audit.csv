@@ -1,0 +1,39 @@
+bib_key,status,what_changed,source_url
+johnson2019billion,PASS,Verified exact title/authors/pages (535-547),https://doi.org/10.1109/tbdata.2019.2921572
+douze2024faiss,WARN,Updated from arXiv preprint to official IEEE Trans. Big Data publication (vol. 12 pp. 346-361 2025) with first 3 authors,https://doi.org/10.1109/tbdata.2025.3618474
+ootomo2024cagra,PASS,Verified exact title/authors/pages (4236-4247); listed first 3 authors,https://doi.org/10.1109/icde60146.2024.00323
+groh2023ggnn,PASS,Verified exact title/authors/pages (267-279); listed first 3 authors,https://doi.org/10.1109/tbdata.2022.3161156
+zhang2025tribase,WARN,Fixed placeholder author 'XXXX Zhang' to 'Qian Xu and Juan Yang and Feng Zhang and others'; fixed title to exact SIGMOD'25 title 'Tribase: A Vector Data Query Engine for Reliable and Lossless Pruning Compression Using Triangle Inequalities'; removed placeholder pages 1--26,papers_2024_2026/details/19_SIGMOD25_Tribase_A_Vector_Data_Query_Engine_for_Reliable_and_Lossless.md
+kuffo2025pdx,WARN,Added second author Elena Krippner; updated number to 3 and removed placeholder pages 1--25,https://doi.org/10.1145/3725333
+gao2023high,WARN,Updated issue number to 2 and removed placeholder pages 1--27,https://doi.org/10.1145/3589282
+gao2024rabitq,WARN,Verified exact title/authors/volume/issue; removed placeholder pages 1--27,https://doi.org/10.1145/3654970
+jegou2011product,PASS,Verified exact title/authors/pages (117-128),https://doi.org/10.1109/tpami.2010.57
+ge2013optimized,PASS,Verified exact title/authors/pages (744-755),https://doi.org/10.1109/tpami.2013.240
+andre2017accelerated,PASS,Verified exact title/authors/pages (159-166),https://doi.org/10.1145/3078971.3078992
+guo2020accelerating,PASS,Verified exact title/authors/pages (3887-3896) in ICML 2020 PMLR 119,https://proceedings.mlr.press/v119/guo20h.html
+wang2021milvus,PASS,Verified exact title/authors/pages (2614-2627); listed first 3 authors,https://doi.org/10.1145/3448016.3457550
+pan2024survey,PASS,Verified exact title/authors/pages (1591-1615),https://doi.org/10.1007/s00778-024-00864-x
+chen2021spanns,PASS,Verified exact title/authors/pages (5199-5212) in NeurIPS 2021; listed first 3 authors,https://proceedings.neurips.cc/paper/2021/hash/299dc35e747eb77177d9cea10a802da2-Abstract.html
+zhao2020song,PASS,Verified exact title/authors/pages (1033-1044),https://doi.org/10.1109/icde48307.2020.00094
+yu2022gpu,FAIL,Deleted from references.bib and sec2_3_bg_motiv.tex (unverifiable in CrossRef/ICDE 2022),N/A
+tian2025ican,FAIL,Deleted from references.bib and sec2_3_bg_motiv.tex (placeholder author 'XXXX Tian' and unverifiable in CrossRef/PVLDB),N/A
+babenko2014inverted,PASS,Verified exact title/authors/pages (3069-3076) in CVPR 2012,https://doi.org/10.1109/CVPR.2012.6248038
+baranchuk2018revisiting,WARN,Fixed pages from 202--216 to official Springer ECCV 2018 pages 209--224,https://doi.org/10.1007/978-3-030-01258-8_13
+wei2020analytic,PASS,Verified exact title/authors/pages (3152-3165); listed first 3 authors,https://doi.org/10.14778/3415478.3415541
+elkan2003using,PASS,Verified exact title/author/pages (147-153) in ICML 2003,https://api.openalex.org/works?search=Using+the+Triangle+Inequality+to+Accelerate+k-Means
+beyer1999nearest,PASS,Verified exact title/authors/pages (217-235) in ICDT 1999,https://doi.org/10.1007/3-540-49257-7_15
+amsaleg2015estimating,PASS,Verified exact title/authors/pages (29-38) in KDD 2015; listed first 3 authors,https://doi.org/10.1145/2783258.2783405
+harmony,WARN,Fixed title to 'HARMONY: A Scalable Distributed Vector Database for High-Throughput Approximate Nearest Neighbor Search'; listed first 3 authors (Qian Xu and Feng Zhang and Chengxi Li); removed placeholder pages 1--26,papers_2024_2026/details/01_SIGMOD26_HARMONY_A_Scalable_Distributed_Vector_Database_for_High_Thro.md
+l3_sigmod26,WARN,Fixed authors to 'Youyang Xia and Feng Zhang and Junda Pan and others'; fixed title to 'L3: A GPU-Native Co-Designed Data Format for Learned Lossless Lightweight Compression'; removed placeholder pages 1--25,https://doi.org/10.1145/3802078
+mercury_icde26,WARN,Listed first 3 authors (Qian Xu and Feng Zhang and Shijie Gao and others); removed placeholder pages 1--14,https://doi.org/10.1109/icde65706.2026.00159
+cufhedb,WARN,Fixed authors to 'Shijie Gao and Feng Zhang and others'; fixed title to 'cuFHEDB: GPU-Accelerated Fully Homomorphic Encryption Database'; removed placeholder pages 1--14,https://doi.org/10.1109/icde65706.2026.00042
+laconic_vldb24,WARN,Fixed authors to 'Qian Xu and Juan Yang and Feng Zhang and others'; fixed title to official VLDB'24 title 'Improving Graph Compression for Efficient Resource-Constrained Graph Analytics'; removed unverified pages,https://doi.org/10.14778/3665844.3665852
+hoco_sigmod24,WARN,Fixed authors to 'Jiawei Guan and Feng Zhang and Siqi Ma and others'; fixed title to 'Homomorphic Compression: Making Text Processing on Compression Unlimited'; removed placeholder pages 1--26,https://doi.org/10.1145/3626765
+compressgnn_kdd25,WARN,Fixed authors to 'Zheng Chen and Feng Zhang and Yifei Xia and others'; fixed title to 'CompressGNN: Accelerating Graph Neural Network Training via Hierarchical Compression'; removed placeholder pages 1--12,https://doi.org/10.1145/3711896.3736888
+xorbits_icde24,WARN,Fixed authors to 'Weizheng Lu and Kaisheng He and Xuye Qin and others'; fixed title to 'Xorbits: Automating Operator Tiling for Distributed Data Science'; removed unverified pages,https://doi.org/10.1109/icde60146.2024.00392
+gtadoc,FAIL,Deleted from references.bib and sec2_3_bg_motiv.tex (not in papers_2024_2026/INDEX.md; fabricated title),N/A
+ddc,FAIL,Deleted from references.bib and sec2_3_bg_motiv.tex (duplicate/fabricated variant of gao2023high),N/A
+ext_rabitq,WARN,Updated to official SIGMOD 2025 publication title 'Practical and Asymptotically Optimal Quantization of High-Dimensional Vectors in Euclidean Space for Approximate Nearest Neighbor Search' and authors 'Jianyang Gao and Yutong Gou and Yuexuan Xu and others',https://doi.org/10.1145/3725413
+pinecone,PASS,Verified official website URL,https://www.pinecone.io/
+qdrant,PASS,Verified official website URL,https://qdrant.tech/
+weaviate,PASS,Verified official website URL,https://weaviate.io/

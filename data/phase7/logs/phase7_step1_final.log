@@ -1,0 +1,97 @@
+[Worker bge1024 mode=UVM_capped cap=2.2GB] Effective free before load=2.207 GiB
+[Worker bge1024 cap=2.2GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker bge1024 cap=2.2GB itopk=128] Cold (B=128) took 9.700s -> cold_qps=13.2
+  steady[1/5] (B=32) dt=2.111s -> qps=15.2
+  steady[2/5] (B=32) dt=2.088s -> qps=15.3
+  steady[3/5] (B=32) dt=2.078s -> qps=15.4
+  steady[4/5] (B=32) dt=2.109s -> qps=15.2
+  steady[5/5] (B=32) dt=2.092s -> qps=15.3
+UVM_RESULT: ['bge1024', 2.2, 'UVM_capped', 32, 128, 0.049, 'OK', 13.2, 15.3, 0.1, 0.9172, 85.31, 1]
+[Worker bge1024 cap=2.2GB itopk=256] Cold (B=128) took 19.438s -> cold_qps=6.6
+  steady[1/5] (B=32) dt=4.414s -> qps=7.2
+  steady[2/5] (B=32) dt=4.381s -> qps=7.3
+  steady[3/5] (B=32) dt=4.380s -> qps=7.3
+  steady[4/5] (B=32) dt=4.416s -> qps=7.2
+  steady[5/5] (B=32) dt=4.403s -> qps=7.3
+UVM_RESULT: ['bge1024', 2.2, 'UVM_capped', 32, 256, 0.049, 'OK', 6.6, 7.3, 0.0, 0.9781, 92.58, 1]
+=== Running UVM_capped worker ds=bge1024 cap=2.5 ===
+[Worker bge1024 mode=UVM_capped cap=2.5GB] Effective free before load=2.504 GiB
+[Worker bge1024 cap=2.5GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker bge1024 cap=2.5GB itopk=128] Cold (B=128) took 8.922s -> cold_qps=14.3
+  steady[1/5] (B=32) dt=1.857s -> qps=17.2
+  steady[2/5] (B=32) dt=1.882s -> qps=17.0
+  steady[3/5] (B=32) dt=1.858s -> qps=17.2
+  steady[4/5] (B=32) dt=1.868s -> qps=17.1
+  steady[5/5] (B=32) dt=1.881s -> qps=17.0
+UVM_RESULT: ['bge1024', 2.5, 'UVM_capped', 32, 128, 0.049, 'OK', 14.3, 17.1, 0.1, 0.9258, 86.8, 1]
+[Worker bge1024 cap=2.5GB itopk=256] Cold (B=128) took 17.794s -> cold_qps=7.2
+  steady[1/5] (B=32) dt=3.964s -> qps=8.1
+  steady[2/5] (B=32) dt=3.938s -> qps=8.1
+  steady[3/5] (B=32) dt=3.973s -> qps=8.1
+  steady[4/5] (B=32) dt=3.949s -> qps=8.1
+  steady[5/5] (B=32) dt=3.986s -> qps=8.0
+UVM_RESULT: ['bge1024', 2.5, 'UVM_capped', 32, 256, 0.049, 'OK', 7.2, 8.1, 0.0, 0.9781, 92.97, 1]
+=== Running UVM_capped worker ds=sift10m cap=2.5 ===
+[Worker sift10m mode=UVM_capped cap=2.5GB] Effective free before load=2.514 GiB
+[Worker sift10m cap=2.5GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker sift10m cap=2.5GB itopk=128] Cold (B=128) took 31.314s -> cold_qps=4.1
+  steady[1/5] (B=32) dt=15.734s -> qps=2.0
+  steady[2/5] (B=32) dt=15.738s -> qps=2.0
+  steady[3/5] (B=32) dt=15.773s -> qps=2.0
+  steady[4/5] (B=32) dt=15.569s -> qps=2.1
+  steady[5/5] (B=32) dt=15.782s -> qps=2.0
+UVM_RESULT: ['sift10m', 2.5, 'UVM_capped', 64, 128, 0.049, 'OK', 4.1, 2.0, 0.0, 0.993, 92.81, 1]
+=== Running UVM_capped worker ds=sift10m cap=3.0 ===
+[Worker sift10m mode=UVM_capped cap=3.0GB] Effective free before load=3.014 GiB
+[Worker sift10m cap=3.0GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker sift10m cap=3.0GB itopk=128] Cold (B=128) took 27.965s -> cold_qps=4.6
+  steady[1/5] (B=32) dt=11.570s -> qps=2.8
+  steady[2/5] (B=32) dt=11.705s -> qps=2.7
+  steady[3/5] (B=32) dt=11.479s -> qps=2.8
+  steady[4/5] (B=32) dt=11.365s -> qps=2.8
+  steady[5/5] (B=32) dt=11.589s -> qps=2.8
+UVM_RESULT: ['sift10m', 3.0, 'UVM_capped', 64, 128, 0.049, 'OK', 4.6, 2.8, 0.0, 0.9914, 93.12, 1]
+=== Running UVM_capped worker ds=deep10m cap=2.5 ===
+[Worker deep10m mode=UVM_capped cap=2.5GB] Effective free before load=2.514 GiB
+[Worker deep10m cap=2.5GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker deep10m cap=2.5GB itopk=128] Cold (B=128) took 26.380s -> cold_qps=4.9
+  steady[1/5] (B=32) dt=10.375s -> qps=3.1
+  steady[2/5] (B=32) dt=10.313s -> qps=3.1
+  steady[3/5] (B=32) dt=10.418s -> qps=3.1
+  steady[4/5] (B=32) dt=10.341s -> qps=3.1
+  steady[5/5] (B=32) dt=10.379s -> qps=3.1
+UVM_RESULT: ['deep10m', 2.5, 'UVM_capped', 64, 128, 0.049, 'OK', 4.9, 3.1, 0.0, 0.9906, 92.97, 1]
+=== Running UVM_capped worker ds=gist1m cap=2.2 ===
+[Worker gist1m mode=UVM_capped cap=2.2GB] Effective free before load=2.207 GiB
+[Worker gist1m cap=2.2GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker gist1m cap=2.2GB itopk=128] Cold (B=128) took 28.961s -> cold_qps=4.4
+  steady[1/5] (B=32) dt=7.243s -> qps=4.4
+  steady[2/5] (B=32) dt=7.291s -> qps=4.4
+  steady[3/5] (B=32) dt=7.244s -> qps=4.4
+  steady[4/5] (B=32) dt=7.245s -> qps=4.4
+  steady[5/5] (B=32) dt=7.248s -> qps=4.4
+UVM_RESULT: ['gist1m', 2.2, 'UVM_capped', 64, 128, 0.049, 'OK', 4.4, 4.4, 0.0, 0.9781, 91.48, 1]
+[Worker gist1m cap=2.2GB itopk=512] Cold (B=128) took 118.968s -> cold_qps=1.1
+  steady[1/5] (B=16) dt=14.100s -> qps=1.1
+  steady[2/5] (B=16) dt=14.102s -> qps=1.1
+  steady[3/5] (B=16) dt=14.100s -> qps=1.1
+  steady[4/5] (B=16) dt=14.069s -> qps=1.1
+  steady[5/5] (B=16) dt=14.088s -> qps=1.1
+UVM_RESULT: ['gist1m', 2.2, 'UVM_capped', 64, 512, 0.049, 'OK', 1.1, 1.1, 0.0, 0.9969, 96.56, 1]
+=== Running UVM_capped worker ds=gist1m cap=2.5 ===
+[Worker gist1m mode=UVM_capped cap=2.5GB] Effective free before load=2.504 GiB
+[Worker gist1m cap=2.5GB] Loaded index via UVM! free_after_load=0.049 GiB
+[Worker gist1m cap=2.5GB itopk=128] Cold (B=128) took 27.215s -> cold_qps=4.7
+  steady[1/5] (B=32) dt=6.693s -> qps=4.8
+  steady[2/5] (B=32) dt=6.716s -> qps=4.8
+  steady[3/5] (B=32) dt=6.707s -> qps=4.8
+  steady[4/5] (B=32) dt=6.692s -> qps=4.8
+  steady[5/5] (B=32) dt=6.683s -> qps=4.8
+UVM_RESULT: ['gist1m', 2.5, 'UVM_capped', 64, 128, 0.049, 'OK', 4.7, 4.8, 0.0, 0.9789, 91.48, 1]
+[Worker gist1m cap=2.5GB itopk=512] Cold (B=128) took 105.939s -> cold_qps=1.2
+  steady[1/5] (B=16) dt=12.974s -> qps=1.2
+  steady[2/5] (B=16) dt=13.010s -> qps=1.2
+  steady[3/5] (B=16) dt=12.970s -> qps=1.2
+  steady[4/5] (B=16) dt=12.932s -> qps=1.2
+  steady[5/5] (B=16) dt=12.966s -> qps=1.2
+UVM_RESULT: ['gist1m', 2.5, 'UVM_capped', 64, 512, 0.049, 'OK', 1.2, 1.2, 0.0, 0.9969, 96.48, 1]

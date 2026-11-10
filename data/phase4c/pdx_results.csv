@@ -1,0 +1,12 @@
+dataset,algorithm,nprobe,recall,latency_avg_ms,latency_min_ms,latency_max_ms,qps,knn,num_queries
+sift,end_to_end_pdx_f32,24,0.8516,0.467,0.342,0.593,2140.5,20,1000
+sift,end_to_end_pdx_f32,48,0.9337,0.694,0.422,0.97,1441.0,20,1000
+sift,end_to_end_pdx_f32,64,0.9567,0.987,0.413,1.818,1013.5,20,1000
+sift,end_to_end_pdx_f32,96,0.9787,1.073,0.51,1.649,931.6,20,1000
+sift,end_to_end_pdx_f32,128,0.9886,1.352,0.649,2.239,739.7,20,1000
+sift,end_to_end_pdx_f32,160,0.9931,1.489,0.659,2.391,671.8,20,1000
+gist,end_to_end_pdx_f32,56,0.8145,4.04,2.012,5.95,247.5,20,1000
+gist,end_to_end_pdx_f32,128,0.9196,5.625,1.968,9.693,177.8,20,1000
+gist,end_to_end_pdx_f32,192,0.9521,7.025,2.534,12.974,142.3,20,1000
+gist,end_to_end_pdx_f32,256,0.9669,8.338,2.771,15.695,119.9,20,1000
+gist,end_to_end_pdx_f32,384,0.9815,10.252,3.506,19.144,97.5,20,1000

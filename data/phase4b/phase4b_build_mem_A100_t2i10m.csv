@@ -1,0 +1,4 @@
+gpu,dataset,dim,nlist,seed,kmeans_s,cm_extra_s,trident_extra_s,total_trident_build_s,cm_fp32_vram_gb,trident_vram_gb,vram_ratio_vs_fp32
+A100_t2i10m,t2i10m,200,4096,0,21.79,7.54,77.76,99.55,7.488,10.613,1.417
+A100_t2i10m,t2i10m,200,4096,1,22.63,7.72,54.27,76.91,7.488,10.608,1.417
+A100_t2i10m,t2i10m,200,4096,2,21.29,7.01,53.64,74.93,7.488,10.608,1.417
