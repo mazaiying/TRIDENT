@@ -161,12 +161,18 @@ def draw_grid_table(ax, x0, y0, col_widths, row_heights, cells_text, cells_bg, l
         cur_y -= rh
 
 
+def subcaption_below(ax, text, y=-0.25, fontsize=8.5):
+    """Place IEEE-style sub-figure caption strictly BELOW the subplot."""
+    ax.text(0.5, y, text, transform=ax.transAxes, ha="center", va="top",
+            fontsize=fontsize, fontweight="bold", color="#000000", clip_on=False)
+
+
 # ============================================================================
 # FIGURE 1: Intro Paradigm Comparison (Authentic HARMONY Fig 1 Open-Canvas Style)
 # Open white canvas + Top 4-color legend + Dashed row dividers + Contiguous 2D grids
 # ============================================================================
 def gen_fig1_intro():
-    fig, ax = plt.subplots(figsize=(7.2, 3.55))
+    fig, ax = plt.subplots(figsize=(7.2, 3.65))
     ax.set_xlim(0, 1.0)
     ax.set_ylim(0, 1.0)
     ax.axis("off")
@@ -182,17 +188,15 @@ def gen_fig1_intro():
         (0.81, "#FFFFFF", "Early-Pruned Block"),
     ]
     for lx, lcol, ltxt in leg_items:
-        ax.add_patch(patches.Rectangle((lx, 0.945), 0.032, 0.036, facecolor=lcol, edgecolor="#000000", lw=0.85, zorder=4))
-        ax.text(lx + 0.040, 0.963, ltxt, ha="left", va="center", fontsize=7.0, fontweight="bold")
-    ax.plot([0.01, 0.99], [0.925, 0.925], color="#333333", lw=0.9)
+        ax.add_patch(patches.Rectangle((lx, 0.948), 0.032, 0.035, facecolor=lcol, edgecolor="#000000", lw=0.85, zorder=4))
+        ax.text(lx + 0.040, 0.965, ltxt, ha="left", va="center", fontsize=7.0, fontweight="bold")
+    ax.plot([0.01, 0.99], [0.928, 0.928], color="#333333", lw=0.9)
 
     # Row (a): Query-Major Exhaustive FP32 Scan (Faiss-IVF-Flat)
-    ax.text(0.015, 0.892, "(a) Query-Major Exhaustive FP32 Scan (Faiss-IVF-Flat): Uncoalesced Reads & 0.0% Pruning",
-            fontsize=7.9, fontweight="bold", ha="left", va="center")
-    draw_user_icon(ax, 0.035, 0.775, w=0.036, h=0.085, lw=1.25)
-    draw_cylinder(ax, 0.095, 0.775, 0.052, 0.115, fc="#FFFFFF", lw=1.05, stripes=2)
-    ax.text(0.065, 0.682, "Query $q$, Cell $\\mathcal{L}_c$", ha="center", va="center", fontsize=6.8, fontweight="bold")
-    draw_arrow(ax, (0.126, 0.775), (0.175, 0.775), lw=1.15)
+    draw_user_icon(ax, 0.035, 0.822, w=0.036, h=0.082, lw=1.25)
+    draw_cylinder(ax, 0.095, 0.822, 0.052, 0.110, fc="#FFFFFF", lw=1.05, stripes=2)
+    ax.text(0.065, 0.735, "Query $q$, Cell $\\mathcal{L}_c$", ha="center", va="center", fontsize=6.7, fontweight="bold")
+    draw_arrow(ax, (0.126, 0.822), (0.175, 0.822), lw=1.15)
 
     t_a_txt = [
         ["Cand.", "$D_1$", "$D_2$", "$D_3..D_{29}$", "$D_{30}$"],
@@ -204,28 +208,28 @@ def gen_fig1_intro():
         ["#B8CCE4", "#FAC090", "#FAC090", "#FAC090", "#FAC090"],
         ["#B8CCE4", "#FAC090", "#FAC090", "#FAC090", "#FAC090"],
     ]
-    draw_grid_table(ax, 0.180, 0.858, [0.068, 0.072, 0.072, 0.135, 0.072], [0.054, 0.056, 0.056], t_a_txt, t_a_bg, lw=0.85, fontsize=6.9)
-    draw_arrow(ax, (0.605, 0.775), (0.655, 0.775), lw=1.15)
+    draw_grid_table(ax, 0.180, 0.902, [0.068, 0.072, 0.072, 0.135, 0.072], [0.052, 0.054, 0.054], t_a_txt, t_a_bg, lw=0.85, fontsize=6.9)
+    draw_arrow(ax, (0.605, 0.822), (0.655, 0.822), lw=1.15)
     m_a_txt = [
         ["Bottleneck: 100% FP32 Stream"],
         [f"L2 Read: {ncu_g['Faiss_IVFFlat']['l2_bytes_mb']/1000:.1f} GB (0.0% pruned)"],
         [f"GIST1M: {g99['Faiss_IVFFlat']:,.1f} QPS (1.00x)"],
     ]
     m_a_bg = [["#FAC090"], ["#FFFFFF"], ["#FFFFFF"]]
-    draw_grid_table(ax, 0.660, 0.858, [0.325], [0.054, 0.056, 0.056], m_a_txt, m_a_bg, lw=0.9, fontsize=7.0, bold_rows=(0, 2))
+    draw_grid_table(ax, 0.660, 0.902, [0.325], [0.052, 0.054, 0.054], m_a_txt, m_a_bg, lw=0.9, fontsize=7.0, bold_rows=(0, 2))
+    ax.text(0.50, 0.692, "(a) Query-major exhaustive FP32 scan (Faiss-IVF-Flat): uncoalesced reads & 0.0% pruning",
+            fontsize=7.8, fontweight="bold", ha="center", va="center")
 
-    ax.plot([0.01, 0.99], [0.640, 0.640], color="#666666", lw=0.85, ls="--")
+    ax.plot([0.01, 0.99], [0.655, 0.655], color="#666666", lw=0.85, ls="--")
 
     # Row (b): Scalar Triangle-Inequality Pruning (Tribase-GPU)
-    ax.text(0.015, 0.605, "(b) Scalar Triangle-Inequality Bound (Tribase-GPU): Norm Concentration in High-D (D=960)",
-            fontsize=7.9, fontweight="bold", ha="left", va="center")
     s_b_txt = [
         ["Scalar Norm LB"],
         ["$(\\|q-c\\|-\\|x-c\\|)^2$"],
         ["$\\mathcal{O}(1/\\sqrt{D})$ collapse"],
     ]
-    draw_grid_table(ax, 0.015, 0.572, [0.165], [0.052, 0.056, 0.056], s_b_txt, [["#E4DFEC"], ["#CCC0DA"], ["#FFFFFF"]], lw=0.85, fontsize=6.7)
-    draw_arrow(ax, (0.185, 0.490), (0.232, 0.490), lw=1.15)
+    draw_grid_table(ax, 0.015, 0.625, [0.165], [0.050, 0.054, 0.054], s_b_txt, [["#E4DFEC"], ["#CCC0DA"], ["#FFFFFF"]], lw=0.85, fontsize=6.7)
+    draw_arrow(ax, (0.185, 0.545), (0.232, 0.545), lw=1.15)
     t_b_txt = [
         ["Cand.", "Norm LB", "$D_1..D_{30}$ (FP32)"],
         ["$V_1$", "$0.04 \\leq \\tau_K$", "98.9% Dims Scanned"],
@@ -236,28 +240,28 @@ def gen_fig1_intro():
         ["#B8CCE4", "#CCC0DA", "#FAC090"],
         ["#B8CCE4", "#CCC0DA", "#FAC090"],
     ]
-    draw_grid_table(ax, 0.237, 0.572, [0.068, 0.112, 0.188], [0.054, 0.056, 0.056], t_b_txt, t_b_bg, lw=0.85, fontsize=6.9)
-    draw_arrow(ax, (0.610, 0.490), (0.655, 0.490), lw=1.15)
+    draw_grid_table(ax, 0.237, 0.625, [0.068, 0.112, 0.188], [0.052, 0.054, 0.054], t_b_txt, t_b_bg, lw=0.85, fontsize=6.9)
+    draw_arrow(ax, (0.610, 0.545), (0.655, 0.545), lw=1.15)
     m_b_txt = [
-        ["Bottleneck: Bound Collapse"],
-        [f"Pruned: Only {g99['tribase_dim_pruned_pct']:.1f}% Dims"],
+        ["Bottleneck: Scalar Bound Collapse"],
+        [f"Pruned: Only {g99['tribase_dim_pruned_pct']:.1f}% Cands/Coords"],
         [f"GIST1M: {g99['Tribase_GPU']:,.1f} QPS ({g99['Tribase_GPU']/g99['Faiss_IVFFlat']:.2f}x)"],
     ]
     m_b_bg = [["#CCC0DA"], ["#FFFFFF"], ["#FFFFFF"]]
-    draw_grid_table(ax, 0.660, 0.572, [0.325], [0.054, 0.056, 0.056], m_b_txt, m_b_bg, lw=0.9, fontsize=7.0, bold_rows=(0, 2))
+    draw_grid_table(ax, 0.660, 0.625, [0.325], [0.052, 0.054, 0.054], m_b_txt, m_b_bg, lw=0.9, fontsize=7.0, bold_rows=(0, 2))
+    ax.text(0.50, 0.415, "(b) Scalar triangle-inequality bound (Tribase-GPU): norm concentration in high-D (D=960)",
+            fontsize=7.8, fontweight="bold", ha="center", va="center")
 
-    ax.plot([0.01, 0.99], [0.352, 0.352], color="#666666", lw=0.85, ls="--")
+    ax.plot([0.01, 0.99], [0.378, 0.378], color="#666666", lw=0.85, ls="--")
 
     # Row (c): TRIDENT Progressive Dimension-Block Pruning
-    ax.text(0.015, 0.318, "(c) TRIDENT Cluster-Major Progressive Dimension-Block Pruning (PCA + Per-Cluster SQ8 LB)",
-            fontsize=7.9, fontweight="bold", ha="left", va="center")
     s_c_txt = [
         ["Isometric PCA+SQ8"],
         ["$\\mathbf{R}^\\top\\mathbf{R}=\\mathbf{I}$ (32-dim)"],
         ["Bounds $[\\ell_{c,d}, \\delta_{c,d}]$"],
     ]
-    draw_grid_table(ax, 0.015, 0.285, [0.165], [0.052, 0.056, 0.056], s_c_txt, [["#B8CCE4"], ["#DCEEF8"], ["#FFFFFF"]], lw=0.85, fontsize=6.7)
-    draw_arrow(ax, (0.185, 0.202), (0.228, 0.202), lw=1.15)
+    draw_grid_table(ax, 0.015, 0.348, [0.165], [0.050, 0.054, 0.054], s_c_txt, [["#B8CCE4"], ["#DCEEF8"], ["#FFFFFF"]], lw=0.85, fontsize=6.7)
+    draw_arrow(ax, (0.185, 0.268), (0.228, 0.268), lw=1.15)
     t_c_txt = [
         ["Cand.", "$B_0$", "$B_1$", "$B_2..B_{29}$", "Stage Z"],
         ["$V_1$", "$0.13$", "$0.19$", "$0.37 \\leq \\tau_K$", "Warp FP32"],
@@ -268,15 +272,17 @@ def gen_fig1_intro():
         ["#B8CCE4", "#C4D79B", "#C4D79B", "#C4D79B", "#C4D79B"],
         ["#B8CCE4", "#FAC090", "#FFFFFF", "#FFFFFF", "#FFFFFF"],
     ]
-    draw_grid_table(ax, 0.233, 0.285, [0.062, 0.068, 0.062, 0.095, 0.092], [0.054, 0.056, 0.056], t_c_txt, t_c_bg, lw=0.85, fontsize=6.8)
-    draw_arrow(ax, (0.617, 0.202), (0.655, 0.202), lw=1.15)
+    draw_grid_table(ax, 0.233, 0.348, [0.062, 0.068, 0.062, 0.095, 0.092], [0.052, 0.054, 0.054], t_c_txt, t_c_bg, lw=0.85, fontsize=6.8)
+    draw_arrow(ax, (0.617, 0.268), (0.655, 0.268), lw=1.15)
     m_c_txt = [
         ["Ours: 100.0% Lossless Top-K"],
         [f"Pruned: {g99['trident_dim_pruned_pct']:.1f}% Dims (21.4 GB)"],
         [f"GIST1M: {g99['TRIDENT_Auto']:,.1f} QPS ({g99['speedup_auto_vs_faiss']:.2f}x)"],
     ]
     m_c_bg = [["#C4D79B"], ["#D4EDDA"], ["#D4EDDA"]]
-    draw_grid_table(ax, 0.660, 0.285, [0.325], [0.054, 0.056, 0.056], m_c_txt, m_c_bg, lw=0.95, fontsize=7.0, bold_rows=(0, 1, 2))
+    draw_grid_table(ax, 0.660, 0.348, [0.325], [0.052, 0.054, 0.054], m_c_txt, m_c_bg, lw=0.95, fontsize=7.0, bold_rows=(0, 1, 2))
+    ax.text(0.50, 0.135, "(c) TRIDENT cluster-major progressive dimension-block pruning (PCA + per-cluster SQ8 LB)",
+            fontsize=7.8, fontweight="bold", ha="center", va="center")
 
     fig.tight_layout(pad=0.05)
     fig.savefig(os.path.join(OUT_DIR, "fig1_intro_comparison.pdf"), dpi=300, bbox_inches="tight")
@@ -287,7 +293,7 @@ def gen_fig1_intro():
 # FIGURE 2: Motivation (100% CSV-Driven from tribase_gpu.csv & active_tile_curves.csv)
 # ============================================================================
 def gen_fig2_motivation():
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.2, 2.55))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.2, 2.50))
 
     # Subplot (a): Measured Fraction of Dimensions Scanned (100 - dim_pruned_pct) at R=0.99 from tribase_gpu.csv
     ds_keys = ["glove100", "sift1m", "msong", "gist1m", "bge1024", "sift10m", "deep10m"]
@@ -303,12 +309,12 @@ def gen_fig2_motivation():
     ax1.bar(x,     unpruned_tb, width=w, color="#B4A7D6", edgecolor="black", hatch="\\\\", lw=0.7, label="Tribase-GPU (Scalar Tri.)")
     ax1.bar(x + w, unpruned_tr, width=w, color=C_TRIDENT, edgecolor="black", lw=0.7, label="TRIDENT (PCA+SQ8 LB)")
     ax1.set_xticks(x)
-    ax1.set_xticklabels(ds_labels, fontsize=6.8)
+    ax1.set_xticklabels(ds_labels, fontsize=6.1)
     ax1.set_ylabel("Dimensions Scanned (%)", fontsize=8.2, fontweight="bold")
     ax1.set_ylim(0, 118)
     ax1.grid(axis="y", linestyle="--", alpha=0.4)
-    ax1.set_title("(a) Obs. 1: Scalar Bounds Collapse in High-D", fontsize=8.5, fontweight="bold")
     ax1.legend(loc="upper right", fontsize=6.4, frameon=True, edgecolor="black")
+    subcaption_below(ax1, "(a) Obs. 1: Scalar bounds collapse in high-D", y=-0.27, fontsize=8.5)
 
     # Subplot (b): Measured Active Warp Survival Curve across Dimension Blocks on GIST1M from phase2a/active_tile_curves.csv
     rows_2a = read_csv("phase2a/active_tile_curves.csv")
@@ -330,12 +336,12 @@ def gen_fig2_motivation():
             step = max(1, len(b_indices) // 10)
             ax2.plot(b_indices, y_vals, color=col, ls=ls, lw=1.6, marker=mk, markevery=step, markersize=4.5, label=label)
 
-    ax2.set_xlabel("Dimension Block Index b (32 dims/block, GIST1M)", fontsize=7.8, fontweight="bold")
+    ax2.set_xlabel("Dimension Block Index b (32 dims/block, GIST1M)", fontsize=7.6, fontweight="bold", labelpad=2)
     ax2.set_ylabel("Active Unpruned Warps (%)", fontsize=8.2, fontweight="bold")
     ax2.set_ylim(0, 105)
     ax2.grid(True, linestyle="--", alpha=0.4)
-    ax2.set_title("(b) Obs. 2: PCA Energy Compaction Accelerates Pruning", fontsize=8.5, fontweight="bold")
     ax2.legend(loc="upper right", fontsize=6.4, frameon=True, edgecolor="black")
+    subcaption_below(ax2, "(b) Obs. 2: PCA energy compaction accelerates pruning", y=-0.27, fontsize=8.5)
 
     fig.tight_layout(pad=0.5)
     fig.savefig(os.path.join(OUT_DIR, "fig2_motivation.pdf"), dpi=300, bbox_inches="tight")
@@ -723,11 +729,13 @@ def gen_fig6_overall_10panels():
         ax.set_xlim(0.25, 8e-4)
         ax.set_xticks([0.1, 0.05, 0.01, 0.001])
         ax.set_xticklabels(["0.9", "0.95", "0.99", "0.999"], fontsize=6.8)
-        ax.set_title(f"({chr(97+idx)}) {ds_title} (D={dim})", fontsize=8.5, fontweight="bold", pad=3)
         ax.grid(True, which="major", linestyle="--", alpha=0.4)
         ax.tick_params(axis="both", labelsize=7.0)
         if idx >= 5:
-            ax.set_xlabel("Recall@10 (Log Loss Scale)", fontsize=7.8, fontweight="bold")
+            ax.set_xlabel("Recall@10 (Log Loss Scale)", fontsize=7.6, fontweight="bold", labelpad=2)
+            subcaption_below(ax, f"({chr(97+idx)}) {ds_title} (D={dim})", y=-0.30, fontsize=8.5)
+        else:
+            subcaption_below(ax, f"({chr(97+idx)}) {ds_title} (D={dim})", y=-0.19, fontsize=8.5)
         if idx % 5 == 0:
             ax.set_ylabel("Throughput (QPS)", fontsize=8.2, fontweight="bold")
 
@@ -760,13 +768,14 @@ def gen_fig6_overall_10panels():
     ax_j.set_xticklabels(rt_labels, fontsize=7.5, fontweight="bold")
     ax_j.set_ylim(0, 6.2)
     ax_j.set_ylabel("GeoMean Speedup (x)", fontsize=8.0, fontweight="bold")
-    ax_j.set_title("(j) GeoMean Speedup Summary", fontsize=8.5, fontweight="bold", pad=3)
     ax_j.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax_j, "(j) GeoMean Speedup Summary", y=-0.30, fontsize=8.5)
 
     handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 1.03),
+    fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 1.01),
                ncol=8, fontsize=8.0, frameon=False, handletextpad=0.4, columnspacing=1.0)
-    fig.tight_layout(rect=[0, 0, 1, 0.95], pad=0.45)
+    fig.tight_layout(rect=[0, 0, 1, 0.96], pad=0.40)
+    fig.subplots_adjust(hspace=0.38)
     fig.savefig(os.path.join(OUT_DIR, "fig6_overall_qps_recall_10panels.pdf"), dpi=300, bbox_inches="tight")
     plt.close(fig)
 
@@ -775,8 +784,8 @@ def gen_fig6_overall_10panels():
 # FIGURE 7: Locked Recall@10=0.99 Bar Chart & Batch Size Sensitivity (auto_v2.csv)
 # ============================================================================
 def gen_fig7_batch_and_10m():
-    fig = plt.figure(figsize=(14.2, 4.3))
-    gs = fig.add_gridspec(2, 4, height_ratios=[1.05, 1.0], hspace=0.48, wspace=0.28)
+    fig = plt.figure(figsize=(14.2, 4.35))
+    gs = fig.add_gridspec(2, 4, height_ratios=[1.05, 1.0], hspace=0.44, wspace=0.28)
 
     ax_top = fig.add_subplot(gs[0, :])
     ds_keys = [d[0] for d in DATASETS_9]
@@ -803,10 +812,10 @@ def gen_fig7_batch_and_10m():
     ax_top.set_xticks(x)
     ax_top.set_xticklabels(ds_names, fontsize=8.2, fontweight="bold")
     ax_top.set_ylabel("QPS (x 1,000, log)", fontsize=8.2, fontweight="bold")
-    ax_top.set_ylim(0.8, 3800)
-    ax_top.set_title("(a) End-to-End Throughput (K QPS, Log Scale) at Locked High Precision (Recall@10 = 0.99) Across All 9 Datasets", fontsize=9.0, fontweight="bold")
+    ax_top.set_ylim(0.8, 5500)
     ax_top.grid(axis="y", linestyle="--", alpha=0.4)
     ax_top.legend(loc="upper right", ncol=4, fontsize=8.0, frameon=False)
+    subcaption_below(ax_top, "(a) End-to-end throughput (K QPS, log scale) at locked high precision (Recall@10 = 0.99) across all 9 datasets", y=-0.19, fontsize=8.8)
 
     # Bottom row: Batch size scaling directly from phase6/auto_v2.csv
     auto_rows = read_csv("phase6/auto_v2.csv")
@@ -837,12 +846,12 @@ def gen_fig7_batch_and_10m():
         ax_b.plot(bx, fa_v, color=C_FAISS, marker="o", markersize=4.2, lw=1.3, label="Faiss-IVFFlat")
         ax_b.set_xticks(bx)
         ax_b.set_xticklabels([str(b) for b in bs], fontsize=7.2)
-        ax_b.set_xlabel("Query Batch Size (B)", fontsize=7.8, fontweight="bold")
+        ax_b.set_xlabel("Query Batch Size (B)", fontsize=7.6, fontweight="bold", labelpad=2)
         if j == 0:
             ax_b.set_ylabel("QPS (x 1,000)", fontsize=8.2, fontweight="bold")
-        ax_b.set_title(title_b, fontsize=8.4, fontweight="bold")
         ax_b.grid(True, linestyle="--", alpha=0.4)
         ax_b.tick_params(axis="y", labelsize=7.2)
+        subcaption_below(ax_b, title_b, y=-0.31, fontsize=8.4)
 
     fig.savefig(os.path.join(OUT_DIR, "fig7_batch_and_10m_throughput.pdf"), dpi=300, bbox_inches="tight")
     plt.close(fig)
@@ -853,7 +862,7 @@ def gen_fig7_batch_and_10m():
 # Directly from phase6/ncu_v2.csv & tribase_gpu.csv
 # ============================================================================
 def gen_fig8_breakdown_10panels():
-    fig, axes = plt.subplots(1, 6, figsize=(14.2, 2.5))
+    fig, axes = plt.subplots(1, 6, figsize=(14.2, 2.45))
     axes = axes.flatten()
 
     ncu_v2 = CLAIMS["ncu_v2"]
@@ -878,11 +887,11 @@ def gen_fig8_breakdown_10panels():
         ax.bar(x, bar_vals, width=0.52, color=[C_FAISS, C_CM, C_SQ8, C_TRIDENT], edgecolor="black", lw=0.7)
         ax.set_xticks(x)
         ax.set_xticklabels(methods, fontsize=6.6, fontweight="bold")
-        ax.set_title(f"({chr(97+idx)}) {ds_title}", fontsize=8.3, fontweight="bold", pad=3)
         ax.grid(axis="y", linestyle="--", alpha=0.4)
         ax.tick_params(axis="y", labelsize=6.8)
         if idx == 0:
             ax.set_ylabel(y_lbl, fontsize=7.6, fontweight="bold")
+        subcaption_below(ax, f"({chr(97+idx)}) {ds_title}", y=-0.31, fontsize=8.3)
 
         ax2 = ax.twinx()
         ax2.plot(x, mem_vals, color="#111111", marker="o", markersize=4.0, lw=1.4, ls="--")
@@ -904,8 +913,8 @@ def gen_fig8_breakdown_10panels():
     ax_i.set_xticks(xi)
     ax_i.set_xticklabels(["GIST", "BGE", "MSong", "SIFT1M", "SIFT10M", "Deep10M"], fontsize=6.0, rotation=30, ha="right")
     ax_i.set_ylabel("GPU Kernel Time (ms)", fontsize=7.5, fontweight="bold")
-    ax_i.set_title("(e) NCU GPU Kernel Time", fontsize=8.3, fontweight="bold", pad=3)
     ax_i.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax_i, "(e) NCU GPU Kernel Time", y=-0.31, fontsize=8.3)
 
     # Panel (f): Candidate vs Dimension Pruning % across 7 datasets at R=0.99
     ax_j = axes[5]
@@ -920,8 +929,8 @@ def gen_fig8_breakdown_10panels():
     ax_j.set_xticklabels(["SIFT1M", "GloVe", "MSong", "GIST", "BGE", "SIFT10M", "Deep10M"], fontsize=5.8, rotation=30, ha="right")
     ax_j.set_ylim(0, 110)
     ax_j.set_ylabel("Pruned Fraction (%)", fontsize=7.5, fontweight="bold")
-    ax_j.set_title("(f) Pruned Dims & Cands", fontsize=8.3, fontweight="bold", pad=3)
     ax_j.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax_j, "(f) Pruned Dims & Cands", y=-0.31, fontsize=8.3)
 
     legend_elems = [
         patches.Patch(facecolor=C_FAISS, edgecolor="black", label="Faiss-IVFFlat (FFMA Inst.)"),
@@ -930,8 +939,8 @@ def gen_fig8_breakdown_10panels():
         patches.Patch(facecolor=C_TRIDENT, edgecolor="black", label="B4: Full TRIDENT (FFMA Inst.)"),
         Line2D([0], [0], color="#111111", marker="o", ls="--", lw=1.5, label="NCU L2 Traffic (GB, Right Axis)"),
     ]
-    fig.legend(handles=legend_elems, loc="upper center", bbox_to_anchor=(0.5, 1.05), ncol=5, fontsize=7.8, frameon=False)
-    fig.tight_layout(rect=[0, 0, 1, 0.93], pad=0.35)
+    fig.legend(handles=legend_elems, loc="upper center", bbox_to_anchor=(0.5, 1.03), ncol=5, fontsize=7.8, frameon=False)
+    fig.tight_layout(rect=[0, 0, 1, 0.95], pad=0.35)
     fig.savefig(os.path.join(OUT_DIR, "fig8_latency_traffic_breakdown_10panels.pdf"), dpi=300, bbox_inches="tight")
     plt.close(fig)
 
@@ -940,7 +949,7 @@ def gen_fig8_breakdown_10panels():
 # FIGURE 9: Ablation Study Directly from phase4a/phase4a_ablation_A100.csv (1x6 Panels)
 # ============================================================================
 def gen_fig9_ablation_10panels():
-    fig, axes = plt.subplots(1, 6, figsize=(14.2, 2.45))
+    fig, axes = plt.subplots(1, 6, figsize=(14.2, 2.40))
     axes = axes.flatten()
 
     ab_rows = read_csv("phase4a/phase4a_ablation_A100.csv")
@@ -977,10 +986,10 @@ def gen_fig9_ablation_10panels():
         ax.set_xticks(x)
         ax.set_xticklabels([s[1] for s in steps], fontsize=7.2, fontweight="bold")
         ax.set_ylim(0, max(q_vals) * 1.25)
-        ax.set_title(f"({chr(97+idx)}) {ds_title} Progression", fontsize=8.2, fontweight="bold", pad=3)
         ax.grid(axis="y", linestyle="--", alpha=0.4)
         if idx == 0:
             ax.set_ylabel("Throughput (K QPS)", fontsize=7.8, fontweight="bold")
+        subcaption_below(ax, f"({chr(97+idx)}) {ds_title} Progression", y=-0.20, fontsize=8.2)
 
     # Panels (e)-(f): Leave-One-Out Ablation (Full TRIDENT vs -EarlyStop, -PCA, -PerClusterSQ8, -WarpRefine)
     loo_steps = [
@@ -1002,8 +1011,8 @@ def gen_fig9_ablation_10panels():
         ax.set_xticks(x)
         ax.set_xticklabels([s[1] for s in loo_steps], fontsize=6.8, fontweight="bold")
         ax.set_ylim(0, max(q_vals) * 1.22)
-        ax.set_title(f"({chr(97+4+j)}) {ds_title}", fontsize=8.2, fontweight="bold", pad=3)
         ax.grid(axis="y", linestyle="--", alpha=0.4)
+        subcaption_below(ax, f"({chr(97+4+j)}) {ds_title}", y=-0.20, fontsize=8.2)
 
     legend_elems = [
         patches.Patch(facecolor=v_colors[0], edgecolor="black", label="B0: CM-FP32 Baseline"),
@@ -1012,8 +1021,8 @@ def gen_fig9_ablation_10panels():
         patches.Patch(facecolor=v_colors[3], edgecolor="black", label="B3: +PCA Energy Compaction"),
         patches.Patch(facecolor=v_colors[4], edgecolor="black", label="B4: Full TRIDENT (+Warp-Cooperative Refine)"),
     ]
-    fig.legend(handles=legend_elems, loc="upper center", bbox_to_anchor=(0.5, 1.05), ncol=5, fontsize=7.8, frameon=False)
-    fig.tight_layout(rect=[0, 0, 1, 0.93], pad=0.35)
+    fig.legend(handles=legend_elems, loc="upper center", bbox_to_anchor=(0.5, 1.03), ncol=5, fontsize=7.8, frameon=False)
+    fig.tight_layout(rect=[0, 0, 1, 0.95], pad=0.35)
     fig.savefig(os.path.join(OUT_DIR, "fig9_ablation_study_10panels.pdf"), dpi=300, bbox_inches="tight")
     plt.close(fig)
 
@@ -1023,7 +1032,7 @@ def gen_fig9_ablation_10panels():
 # Directly from phase6/ooc.csv & build_mem CSVs
 # ============================================================================
 def gen_fig10_amortization():
-    fig, axes = plt.subplots(1, 4, figsize=(14.0, 2.8))
+    fig, axes = plt.subplots(1, 4, figsize=(14.0, 2.75))
 
     ooc = CLAIMS["ooc"]
     s100 = CLAIMS["ooc_100m_RTX4080"]["sift100m"]
@@ -1071,9 +1080,9 @@ def gen_fig10_amortization():
     ax.set_xticklabels(ds_labels_5, fontsize=6.6, fontweight="bold")
     ax.set_ylim(0.6, 1500000)
     ax.set_ylabel("OOC Throughput (QPS, log)", fontsize=8.0, fontweight="bold")
-    ax.set_title("(a) OOC QPS (1M-100M, R=0.99)", fontsize=8.3, fontweight="bold")
     ax.legend(loc="upper left", ncol=2, fontsize=5.4, frameon=False, columnspacing=0.4, handletextpad=0.3)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax, "(a) OOC QPS (1M-100M, R=0.99)", y=-0.28, fontsize=8.4)
 
     # (b) Nsight Compute Measured PCIe sysmem Traffic (GB per 1,024 queries at R=0.99)
     ax = axes[1]
@@ -1089,9 +1098,9 @@ def gen_fig10_amortization():
     ax.set_xticklabels(ds_labels_5, fontsize=6.6, fontweight="bold")
     ax.set_ylim(0.02, 4500)
     ax.set_ylabel("NCU PCIe Sysmem Read (GB, log)", fontsize=8.0, fontweight="bold")
-    ax.set_title("(b) NCU Measured PCIe Traffic", fontsize=8.3, fontweight="bold")
     ax.legend(loc="upper right", fontsize=6.4, frameon=False)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax, "(b) NCU Measured PCIe Traffic", y=-0.28, fontsize=8.4)
 
     # (c) GPU Resident VRAM Footprint (GB): In-VRAM vs OOC Mode (including SIFT100M on 16GB 4080)
     ax = axes[2]
@@ -1108,9 +1117,9 @@ def gen_fig10_amortization():
     ax.set_xticklabels(ds_labels_5, fontsize=6.6, fontweight="bold")
     ax.set_ylim(0.5, 120.0)
     ax.set_ylabel("Resident GPU VRAM (GB, log)", fontsize=8.0, fontweight="bold")
-    ax.set_title("(c) Resident GPU VRAM Footprint", fontsize=8.3, fontweight="bold")
     ax.legend(loc="upper left", fontsize=5.8, frameon=False)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax, "(c) Resident GPU VRAM Footprint", y=-0.28, fontsize=8.4)
 
     # (d) Offline GPU Index Build Time (s) from phase7/gpu_build_v2_A100.csv (4 bars: CAGRA R=0.99, cuVS-IVF-Flat, CM-FP32, TRIDENT)
     ax = axes[3]
@@ -1141,9 +1150,9 @@ def gen_fig10_amortization():
     ax.set_xticklabels(["GIST1M", "BGE1024", "SIFT10M", "Deep10M"], fontsize=7.2, fontweight="bold")
     ax.set_ylim(0.3, 300.0)
     ax.set_ylabel("GPU Index Build Time (s, log)", fontsize=8.0, fontweight="bold")
-    ax.set_title("(d) GPU Build Time (vs. CAGRA & IVF-Flat)", fontsize=8.3, fontweight="bold")
     ax.legend(loc="upper left", ncol=2, fontsize=5.8, frameon=False, columnspacing=0.6, handletextpad=0.3)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax, "(d) GPU Build Time (vs. CAGRA & IVF-Flat)", y=-0.28, fontsize=8.4)
 
     fig.tight_layout(pad=0.5)
     fig.savefig(os.path.join(OUT_DIR, "fig10_build_amortization_memory.pdf"), dpi=300, bbox_inches="tight")
@@ -1155,7 +1164,7 @@ def gen_fig10_amortization():
 # Directly from sens_k.csv, tribase_gpu.csv, rabitq_cpu.csv, sens_nlist.csv, main_4080.csv
 # ============================================================================
 def gen_fig11_heatmap_scalability():
-    fig, axes = plt.subplots(1, 4, figsize=(14.0, 2.85))
+    fig, axes = plt.subplots(1, 4, figsize=(14.0, 2.80))
 
     # (a) F1: Top-K Sensitivity on GIST1M & BGE1024 from phase6/sens_k.csv
     ax = axes[0]
@@ -1170,11 +1179,11 @@ def gen_fig11_heatmap_scalability():
     ax.set_yscale("log")
     ax.set_xticks(kx)
     ax.set_xticklabels([f"K={k}" for k in k_vals], fontsize=7.6, fontweight="bold")
-    ax.set_xlabel("Result Set Size (Top-K)", fontsize=7.8, fontweight="bold")
+    ax.set_xlabel("Result Set Size (Top-K)", fontsize=7.6, fontweight="bold", labelpad=2)
     ax.set_ylabel("Throughput (K QPS, log)", fontsize=8.0, fontweight="bold")
-    ax.set_title("(a) Top-K Scaling (F1: 100% Overlap)", fontsize=8.4, fontweight="bold")
     ax.legend(loc="upper right", fontsize=6.2, frameon=False)
     ax.grid(True, linestyle="--", alpha=0.4)
+    subcaption_below(ax, "(a) Top-K Scaling (100% Overlap)", y=-0.27, fontsize=8.4)
 
     # (b) F2 & F4: Head-to-Head vs RaBitQ (24T AVX-512) & Tribase-GPU at R=0.99
     ax = axes[1]
@@ -1193,9 +1202,9 @@ def gen_fig11_heatmap_scalability():
     ax.set_xticks(xc)
     ax.set_xticklabels(["SIFT1M", "GIST1M", "BGE1024"], fontsize=7.6, fontweight="bold")
     ax.set_ylabel("Throughput (K QPS, log)", fontsize=8.0, fontweight="bold")
-    ax.set_title("(b) vs. RaBitQ & Tribase-GPU (R=0.99)", fontsize=8.4, fontweight="bold")
     ax.legend(loc="upper right", fontsize=6.4, frameon=False)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax, "(b) vs. RaBitQ & Tribase-GPU (R=0.99)", y=-0.27, fontsize=8.4)
 
     # (c) Partition Granularity nlist Sensitivity from phase6/sens_nlist.csv
     ax = axes[2]
@@ -1217,9 +1226,9 @@ def gen_fig11_heatmap_scalability():
     ax.set_xticks(xn)
     ax.set_xticklabels([c[2] for c in configs_nl], fontsize=6.8, fontweight="bold")
     ax.set_ylabel("Throughput (K QPS)", fontsize=8.0, fontweight="bold")
-    ax.set_title("(c) Partition Count (nlist) Sensitivity", fontsize=8.4, fontweight="bold")
     ax.legend(loc="upper left", fontsize=6.4, frameon=False)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax, "(c) Partition Count (nlist) Sensitivity", y=-0.27, fontsize=8.4)
 
     # (d) Cross-Architecture Portability on NVIDIA RTX 4080 (Ada Lovelace) from phase6/main_4080.csv
     ax = axes[3]
@@ -1243,9 +1252,9 @@ def gen_fig11_heatmap_scalability():
     ax.set_xticklabels(["SIFT1M", "GloVe", "MSong", "GIST", "BGE"], fontsize=7.0, fontweight="bold")
     ax.set_ylim(1.0, 950)
     ax.set_ylabel("RTX 4080 QPS (x 1,000, log)", fontsize=8.0, fontweight="bold")
-    ax.set_title("(d) RTX 4080 Portability (R=0.99)", fontsize=8.4, fontweight="bold")
     ax.legend(loc="upper right", fontsize=6.2, frameon=False)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
+    subcaption_below(ax, "(d) RTX 4080 Portability (R=0.99)", y=-0.27, fontsize=8.4)
 
     fig.tight_layout(pad=0.5)
     fig.savefig(os.path.join(OUT_DIR, "fig11_heatmap_scalability.pdf"), dpi=300, bbox_inches="tight")

@@ -5364,6 +5364,10 @@
     "bge1024_m2048_speedup_r99": 4.95,
     "nuswide_r95_auto_vs_faiss": 0.93,
     "nuswide_r95_auto_vs_raw": 1.74,
-    "nuswide_r99_tribase_vs_auto": 1.65
+    "nuswide_r99_tribase_vs_auto": 1.65,
+    "gist1m_k100_trident_vs_rr2k": 1.32,
+    "gist1m_r99_tribase_vs_cm": 1.34,
+    "gist1m_r95_ncu_trident_vs_cm": 3.81,
+    "gist1m_r95_ablation_b4_vs_b0": 3.93
   }
 }
